@@ -17,25 +17,39 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <script src="scripts.js"></script>
     <title>Home</title>
   </head>
   <body>
     <header>
       <div class="firstHead">
         <div class="email">
-          <p>mostafa.oraby159@gmail.com</p>
+          <p>
+            <i class="fa-regular fa-clock" style="color: #ffd43b"></i> Monday -
+            Friday 9AM - 5AM
+          </p>
         </div>
         <div class="address">
-          <p class="">25 36 3636 54</p>
+          <p class="">
+            <i class="fa-solid fa-location-dot"></i> 725 Park, New York
+          </p>
         </div>
-        <div class="links">aa</div>
+        <div class="links">
+          <i class="fa-brands fa-instagram"></i>
+          <i class="fa-brands fa-facebook"></i>
+          <i class="fa-brands fa-twitter" style="color: #74c0fc"></i>
+          <i class="fa-brands fa-linkedin"></i>
+        </div>
       </div>
 
       <nav>
         <div class="name">
-          <h1>AskExperts</h1>
+          <h1>
+            <i class="fa-regular fa-message" style="color: #ffd43b"></i>
+            AskExperts
+          </h1>
         </div>
-        <div class="linkslist">
+        <div class="linkslist navIcons" id="linkslist">
           <ul>
             <li><a href="/Home.html">Home</a></li>
             <li><a href="">Pages</a></li>
@@ -47,6 +61,11 @@
         </div>
         <div class="callingNum">
           <div><i class="fa-solid fa-phone"></i> +(888)452 1505</div>
+        </div>
+        <div class="humbrger" id="humbrger" onclick="show()">
+          <div id="bar1" class="bar1"></div>
+          <div id="bar2" class="bar2"></div>
+          <div id="bar3" class="bar3"></div>
         </div>
       </nav>
     </header>
@@ -61,14 +80,18 @@
         </div>
       </section>
       <section class="section2">
-        <div class="brandImages">
-          <img src="images/1.svg" alt="" />
-          <img src="images/2.svg" alt="" />
-          <img src="images/3.svg" alt="" />
-          <img src="images/4.svg" alt="" />
-          <img src="images/5.svg" alt="" />
-          <img src="images/6.svg" alt="" />
+        <div style="display: grid; grid-template-areas: 
+        '. a .';margin: 0;">
+          <div class="brandImages">
+            <img src="images/1.svg" alt="" />
+            <img src="images/2.svg" alt="" />
+            <img src="images/3.svg" alt="" />
+            <img src="images/4.svg" alt="" />
+            <img src="images/5.svg" alt="" />
+            <img src="images/6.svg" alt="" />
+          </div>
         </div>
+
         <div class="S2Container">
           <div class="text">
             <p class="about">ABOUT US</p>
@@ -275,7 +298,7 @@
         <div class="process2Container">
           <div class="process2Container1">
             <div class="process2Head">
-              <div style="width: 50%">
+              <div class="processHead1">
                 <p class="Process">PROCESS</p>
                 <h1>
                   Our clients, global analytical techno company, wanted to build
@@ -337,22 +360,223 @@
       <section class="clientFeedBack">
         <div class="feedbackContainer">
           <div class="feedbackHead">
-            <p class="feedbackprocess">PROCESS</p>
-          <h1>There have some easy steps to join with us!</h1>
-          <p>
-            "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat
-            est autem, culpa rem quas hic a velit et."
-          </p>
-
-          <div class="feedbackUser">
-            <button>Prev</button>
-            <img src="images/user.png" alt="">
-            <button>Next</button>
+            <p class="feedbackprocess">CLIENT FEEDBACK</p>
+            <h1>There have some easy steps to join with us!</h1>
+            <p class="feedbackWords">
+              "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat
+              est autem, culpa rem quas hic a velit et."
+            </p>
           </div>
+          <div class="feedbackBody">
+            <div class="feedbackUser">
+              <button><i class="fa-solid fa-arrow-left prev"></i> Prev</button>
+              <img src="images/user.png" alt="" />
+              <button>Next <i class="fa-solid fa-arrow-right next"></i></button>
+            </div>
+            <p style="font-weight: bold">kathleen smith</p>
+            <p style="color: #ffcc4a; font-size: 12px">Web Designer</p>
           </div>
-          
+          <div class="feedbackFooter">
+            <div class="feedbackFooter1">
+              <p class="feedbackprocessFooter">BOOK NOW</p>
+              <h1>Better Consult, <span>Better</span> Results</h1>
+              <p class="feedbackWordsFooter">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad at,
+                quasi accusamus aliquid veritatis ipsa rem mollitia hic
+                voluptates nesciunt dicta earum animi, saepe quibusdam. Eligendi
+                porro quasi placeat maiores.
+              </p>
+              <div class="feedbackNum">
+                <i class="fa-solid fa-phone"></i> +(888)452 1505
+              </div>
+            </div>
+            <div class="feedbackFooter2">
+              <img src="images/Pattern.png" alt="" class="feedbackBgImage" />
+              <img src="images/Image.png" alt="" class="feedbackImage" />
+              <div class="feedbackBgColor"></div>
+              <div class="feedbackBgColor2"></div>
+            </div>
+          </div>
         </div>
       </section>
+      <section class="blog">
+        <div class="bolgContainer">
+          <div class="blogHead">
+            <div style="width: 25%">
+              <p class="blogWord">Blog</p>
+              <h1>Take a look at our letest articles & resources</h1>
+            </div>
+            <div>
+              <button>More News</button>
+            </div>
+          </div>
+          <div class="blogBody">
+            <div class="blogBodyCard1">
+              <img src="images/blog1.png" alt="" />
+              <h2>Consulting Feeds Study 2019 (And How To Raise Your Rates)</h2>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Consectetur, veritatis pariatur nemo officiis voluptatibus ab
+                voluptatem aliquid quia, sed corporis doloremque! Praesentium
+                officiis facilis voluptate est doloremque eveniet qui
+                architecto!
+              </p>
+              <hr style="border: 1px solid #c5c5c5" />
+              <div class="blogBodyCard1End">
+                <div style="display: flex; align-items: center">
+                  <img src="images/blog1.png" alt="" />
+                  <p>John Carar</p>
+                  <p>September 1, 2022</p>
+                </div>
+                <button class="blogBodyCard1EndButton">Read More</button>
+              </div>
+              <hr style="border: 1px solid #c5c5c5" />
+            </div>
+
+            <div class="blogBodyCard2">
+              <img src="images/blog2.png" alt="" />
+              <h2>
+                What is growth hacking and how to apply it to your startup
+              </h2>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Consectetur, veritatis pariatur nemo officiis voluptatibus ab
+                voluptatem aliquid quia, sed corporis doloremque! Praesentium
+                officiis facilis voluptate est doloremque eveniet qui
+                architecto!
+              </p>
+              <hr style="border: 1px solid #c5c5c5" />
+              <div class="blogBodyCard1End">
+                <div style="display: flex; align-items: center">
+                  <img src="images/blog1.png" alt="" />
+                  <p>John Carar</p>
+                  <p>September 1, 2022</p>
+                </div>
+                <button class="blogBodyCard1EndButton">Read More</button>
+              </div>
+              <hr style="border: 1px solid #c5c5c5" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="contact">
+        <div class="contactContainer">
+          <div class="contactInfo">
+            <div class="contactHead">
+              <p class="blogWord">PROCESS</p>
+              <h1>Contact Us. It's Easy.</h1>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Assumenda reprehenderit, id possimus quibusdam tempore ut natus
+                voluptatem
+              </p>
+            </div>
+            <div class="todayContactNum">
+              <div class="callingIcon">
+                <i class="fa-solid fa-phone"></i>
+              </div>
+
+              <div>
+                <p style="margin: 0">Call Today</p>
+                <h3 style="margin: 0">+1 800 100 900</h3>
+              </div>
+            </div>
+            <div class="todayContactNum">
+              <div class="callingIcon2">
+                <i class="fa-solid fa-phone"></i>
+              </div>
+
+              <div>
+                <p style="margin: 0">Monday to Friday</p>
+                <h3 style="margin: 0">9AM - 5AM</h3>
+              </div>
+            </div>
+            <div class="todayContactNum">
+              <div class="callingIcon3">
+                <i class="fa-solid fa-phone"></i>
+              </div>
+
+              <div>
+                <p style="margin: 0">USA Office</p>
+                <h3 style="margin: 0">195 Devanshire St Boston, MA 02110</h3>
+              </div>
+            </div>
+          </div>
+          <div class="contactUserInfo">
+            <form action="">
+              <div class="contactUserInfoForm">
+                <div class="fullName">
+                  <label for="fullName">Full Name</label>
+                  <input type="text" name="" id="fullName" />
+                </div>
+                <div class="email">
+                  <label for="email">Email</label>
+                  <input type="email" name="" id="email" />
+                </div>
+                <div class="phone">
+                  <label for="phone">Phone</label>
+                  <input type="number" name="" id="phone" />
+                </div>
+                <div class="company">
+                  <label for="company">Company</label>
+                  <input type="text" name="" id="company" />
+                </div>
+              </div>
+              <div class="message">
+                <label for="message">Message</label>
+                <textarea name="" id="message" cols="30" rows="10"></textarea>
+              </div>
+              <button type="submit">Send Message</button>
+            </form>
+          </div>
+        </div>
+      </section>
+      <footer>
+        <div class="footerContainer">
+          <div class="footerCard1">
+            <h1><i class="fa-regular fa-message"></i> AskExperts</h1>
+            <p>Fb./Lg./Tw./Be.</p>
+          </div>
+          <div class="footerCard2">
+            <div class="footerProduct">
+              <h4>Product</h4>
+              <hr />
+              <ul>
+                <li>Service</li>
+                <li>FAQ</li>
+                <li>Single Service</li>
+                <li>Service</li>
+                <li>Prices</li>
+              </ul>
+            </div>
+            <div class="footerProduct">
+              <h4>Company</h4>
+              <hr />
+              <ul>
+                <li>About</li>
+                <li>News</li>
+                <li>contacts</li>
+                <li>Service</li>
+                <li>Our Team</li>
+                <li>Our Aproch</li>
+              </ul>
+            </div>
+            <div class="footerProduct">
+              <h4>Address</h4>
+              <hr />
+              <ul>
+                <li>1700 W Brleen St, 17</li>
+                <li>south USA Amrica</li>
+              </ul>
+              <button>Book an Appoinment</button>
+            </div>
+          </div>
+        </div>
+        <hr />
+        <p style="color: #c5c5c5; text-align: center">
+          C 2022 AskExperts, All rights reseved
+        </p>
+      </footer>
     </main>
   </body>
 </html>
