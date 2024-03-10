@@ -24,7 +24,7 @@ body {
   text-align: center;
   color: #e9e9e9;
 }
-.address i{
+.address i {
   color: #ffcc4a;
 }
 .links {
@@ -52,7 +52,9 @@ nav {
   text-align: right;
   /* transition: all 2s; */
 }
-.bar1,.bar2,.bar3 {
+.bar1,
+.bar2,
+.bar3 {
   width: 40px;
   height: 4px;
   background-color: #c4c3c3;
@@ -105,6 +107,7 @@ li a:hover {
 .section1 img {
   width: 100%;
   height: 500px;
+  object-fit: cover;
 }
 .card {
   padding: 15px;
@@ -142,7 +145,7 @@ li a:hover {
   width: 100%;
   grid-area: a;
 }
-.brandImages img{
+.brandImages img {
   /* width: 200px; */
 }
 .S2Container {
@@ -174,6 +177,10 @@ li a:hover {
 }
 .text {
   width: 30%;
+}
+.S2ImagesContainer {
+  display: grid;
+  grid-template-areas: ". a .";
 }
 .S2Img {
   width: 70%;
@@ -217,6 +224,7 @@ hr {
   /* top: 30px; */
   left: 20%;
   border-radius: 20px;
+  object-fit: cover;
 }
 .marketImg {
   position: absolute;
@@ -285,6 +293,9 @@ hr {
   background-color: black;
   color: white;
 }
+
+/* section 4 */
+
 .S4Container {
   width: 70%;
   text-align: center;
@@ -401,7 +412,7 @@ hr {
   display: flex;
   justify-content: space-between;
 }
-.processHead1{
+.processHead1 {
   width: 50%;
 }
 .process2Head h1 {
@@ -432,6 +443,7 @@ hr {
   width: 100%;
   height: 300px;
   border-radius: 10px;
+  object-fit: cover;
 }
 .process2ImageCard1 {
   position: relative;
@@ -503,7 +515,7 @@ hr {
   flex-direction: column;
   align-items: center;
 }
-.feedbackWords{
+.feedbackWords {
   width: 50%;
 }
 .feedbackprocess {
@@ -568,7 +580,6 @@ hr {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  
 }
 .feedbackFooter1 h1 {
   color: white;
@@ -599,7 +610,6 @@ hr {
   position: relative;
   height: 550px;
   width: 50%;
-  
 }
 .feedbackBgImage {
   position: absolute;
@@ -607,7 +617,6 @@ hr {
   top: 20%;
   left: 0;
   width: 40%;
-
 }
 .feedbackImage {
   /* width: 80%; */
@@ -654,6 +663,9 @@ hr {
   display: flex;
   justify-content: space-between;
 }
+.blogHeadWords {
+  width: 25%;
+}
 .blogWord {
   font-size: 12px;
   padding: 3px 10px;
@@ -682,6 +694,7 @@ hr {
 .blogBodyCard2 img {
   width: 100%;
   border-radius: 10px;
+  object-fit: cover;
 }
 .blogBodyCard2 {
   width: 48%;
@@ -696,9 +709,9 @@ hr {
   height: 40px;
   margin-right: 10px;
   border-radius: 50%;
-
+  object-fit: cover;
 }
-.blogBodyCard1EndButton{
+.blogBodyCard1EndButton {
   padding: 15px 25px;
   border-radius: 25px;
   background-color: black;
@@ -707,36 +720,34 @@ hr {
   color: white;
   transition: all 0.3s ease;
 }
-.blogBodyCard1EndButton:hover{
+.blogBodyCard1EndButton:hover {
   background-color: #e9e9e9;
   border: 1px solid #7c7c7c;
   color: black;
-
 }
 
 /* contact section  */
 
-
-.contactContainer{
+.contactContainer {
   width: 70%;
   margin: 0 auto;
   padding: 100px 0;
   display: flex;
-
 }
-.contactInfo{
+.contactInfo {
   width: 30%;
 }
-.todayContactNum{
+.todayContactNum {
   display: flex;
   align-items: center;
   margin: 30px 0;
-  
 }
-.todayContactNum p{
+.todayContactNum p {
   color: #7c7c7c;
 }
-.callingIcon , .callingIcon2 , .callingIcon3{
+.callingIcon,
+.callingIcon2,
+.callingIcon3 {
   padding: 5px;
   background-color: #f3ead5;
   border-radius: 50%;
@@ -748,36 +759,36 @@ hr {
   justify-content: center;
   align-items: center;
 }
-.callingIcon2{
+.callingIcon2 {
   background-color: #a4d8a4;
 }
-.callingIcon3{
+.callingIcon3 {
   background-color: #c4c3c3;
 }
-.contactUserInfo{
+.contactUserInfo {
   padding: 50px;
 }
-.contactUserInfoForm{
+.contactUserInfoForm {
   display: grid;
-  grid-template-columns: repeat(2 , 1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 15px;
   margin-bottom: 15px;
 }
-.contactUserInfo form label{
+.contactUserInfo form label {
   display: block;
   margin-bottom: 5px;
 }
-.contactUserInfo input{
+.contactUserInfo input {
   padding: 15px;
   border: 1px solid #7c7c7c;
   border-radius: 25px;
 }
-#message{
+#message {
   padding: 10px;
   width: 100%;
   border-radius: 25px;
 }
-.contactUserInfo button{
+.contactUserInfo button {
   padding: 15px;
   border-radius: 25px;
   background-color: black;
@@ -785,78 +796,72 @@ hr {
   margin-top: 15px;
 }
 
-
 /* footer  */
 
-footer{
+footer {
   background-color: black;
   padding: 30px;
 }
-.footerContainer{
+.footerContainer {
   width: 70%;
   margin: 0 auto;
   padding: 100px 0;
   display: flex;
 }
-.footerCard1{
+.footerCard1 {
   color: white;
   width: 30%;
 }
-.footerCard1 h1 i{
+.footerCard1 h1 i {
   color: #ffcc4a;
 }
-.footerCard2{
+.footerCard2 {
   border-left: 1px solid #7c7c7c;
   padding-left: 100px;
   width: 70%;
   display: flex;
   justify-content: space-between;
 }
-.footerProduct{
+.footerProduct {
   color: #c4c3c3;
   text-align: left;
 }
-.footerProduct h4{
+.footerProduct h4 {
   margin-top: 0;
 }
-.footerProduct hr{
+.footerProduct hr {
   width: 30%;
   margin-left: 0;
   border: 1px solid #ffcc4a;
 }
-.footerProduct ul{
+.footerProduct ul {
   padding: 20px;
   margin-bottom: 0;
 }
-.footerProduct button{
+.footerProduct button {
   padding: 20px;
   border-radius: 30px;
   font-weight: bold;
   font-size: 16px;
 }
-footer hr{
+footer hr {
   border: 1px solid #7c7c7c;
 }
 
-
-
-
-@media  screen and (max-width: 1440px) {
-  .callingNum div{
+@media screen and (max-width: 1440px) {
+  .callingNum div {
     width: 100%;
   }
-  .linkslist ul li{
+  .linkslist ul li {
     list-style-type: none;
   }
-
 }
-@media  screen and (max-width: 1200px){
-  
-  .linkslist ul{
+@media screen and (max-width: 1200px) {
+  .linkslist ul {
     padding: 0;
   }
 
-  .brandImages img{
+  .brandImages img {
     width: 150px;
   }
   .S3CardsContainer {
@@ -866,23 +871,22 @@ footer hr{
   .S4Container {
     width: 80%;
   }
-  .feedbackBody{
+  .feedbackBody {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 992px) {
+  .name {
     width: 100%;
   }
 
-}
-@media  screen and (max-width: 992px){
-  .name{
-    width: 100%;
-  }
-  
-  nav{
+  nav {
     justify-content: space-between;
   }
-  .linkslist{
+  .linkslist {
     display: none;
   }
-  .callingNum{
+  .callingNum {
     width: 100%;
     /* display: none; */
   }
@@ -892,16 +896,15 @@ footer hr{
     justify-content: space-between;
     align-items: center;
     z-index: 3;
-    
   }
-  .bar2.active{
+  .bar2.active {
     opacity: 0;
   }
-  .bar1.active{
-    transform: rotate(45deg) translate(7.5px,10px);
+  .bar1.active {
+    transform: rotate(45deg) translate(7.5px, 10px);
   }
-  .bar3.active{
-    transform: rotate(-45deg) translate(7.5px,-10px);
+  .bar3.active {
+    transform: rotate(-45deg) translate(7.5px, -10px);
   }
   .navIcons {
     opacity: 0;
@@ -915,16 +918,16 @@ footer hr{
     width: 100%;
     color: black;
   }
-  .linkslist ul{
+  .linkslist ul {
     flex-direction: column;
-      justify-content: space-around;
-      align-items: center;
-      margin: 180px 0;
+    justify-content: space-around;
+    align-items: center;
+    margin: 180px 0;
   }
-  .linkslist a{
+  .linkslist a {
     color: black;
   }
-  .navIcons.active{
+  .navIcons.active {
     display: flex;
     opacity: 1;
     /* flex-direction: column;
@@ -939,7 +942,7 @@ footer hr{
     padding: 0;
     /* transition: all 2s; */
     justify-content: center;
-    .linkslist ul{
+    .linkslist ul {
       flex-direction: column;
       justify-content: space-around;
       align-items: center;
@@ -947,139 +950,245 @@ footer hr{
     }
   }
 
-  .brandImages img{
+  .brandImages img {
     width: 100px;
   }
-  
-  .S2Container{
+
+  .S2Container {
     /* flex-wrap: wrap; */
     flex-direction: column;
   }
-  .text{
+  .text {
     width: 100%;
   }
   .S2Img {
     position: static;
     width: 100%;
   }
-  .S2Img img{
+  .S2Img img {
     position: static;
   }
-  .pattrenImg{
+  .pattrenImg {
     display: none;
   }
-  .marketImg{
+  .marketImg {
     display: none;
   }
-  .photomg{
+  .photomg {
     width: 100%;
   }
-
 
   .S4Container {
     flex-direction: column;
-    
   }
-  .S4Card1Container{
+  .S4Card1Container {
     width: 100%;
   }
-  .S4Card2{
+  .S4Card2 {
     width: 100%;
   }
-  .process2CardsContainer{
+  .process2CardsContainer {
     grid-template-columns: repeat(2, 1fr);
   }
-  .feedbackHead{
+  .feedbackHead {
     width: 100%;
   }
-  .feedbackWords{
+  .feedbackWords {
     width: 100%;
     font-size: 14px;
   }
-  .feedbackContainer{
+  .feedbackContainer {
     width: 90%;
   }
-  .feedbackFooter{
+  .feedbackFooter {
     flex-direction: column;
   }
-  .feedbackFooter1{
+  .feedbackFooter1 {
     width: 100%;
   }
-  .feedbackFooter2{
+  .feedbackFooter2 {
     width: 100%;
   }
-
 }
-@media  screen and (max-width: 786px) {
-  
-  .brandImages{
+@media screen and (max-width: 786px) {
+  .brandImages {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 10px;
     grid-area: a;
-
   }
-  .brandImages img{
+  .brandImages img {
     width: 200px;
     height: 200px;
   }
   .S3CardsContainer {
     grid-template-columns: 1fr;
   }
-  .S3Head{
+  .S3Head {
     width: 100%;
   }
-  .S3Head h1{
+  .S3Head h1 {
     font-size: 24px;
   }
-  .process2Head{
+  .process2Head {
     width: 100%;
   }
-  .process2Head h1{
+  .process2Head h1 {
     font-size: 26px;
   }
-  .process2CardsContainer{
+  .process2CardsContainer {
     grid-template-columns: repeat(1, 1fr);
   }
 
-}
-@media  screen and (max-width: 600px){
-  .callingNum{
-    display: none;
-  }
-  .S3Head{
-    width: 100%;
-  }
-  .S3Head h1{
-    font-size: 22px;
-  }
-  .process2Head{
+  .blogHead {
     flex-direction: column;
   }
-  .process2Head div{
+  .blogHead button {
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+  .blogHead h1 {
+    font-size: 18px;
+  }
+  .blogHeadWords {
     width: 100%;
   }
-  .process2Container{
+
+  .blogBody {
+    flex-direction: column;
+  }
+  .blogBodyCard1 {
+    width: 100%;
+  }
+  .blogBodyCard2 {
+    width: 100%;
+  }
+
+  .contactContainer {
+    flex-direction: column;
+  }
+  .contactInfo {
+    width: 100%;
+  }
+  .contactUserInfo {
+    width: 100%;
+    padding: 0;
+  }
+  .contactUserInfoForm {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .footerCard2 {
+    border-left: 1px solid #7c7c7c;
+    padding-left: 50px;
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .footerContainer {
+    width: 70%;
+    margin: 0 auto;
+    padding: 100px 0;
+    display: flex;
+    flex-direction: column;
+  }
+  .footerCard1 {
+    width: 100%;
+    margin-bottom: 25px;
+  }
+  .footerProduct button {
+    padding: 5px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .callingNum {
+    display: none;
+  }
+  .S3Head {
+    width: 100%;
+  }
+  .S3Head h1 {
+    font-size: 22px;
+  }
+  .process2Head {
+    flex-direction: column;
+  }
+  .process2Head div {
+    width: 100%;
+  }
+  .process2Container {
     width: 90%;
   }
 
-  .process2Nums{
+  .process2Nums {
     flex-wrap: wrap;
     justify-content: space-between;
   }
+  .clientFeedBackImg {
+    width: 100px;
+    height: 100px;
+  }
+  .feedbackHead h1 {
+    font-size: 22px;
+  }
+  .feedbackWords {
+    font-size: 14px;
+  }
+  .feedbackFooter1 {
+    padding: 5px;
+  }
+  .feedbackWordsFooter {
+    font-size: 14px;
+  }
+  .feedbackNum {
+    font-size: 14px;
+  }
+  .feedbackFooter1 h1 {
+    font-size: 20px;
+  }
+  .feedbackUser button {
+    padding: 3px;
+    font-size: 12px;
+  }
+
+  .bolgContainer {
+    width: 90%;
+  }
+  .blogBodyCard1,
+  .blogBodyCard2 {
+    font-size: 14px;
+  }
+  .blogBodyCard1 h2,
+  .blogBodyCard2 h2 {
+    font-size: 18px;
+  }
+  .blogBodyCard1EndButton {
+    padding: 5px;
+  }
+
+  .contactContainer {
+    width: 90%;
+  }
 }
 
-@media  screen and (max-width: 450px){
-  .section1 img{
+@media screen and (max-width: 450px) {
+  .section1 img {
     display: none;
   }
-  .card{
-    width: 90%;
+  .section1 {
+    background-color: #e9e9e9;
+  }
+  .card {
+    width: 100%;
     position: static;
     /* background-color: #e9e9e9; */
   }
 
-  .brandImages{
+  .brandImages {
     display: grid;
     grid-template-columns: 1fr;
     grid-area: a;
@@ -1089,41 +1198,52 @@ footer hr{
     justify-content: center;
     align-items: center; */
   }
-  .brandImages img{
+  .brandImages img {
     width: 150px;
   }
 
-  .S2Container{
+  .S2Container {
     width: 90%;
   }
-
+  .S2ImagesContainer {
+    justify-content: center;
+  }
   .S4Card1 {
     width: 100%;
     text-align: left;
   }
-  .S4Card1 h1{
+  .S4Card1 h1 {
     font-size: 24px;
   }
-  .S4Card2otherCards{
+  .S4Card2otherCards {
     grid-template-columns: 1fr;
   }
-  .S4Card2 h1{
+  .S4Card2 h1 {
     font-size: 24px;
   }
-  .S4Card2 p{
+  .S4Card2 p {
     font-size: 14px;
     color: #7c7c7c;
   }
-  .feedbackFooter2{
-    display: none;
-  }
-}
-
-@media  screen and (max-width: 450px){
   .S3Container {
     width: 90%;
   }
+  .footerCard2 {
+    border: 0;
+    padding: 0;
+  }
+
+  .feedbackFooter2 {
+    display: none;
+  }
+  .firstHead {
+    flex-direction: column;
+  }
+  .email,
+  .address,
+  .links {
+    width: 100%;
+    text-align: center;
+    padding-bottom: 10px;
+  }
 }
-
-
-
