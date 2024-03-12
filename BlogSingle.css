@@ -109,11 +109,19 @@
     height: 500px;
     object-fit: cover;
   }
+  .blogSingleWord{
+    font-size: 12px;
+    background-color: #ffcc4a;
+    border-radius: 15px;
+    padding: 5px 10px;
+    width: 150px;
+  }
+
   .card {
     padding: 15px;
     background-color: rgb(255, 255, 255, 0.9);
     /* opacity: 0.3; */
-    width: 20rem;
+    width: 25rem;
     position: absolute;
     top: 25%;
     left: 15%;
@@ -135,6 +143,13 @@
   .cardPara {
     font-size: 24px;
     font-weight: 500;
+  }
+
+  /* business Services */
+
+  .businessServicesContainer{
+    width: 70%;
+    margin: 0 auto;
   }
 
 
