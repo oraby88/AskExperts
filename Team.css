@@ -181,6 +181,7 @@ li a:hover {
   width: 90%;
   border-radius: 15px;
   object-fit: cover;
+  object-position: top;
 }
 .CEOword2 {
   position: absolute;
@@ -226,6 +227,13 @@ border-radius: 25px;
 }
 .contactHead{
   width: 50%;
+}
+.contactContainer{
+  display: flex;
+}
+.contactImage img{
+  height: 300px;
+  object-fit: cover;
 }
 
 /* footer  */
@@ -293,7 +301,7 @@ footer hr {
     padding: 0;
   }
 }
-@media screen and (max-width: 992px) and (min-width: 786px) {
+@media screen and (max-width: 992px) {
   .name {
     width: 100%;
   }
@@ -367,6 +375,12 @@ footer hr {
       margin: 180px 0;
     }
   }
+  .teamMembers {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+  }
+
 }
 @media screen and (max-width: 786px) {
   .footerCard2 {
