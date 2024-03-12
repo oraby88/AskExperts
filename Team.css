@@ -183,6 +183,13 @@ li a:hover {
   object-fit: cover;
   object-position: top;
 }
+.Ryan{
+  object-position: right !important;
+}
+.Lilly{
+  object-position: left !important;
+}
+
 .CEOword2 {
   position: absolute;
   top: 55%;
@@ -220,21 +227,57 @@ li a:hover {
 .contactContainer {
 width: 70%;
 margin: 0 auto;
-padding: 50px;
+/* padding: 50px; */
 background-color: black;
 color: white;
 border-radius: 25px;
 }
 .contactHead{
   width: 50%;
+  padding: 50px;
 }
 .contactContainer{
   display: flex;
+  /* justify-content: space-between; */
 }
-.contactImage img{
-  height: 300px;
+.contactImage{
+  position: relative;
+  width: 50%;
+}
+.teamImg{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  position: absolute;
+  z-index: 2;
+  /* top: 1; */
+  /* left: 7%; */
+  border-radius: 20px;
   object-fit: cover;
 }
+.Pattern {
+  height: 60%;
+  width: 40%;
+  object-fit: cover;
+  position: absolute;
+  z-index: 1;
+  top: 20%;
+  left: -5%;
+  transform: rotate(73deg);
+}
+.contactEmail{
+  padding: 20px;
+  border-radius: 30px;
+  border: 0;
+}
+.btn{
+  padding: 20px;
+  border-radius: 30px;
+  background-color: #4eaf4e;
+  color: white;
+  border: 0;
+}
+
 
 /* footer  */
 
@@ -380,6 +423,13 @@ footer hr {
     grid-template-columns: repeat(2, 1fr);
     gap: 15px;
   }
+  .contactContainer {
+    width: 90%;
+  }
+  .contactHead{
+    font-size: 14px;
+    padding: 30px;
+  }
 
 }
 @media screen and (max-width: 786px) {
@@ -406,10 +456,28 @@ footer hr {
   .footerProduct button {
     padding: 5px;
   }
+  .teamMembers{
+    grid-template-columns: 1fr;
+  }
+  .teamHead{
+    width: 100%;
+  }
 }
 @media screen and (max-width: 600px) {
   .callingNum {
     display: none;
+  }
+  .teamContainer{
+    width: 90%;
+  }
+  .contactImage{
+    display: none;
+  }
+  .Pattern{
+    display: none;
+  }
+  .contactHead{
+    width: 100%;
   }
 }
 
@@ -432,5 +500,18 @@ footer hr {
 
   .feedbackFooter2 {
     display: none;
+  }
+  .section1 img{
+    display: none;
+  }
+  .card{
+    position: static;
+    width: 100%;
+  }
+  .contactEmail{
+    padding: 10px;
+  }
+  .btn{
+    padding: 10px;
   }
 }
