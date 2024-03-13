@@ -99,6 +99,20 @@ li a:hover {
   color: rgb(3, 3, 114);
 }
 
+.linkslist select{
+  border: 0;
+  background-color: rgb(54, 53, 53);
+  color: white;
+  width: 100px;
+  /* background-color: white; */
+  font-size: 14px;
+  /* font-weight: bold; */
+}
+/* select option{
+  padding: 20px;
+  width: 200px;
+} */
+
 /* Section 1 */
 
 .section1 {
@@ -110,31 +124,44 @@ li a:hover {
   object-fit: cover;
 }
 .card {
-  padding: 15px;
-  background-color: rgb(255, 255, 255, 0.4);
+  padding: 35px 25px;
+  background-color: rgb(255, 255, 255, 0.9);
   /* opacity: 0.3; */
   width: 20rem;
   position: absolute;
   top: 25%;
   left: 15%;
-  border-radius: 25px;
+  border-radius: 15px;
 }
 .cardBtn1 {
   padding: 10px;
   border-radius: 25px;
   background-color: black;
   color: white;
+  border: 0;
 }
 
 .cardBtn2 {
-  padding: 10px;
+  padding: 5px;
   border-radius: 25px;
   background-color: white;
   font-weight: 400;
+  border: 0;
+}
+.cardBtn2 i{
+  background-color: #4eaf4e;
+  padding: 5px;
+  border-radius: 50%;
 }
 .cardPara {
   font-size: 24px;
-  font-weight: 500;
+  font-weight: bold;
+  margin: 0 10px;
+}
+.cardPara1{
+  font-size: 14px;
+  color: #7c7c7c;
+  /* margin: 0; */
 }
 
 /* Section 2 */

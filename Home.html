@@ -53,13 +53,26 @@
           <ul>
             <li><a href="/Home.html">Home</a></li>
             <li><a href="/Blog.html">Pages</a></li>
-            <li><select name="" id="">
-              <option value="Service"><a href="/Service.html">Services</a></option>
-              <option value="Service"><a href="/Service.html">Services</a></option>
-            </select></li>
+            <li>
+              <select name="links" title="services" id="" onchange="location = this.value">
+                <option>
+                  Services
+                </option>
+                <option value="Service.html">
+                  Services
+                </option>
+                <option value="Team.html">
+                  Team
+                </option>
+                <option value="Licenses.html">
+                  Licenses
+                </option>
+
+              </select>
+            </li>
             <li><a href="/CaseStudy.html">Work</a></li>
             <li><a href="/About.html">About</a></li>
-            <li><a href="/Team.html">Contact</a></li>
+            <li><a href="/Contact.html">Contact</a></li>  
           </ul>
         </div>
         <div class="callingNum">
@@ -77,9 +90,9 @@
         <img src="images/Banner.png" alt="AskExperts" />
         <div class="card">
           <p class="cardPara">Your small business growth advisors</p>
-          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+          <p class="cardPara1">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
           <button class="cardBtn1">Our Services</button>
-          <button class="cardBtn2">Book a Meeting</button>
+          <button class="cardBtn2"> <i class="fa-solid fa-door-open"></i>Book a Meeting</button>
         </div>
       </section>
       <section class="section2">

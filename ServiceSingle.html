@@ -16,7 +16,12 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
     <script src="scripts.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
     <title>Home</title>
   </head>
   <body>
@@ -51,11 +56,20 @@
         <div class="linkslist navIcons" id="linkslist">
           <ul>
             <li><a href="/Home.html">Home</a></li>
-            <li><a href="">Pages</a></li>
-            <li><a href="">Services</a></li>
-            <li><a href="">Work</a></li>
-            <li><a href="About.html">About</a></li>
-            <li><a href="">Contact</a></li>
+            <li><a href="/Blog.html">Pages</a></li>
+            <li>
+              <select name="" id="" onchange="location = this.value">
+                <option>
+                  Services
+                </option>
+                <option value="Service.html">Services</option>
+                <option value="Team.html">Team</option>
+                <option value="Licenses.html">Licenses</option>
+              </select>
+            </li>
+            <li><a href="/CaseStudy.html">Work</a></li>
+            <li><a href="/About.html">About</a></li>
+            <li><a href="/Contact.html">Contact</a></li>
           </ul>
         </div>
         <div class="callingNum">
@@ -95,43 +109,69 @@
             <button><i class="fa-solid fa-arrow-right"></i></button>
           </div>
         </div>
+
         <div class="financialCardsContainer">
-          <div class="financialCard">
-            <img src="images/Service_Single/Vector-1.png" alt="" />
-            <h2>The Balance Sheet</h2>
-            <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit
-              esse quam deserunt aliquid sequi laboriosam quas corrupti tenetur
-              vitae rerum eum hic option
-            </p>
+          <div class="swiper-container mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="financialCard">
+                  <img src="images/Service_Single/Vector-1.png" alt="" />
+                  <h2>The Balance Sheet</h2>
+                  <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Velit esse quam deserunt aliquid sequi laboriosam quas
+                    corrupti tenetur vitae rerum eum hic option
+                  </p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="financialCard">
+                  <img src="images/Service_Single/Icon-1.png" alt="" />
+                  <h2>The Balance Sheet</h2>
+                  <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Velit esse quam deserunt aliquid sequi laboriosam quas
+                    corrupti tenetur vitae rerum eum hic option
+                  </p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="financialCard">
+                  <img src="images/Service_Single/Vector.png" alt="" />
+                  <h2>The Balance Sheet</h2>
+                  <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Velit esse quam deserunt aliquid sequi laboriosam quas
+                    corrupti tenetur vitae rerum eum hic option
+                  </p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="financialCard">
+                  <img src="images/Service_Single/Icon.png" alt="" />
+                  <h2>The Balance Sheet</h2>
+                  <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Velit esse quam deserunt aliquid sequi laboriosam quas
+                    corrupti tenetur vitae rerum eum hic option
+                  </p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="financialCard">
+                  <img src="images/Service_Single/Icon.png" alt="" />
+                  <h2>The Balance Sheet</h2>
+                  <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Velit esse quam deserunt aliquid sequi laboriosam quas
+                    corrupti tenetur vitae rerum eum hic option
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- <div class="swiper-pagination"></div> -->
           </div>
-          <div class="financialCard">
-            <img src="images/Service_Single/Icon-1.png" alt="" />
-            <h2>The Balance Sheet</h2>
-            <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit
-              esse quam deserunt aliquid sequi laboriosam quas corrupti tenetur
-              vitae rerum eum hic option
-            </p>
-          </div>
-          <div class="financialCard">
-            <img src="images/Service_Single/Vector.png" alt="" />
-            <h2>The Balance Sheet</h2>
-            <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit
-              esse quam deserunt aliquid sequi laboriosam quas corrupti tenetur
-              vitae rerum eum hic option
-            </p>
-          </div>
-          <div class="financialCard">
-            <img src="images/Service_Single/Icon.png" alt="" />
-            <h2>The Balance Sheet</h2>
-            <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit
-              esse quam deserunt aliquid sequi laboriosam quas corrupti tenetur
-              vitae rerum eum hic option
-            </p>
-          </div>
+          
         </div>
       </div>
     </section>
@@ -280,7 +320,9 @@
             <div>
               <div class="FAQQuestion">
                 <p>what will happen when I've sent my application?</p>
-                <button class="showQuestion" id="Qbtn" onclick="Qshow()">+</button>
+                <button class="showQuestion" id="Qbtn" onclick="Qshow()">
+                  +
+                </button>
               </div>
               <p class="QdiscrptionNone" id="Qdiscrption">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -376,5 +418,34 @@
         C 2022 AskExperts, All rights reseved
       </p>
     </footer>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 1,
+        spaceBetween: 10,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        breakpoints: {
+          640: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+          },
+          768: {
+            slidesPerView: 3,
+            spaceBetween: 40,
+          },
+          980: {
+            slidesPerView: 3,
+            spaceBetween: 50,
+          },
+          1200: {
+            slidesPerView: 4,
+            spaceBetween: 50,
+          },
+        },
+      });
+    </script>
   </body>
 </html>
