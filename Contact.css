@@ -344,6 +344,12 @@ li a:hover {
   display: flex;
   gap: 10px;
 }
+/* .patternImg{
+  position: absolute;
+  top: 0;
+  left: 80%;
+  bottom: 20%;
+} */
 
 
 /* contact section  */

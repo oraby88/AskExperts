@@ -377,7 +377,7 @@ li a:hover {
 
 .S2ImagesContainer {
   display: grid;
-  grid-template-areas: ". a .";
+  /* grid-template-areas: ". a ."; */
 }
 .S2Img {
   width: 70%;
@@ -387,7 +387,8 @@ li a:hover {
   display: flex;
   justify-content: space-between;
   width: 100%;
-  grid-area: a;
+  /* grid-area: a; */
+  justify-items: center;
 }
 
 /* Our History  */
@@ -661,6 +662,7 @@ footer hr {
   }
   .brandImages img {
     width: 150px;
+    height: 100px;
   }
   .historyVideo{
     width: 600px;
@@ -832,13 +834,13 @@ footer hr {
   }
   .brandImages {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     gap: 10px;
-    grid-area: a;
+    /* grid-area: a; */
   }
   .brandImages img {
-    width: 200px;
-    height: 200px;
+    width: 100px;
+    height: 100px;
   }
 
   .contactContainer {
@@ -908,8 +910,8 @@ footer hr {
 
   .brandImages {
     display: grid;
-    grid-template-columns: 1fr;
-    grid-area: a;
+    grid-template-columns: 1fr ;
+    /* grid-area: a; */
     /* width: 150px; */
     /* gap: 10px; */
     /* text-align: center; */
@@ -918,6 +920,7 @@ footer hr {
   }
   .brandImages img {
     width: 150px;
+    margin: 0 auto;
   }
 
   .historyHead{
