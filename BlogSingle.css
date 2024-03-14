@@ -315,6 +315,7 @@ footer hr {
   .callingNum {
     width: 100%;
     /* display: none; */
+    margin-right: 10px;
   }
   .humbrger {
     display: flex;
@@ -359,7 +360,7 @@ footer hr {
     /* flex-direction: column;
         justify-content: space-between;
         align-items: center; */
-    width: 20%;
+    width: 25%;
     height: 100vh;
     position: fixed;
     top: 0px;
@@ -374,6 +375,10 @@ footer hr {
       align-items: center;
       margin: 180px 0;
     }
+  }
+  .linkslist select{
+    background-color: white;
+    color: black;
   }
   .businessServicesContainer{
     width: 90%;
@@ -417,6 +422,9 @@ footer hr {
 }
 
 @media screen and (max-width: 450px) {
+  .navIcons.active {
+    font-size: 14px;
+  }
   .callingNum{
     display: none;
   }

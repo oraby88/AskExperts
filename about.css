@@ -113,6 +113,7 @@ li a:hover {
 .section1 img {
   width: 100%;
   height: 500px;
+  object-fit: cover;
 }
 .card {
   padding: 15px 30px;
@@ -228,6 +229,7 @@ hr {
   top: 10%;
   left: 20%;
   border-radius: 20px;
+  object-fit: cover;
 }
 .marketImg {
   width: 100px;
@@ -408,11 +410,13 @@ hr {
   padding: 5px 20px;
   background-color: #ffcc4a;
   border-radius: 20px;
+  transition: all 0.3s ease;
 }
 .CEOMember img {
   height: 350px;
   width: 90%;
   border-radius: 15px;
+  object-fit: cover;
 }
 .CEOword2 {
   position: absolute;
@@ -422,6 +426,7 @@ hr {
   background-color: black;
   border-radius: 20px;
   color: white;
+  transition: all 0.3s ease;
 }
 .CEOword3 {
   position: absolute;
@@ -431,6 +436,7 @@ hr {
   background-color: black;
   border-radius: 20px;
   color: white;
+  transition: all 0.3s ease;
 }
 .discrption {
   font-size: 14px;
@@ -613,7 +619,15 @@ footer hr {
   .teamContainer{
     width: 80%;
   }
-
+  .CEOword{
+    left: 30%;
+  }
+  .CEOword2{
+    left: 30%;
+  }
+  .CEOword3{
+    left: 30%;
+  }
 
 }
 @media screen and (max-width: 992px) {
@@ -630,6 +644,7 @@ footer hr {
   .callingNum {
     width: 100%;
     /* display: none; */
+    margin-right: 10px;
   }
   .humbrger {
     display: flex;
@@ -674,7 +689,7 @@ footer hr {
     /* flex-direction: column;
         justify-content: space-between;
         align-items: center; */
-    width: 20%;
+    width: 25%;
     height: 100vh;
     position: fixed;
     top: 0px;
@@ -689,6 +704,10 @@ footer hr {
       align-items: center;
       margin: 180px 0;
     }
+  }
+  .linkslist select{
+    background-color: white;
+    color: black;
   }
 
   .OurVisionContainer1{
@@ -747,6 +766,7 @@ footer hr {
   .teamContainer{
     width: 90%;
   }
+  
 }
 
 @media screen and (max-width: 786px) {
@@ -764,6 +784,9 @@ footer hr {
   }
   .teamMembers{
     flex-direction: column;
+  }
+  .CEOMember img {
+    object-position: top;
   }
 
   .footerCard2 {
@@ -853,7 +876,9 @@ footer hr {
 }
 
 @media screen and (max-width: 450px) {
-  
+  .navIcons.active {
+    font-size: 14px;
+  }
   .firstHead {
     flex-direction: column;
   }
