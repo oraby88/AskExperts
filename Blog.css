@@ -572,8 +572,12 @@ footer hr {
 }
 
 @media screen and (max-width: 450px) {
+  
   .navIcons.active {
     font-size: 14px;
+  }
+  .callingNum{
+    display: none;
   }
   .section1 img {
     display: none;
