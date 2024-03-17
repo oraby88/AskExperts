@@ -398,9 +398,9 @@ hr {
 }
 
 .Growing {
-  font-size: 12px;
+  font-size: 14px;
   padding: 5px 10px;
-  width: 200px;
+  width: 220px;
   text-align: center;
   background-color: #ffcc4a;
   border-radius: 20px;
@@ -705,7 +705,7 @@ hr {
   justify-content: space-between;
 }
 .blogHeadWords {
-  width: 25%;
+  width: 35%;
 }
 .blogWord {
   font-size: 12px;
@@ -903,6 +903,7 @@ footer {
   border-radius: 30px;
   font-weight: bold;
   font-size: 16px;
+  border: 0;
 }
 footer hr {
   border: 1px solid #7c7c7c;
@@ -938,6 +939,11 @@ footer hr {
   .blogBodyCard1End {
     flex-direction: column;
   }
+  .footerProduct button {
+    font-size: 12px;
+    border: 0;
+    padding: 10px;
+  }
 }
 @media screen and (max-width: 992px) {
   .name {
@@ -961,6 +967,8 @@ footer hr {
     justify-content: space-between;
     align-items: center;
     z-index: 3;
+    /* position: fixed;
+    left: 80%; */
   }
   .bar2.active {
     opacity: 0;
@@ -1123,7 +1131,10 @@ footer hr {
   .blogHeadWords {
     width: 100%;
   }
-
+  .blogHead button {
+    font-size: 12px;
+    padding: 10px 17px;
+  }
   .blogBody {
     flex-direction: column;
   }
@@ -1135,6 +1146,12 @@ footer hr {
   }
   .blogBodyCard1End {
     flex-direction: row;
+  }
+  .blogBodyCard1EndButton {
+    padding: 12px;
+  }
+  .callingIcon, .callingIcon2 , .callingIcon3 {
+    width: 15%;
   }
 
   .contactContainer {
@@ -1240,7 +1257,7 @@ footer hr {
     font-size: 18px;
   }
   .blogBodyCard1EndButton {
-    padding: 5px;
+    padding: 7px;
   }
 
   .contactContainer {
@@ -1347,9 +1364,15 @@ footer hr {
   .todayContactNum h3 {
     font-size: 18px;
   }
+  .callingIcon, .callingIcon2 , .callingIcon3 {
+    width: 20%;
+  }
 }
 @media screen and (max-width: 360px) {
   .blogBodyCard1End {
     flex-direction: column;
+  }
+  .callingIcon, .callingIcon2 , .callingIcon3 {
+    width: 25%;
   }
 }
