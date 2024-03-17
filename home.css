@@ -872,12 +872,17 @@ footer {
   color: white;
   width: 30%;
 }
+.footerCard1 h1{
+  /* display: flex;
+  align-items: center; */
+  /* justify-content: space-around; */
+}
 .footerCard1 h1 i {
   color: #ffcc4a;
 }
 .footerCard2 {
   border-left: 1px solid #7c7c7c;
-  padding-left: 100px;
+  padding-left: 80px;
   width: 70%;
   display: flex;
   justify-content: space-between;
@@ -888,6 +893,7 @@ footer {
 }
 .footerProduct h4 {
   margin-top: 0;
+  margin-bottom: 10px;
 }
 .footerProduct hr {
   width: 30%;
@@ -897,6 +903,7 @@ footer {
 .footerProduct ul {
   padding: 20px;
   margin-bottom: 0;
+  margin-top: 0;
 }
 .footerProduct button {
   padding: 20px;
@@ -1086,6 +1093,9 @@ footer hr {
   }
   .feedbackFooter2 {
     width: 100%;
+  }
+  .footerCard2 {
+    padding-left: 50px !important;
   }
 }
 @media screen and (max-width: 786px) {
