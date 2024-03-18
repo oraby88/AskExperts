@@ -302,6 +302,7 @@ footer {
   margin: 0 auto;
   padding: 100px 0;
   display: flex;
+  gap: 15px;
 }
 .footerCard1 {
   color: white;
@@ -353,6 +354,11 @@ footer hr {
   .linkslist ul {
     padding: 0;
   }
+  .footerProduct button {
+    font-size: 12px;
+    border: 0;
+    padding: 10px;
+  }
 }
 @media screen and (max-width: 992px) {
   .name {
@@ -365,7 +371,7 @@ footer hr {
     display: none;
   }
   .callingNum {
-    width: 100%;
+    /* width: 100%; */
     /* display: none; */
     margin-right: 10px;
   }
@@ -438,6 +444,12 @@ footer hr {
   .bolgContainer{
     width: 90%;
   }
+  .footerContainer{
+    width: 85%;
+  }
+  .footerCard2 {
+    padding-left: 50px !important;  
+  }
 
 }
 @media screen and (max-width: 786px) {
@@ -471,7 +483,8 @@ footer hr {
     width: 70%;
     display: flex;
     justify-content: space-between;
-    flex-direction: column;
+    /* flex-direction: column; */
+    flex-wrap: wrap;
     width: 100%;
   }
 
@@ -485,6 +498,9 @@ footer hr {
   .footerCard1 {
     width: 100%;
     margin-bottom: 25px;
+  }
+  .footerProduct{
+    margin-bottom: 10px;
   }
   .footerProduct button {
     padding: 5px;
@@ -589,9 +605,17 @@ footer hr {
     border-radius: 0;
   }
 
+  .footerContainer{
+    width: 100%;
+  }
+  .footerCard1 h1{
+    font-size: 28px;
+    width: 100%;
+  }
   .footerCard2 {
     border: 0;
     padding: 0;
+    padding: 0 !important;
   }
 
   .feedbackFooter2 {

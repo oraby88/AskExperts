@@ -592,6 +592,7 @@ footer {
   margin: 0 auto;
   padding: 100px 0;
   display: flex;
+  gap: 15px;
 }
 .footerCard1 {
   color: white;
@@ -946,9 +947,17 @@ footer hr {
     width: 300px;
     height: 200px;
   }
+  .footerContainer{
+    width: 100%;
+  }
+  .footerCard1 h1{
+    font-size: 28px;
+    width: 100%;
+  }
   .footerCard2 {
     border: 0;
     padding: 0;
+    padding: 0 !important;
   }
   .bookNowFooter2 {
     display: none;
