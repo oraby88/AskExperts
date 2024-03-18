@@ -11,13 +11,13 @@ body {
   display: flex;
   background-color: black;
   color: #f5f5f5;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   padding: 0 10%;
   /* text-align: center; */
 }
-.email {
-  width: 20%;
+.dateAndClock {
+  /* width: 40%; */
 }
 .address {
   width: 40%;
@@ -35,12 +35,13 @@ body {
 
 nav {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   background-color: rgb(54, 53, 53);
   color: white;
   padding: 0 10%;
   /* text-align: center; */
+  /* transition: all 1s ease;   */
 }
 
 .humbrger {
@@ -83,8 +84,13 @@ li a:hover {
   color: white;
   list-style-type: circle;
 }
+.NumHumbgerContainer{
+  display: flex;
+  /* width: 35%; */
+}
 .callingNum {
   width: 200px;
+  margin-left: 50px;
 }
 .callingNum div {
   background-color: white;
@@ -378,10 +384,16 @@ hr {
   display: flex;
   align-items: center;
 }
+.S4C1Text1 h4{
+  margin: 10px 0;
+}
+.S4C1Text1 p{
+  margin: 5px 0;
+}
 .num {
-  width: 15%;
+  width: 70px;
   text-align: center;
-  margin-right: 15px;
+  /* margin-right: 15px; */
 }
 .num p {
   width: 50px;
@@ -607,6 +619,7 @@ hr {
   border-radius: 25px;
   border: 0px;
   font-weight: bold;
+  transition: all 1s ease;
 }
 .feedbackUser button i {
   padding: 10px;
@@ -658,14 +671,14 @@ hr {
 .feedbackWordsFooter {
   color: white;
   width: 100%;
-  margin: 5px 0;
+  margin: 10px 0;
 }
 .feedbackNum {
   background-color: #ffcc4a;
   width: 200px;
   border-radius: 20px;
   color: black;
-  padding: 5px;
+  padding: 5px; 
   letter-spacing: 2px;
 }
 .feedbackNum i {
@@ -982,7 +995,7 @@ footer hr {
     width: 80%;
   }
   .feedbackBody {
-    width: 100%;
+    width: 75%;
   }
   .blogBodyCard1End {
     flex-direction: column;
@@ -1000,14 +1013,19 @@ footer hr {
 
   nav {
     justify-content: space-between;
+    /* position: fixed;
+    top: 0%; */
   }
   .linkslist {
     display: none;
   }
   .callingNum {
-    width: 100%;
+    /* width: 100%; */
     /* display: none; */
     margin-right: 10px;
+  }
+  .callingNum{
+    margin: 0;
   }
   .humbrger {
     display: flex;
@@ -1016,7 +1034,7 @@ footer hr {
     align-items: center;
     z-index: 3;
     /* position: fixed;
-    left: 80%; */
+    left: 90%; */
   }
   .bar2.active {
     opacity: 0;
@@ -1029,21 +1047,20 @@ footer hr {
   }
   .navIcons {
     opacity: 0;
-    padding: 16px 24px;
+    padding: 30px 0;
     box-sizing: border-box;
-    position: fixed;
-    top: 0;
-    left: 0;
     z-index: 3;
     background-color: white;
     width: 100%;
+    height: 400px;
     color: black;
+    border-radius: 5px;
   }
   .linkslist ul {
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-    margin: 180px 0;
+    margin: 0;
   }
   .linkslist a {
     color: black;
@@ -1051,25 +1068,18 @@ footer hr {
   .navIcons.active {
     display: flex;
     opacity: 1;
-    /* flex-direction: column;
-    justify-content: space-between;
-    align-items: center; */
-    width: 25%;
-    height: 100vh;
-    position: fixed;
-    top: 0px;
-    left: 80%;
-    right: 0;
-    padding: 0;
-    font-size: 16px;
+    width: 200px;
+    position: absolute;
+    top: 120px;
+    right: 10%;
+    font-size: 18px;
     font-weight: bold;
-    /* transition: all 2s; */
+    transition: all 1s ease;
     justify-content: center;
     .linkslist ul {
       flex-direction: column;
-      justify-content: space-around;
+      justify-content: space-between;
       align-items: center;
-      margin: 180px 0;
     }
   }
   .linkslist select {
@@ -1145,6 +1155,7 @@ footer hr {
   }
 }
 @media screen and (max-width: 786px) {
+  
   .brandImages {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -1255,6 +1266,7 @@ footer hr {
   .callingNum {
     display: none;
   }
+  
   .S3Head {
     width: 100%;
   }
@@ -1301,7 +1313,7 @@ footer hr {
     font-size: 20px;
   }
   .feedbackUser button {
-    padding: 3px;
+    padding: 7px 10px;
     font-size: 12px;
   }
 
@@ -1326,9 +1338,10 @@ footer hr {
 }
 
 @media screen and (max-width: 450px) {
-  .navIcons.active {
-    font-size: 14px;
+  .navIcons.active{
+    top: 220px;
   }
+  
   .section1 img {
     display: none;
   }
@@ -1424,7 +1437,7 @@ footer hr {
   .firstHead {
     flex-direction: column;
   }
-  .email,
+  .dateAndClock,
   .address,
   .links {
     width: 100%;
@@ -1438,6 +1451,7 @@ footer hr {
 
 }
 @media screen and (max-width: 360px) {
+  
   .blogBodyCard1End {
     flex-direction: column;
   }

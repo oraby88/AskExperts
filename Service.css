@@ -136,8 +136,11 @@ li a:hover {
     width: 100px;
     text-align: center;
     background-color: #ffcc4a;
-    color: white !important;
+    color: black !important;
     border-radius: 20px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-transform: uppercase;
   }
 
 
@@ -215,7 +218,7 @@ li a:hover {
   .processContainer {
     display: flex;
     width: 70%;
-    margin: 50px auto;
+    margin: 100px auto;
     justify-content: space-between;
     gap: 30px;
   }
@@ -226,6 +229,8 @@ li a:hover {
     text-align: center;
     background-color: #ffcc4a;
     border-radius: 20px;
+    font-weight: bold;
+    letter-spacing: 2px;
   }
   .headText {
     font-size: 30px;
@@ -240,10 +245,10 @@ li a:hover {
     margin-bottom: 40px;
   }
   .text {
-    width: 30%;
+    width: 35%;
   }
   .processImg {
-    width: 70%;
+    width: 65%;
     position: relative;
   }
   .cardContainer {
@@ -331,6 +336,9 @@ li a:hover {
     text-align: center;
     background-color: #4eaf4e;
     border-radius: 20px;
+    color: white;
+    letter-spacing: 2px;
+    font-weight: bold;
   }
 
   .pricingCardsContainer{
@@ -362,14 +370,18 @@ li a:hover {
   }
   .PriceDuration{
     background-color: #7c7c7c;
+    font-size: 14px;
     border-radius: 18px;
-    padding: 2% 5%;
+    padding: 1% 7%;
+    letter-spacing: 2px;
 
   }
   .PriceDuration2{
     background-color: #4eaf4e;
+    font-size: 14px;
     border-radius: 18px;
-    padding: 2% 5%;
+    padding: 1% 7%;
+    letter-spacing: 2px;
   }
   .pricingCardInfo{
     padding: 20px;
@@ -426,9 +438,12 @@ li a:hover {
   .todayContactNum p {
     color: #7c7c7c;
   }
-  .callingIcon,
-  .callingIcon2,
-  .callingIcon3 {
+  .callingIcon , .callingIcon2 , .callingIcon3 {
+    width: 70px;
+  }
+  .callingIcon i,
+  .callingIcon2 i,
+  .callingIcon3 i{
     padding: 5px;
     background-color: #f5db9f;
     border-radius: 50%;
@@ -441,10 +456,10 @@ li a:hover {
     align-items: center;
     color: white;
   }
-  .callingIcon2 {
+  .callingIcon2 i{
     background-color: #a4d8a4;
   }
-  .callingIcon3 {
+  .callingIcon3 i{
     background-color: #c4c3c3;
   }
   .contactUserInfo {

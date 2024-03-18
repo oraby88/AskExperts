@@ -23,7 +23,7 @@
   <body>
     <header>
       <div class="firstHead">
-        <div class="email">
+        <div class="dateAndClock">
           <p>
             <i class="fa-regular fa-clock" style="color: #ffd43b"></i> Monday -
             Friday 9AM - 5AM
@@ -54,34 +54,32 @@
             <li><a href="/Home.html">Home</a></li>
             <li><a href="/Blog.html">Pages</a></li>
             <li>
-              <select name="links" title="services" id="" onchange="location = this.value">
-                <option>
-                  Services
-                </option>
-                <option value="Service.html">
-                  Services
-                </option>
-                <option value="Team.html">
-                  Team
-                </option>
-                <option value="Licenses.html">
-                  Licenses
-                </option>
-
+              <select
+                name="links"
+                title="services"
+                id=""
+                onchange="location = this.value"
+              >
+                <option>Services</option>
+                <option value="Service.html">Services</option>
+                <option value="Team.html">Team</option>
+                <option value="Licenses.html">Licenses</option>
               </select>
             </li>
             <li><a href="/CaseStudy.html">Work</a></li>
             <li><a href="/About.html">About</a></li>
-            <li><a href="/Contact.html">Contact</a></li>  
+            <li><a href="/Contact.html">Contact</a></li>
           </ul>
         </div>
-        <div class="callingNum">
-          <div><i class="fa-solid fa-phone"></i> +(888)452 1505</div>
-        </div>
-        <div class="humbrger" id="humbrger" onclick="show()">
-          <div id="bar1" class="bar1"></div>
-          <div id="bar2" class="bar2"></div>
-          <div id="bar3" class="bar3"></div>
+        <div class="NumHumbgerContainer">
+          <div class="callingNum">
+            <div><i class="fa-solid fa-phone"></i> +(888)452 1505</div>
+          </div>
+          <div class="humbrger" id="humbrger" onclick="show()">
+            <div id="bar1" class="bar1"></div>
+            <div id="bar2" class="bar2"></div>
+            <div id="bar3" class="bar3"></div>
+          </div>
         </div>
       </nav>
     </header>
@@ -90,9 +88,13 @@
         <img src="images/Banner.svg" alt="AskExperts" />
         <div class="card">
           <p class="cardPara">Your small business growth advisors</p>
-          <p class="cardPara1">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
-          <button class="cardBtn1">Our Services</button>
-          <button class="cardBtn2"> <i class="fa-solid fa-door-open"></i>Book a Meeting</button>
+          <p class="cardPara1">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+          </p>
+          <button class="cardBtn1">Our Services</button>&nbsp;
+          <button class="cardBtn2">
+            <i class="fa-solid fa-door-open"></i>Book a Meeting
+          </button>
         </div>
       </section>
       <section class="section2">
@@ -121,12 +123,21 @@
             <hr />
             <div class="cardContainer">
               <div class="card1">
-                <h4 class="headText"><i class="fa-solid fa-star fa-sm" style="color: #FFD43B;"></i> 400+</h4>
+                <h4 class="headText">
+                  <i class="fa-solid fa-star fa-sm" style="color: #ffd43b"></i>
+                  400+
+                </h4>
                 <p>Business Services</p>
               </div>
               <div class="hr"></div>
               <div class="card2">
-                <h4 class="headText"><i class="fa-solid fa-face-smile fa-sm" style="color: #1dc948;"></i> 100+</h4>
+                <h4 class="headText">
+                  <i
+                    class="fa-solid fa-face-smile fa-sm"
+                    style="color: #1dc948"
+                  ></i>
+                  100+
+                </h4>
                 <p>Business Services</p>
               </div>
             </div>
@@ -283,28 +294,28 @@
             <div class="S4Card2otherCards">
               <div class="S4Card">
                 <p class="growingCardIcon">
-                  <i class="fa-solid fa-earth-americas fa-lg"></i>
+                  <img src="images/Icon (1).svg" alt="" />
                 </p>
                 <h3>Audit & Evaluation</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
               </div>
               <div class="S4Card">
                 <p class="growingCardIcon">
-                  <i class="fa-solid fa-earth-americas fa-lg"></i>
+                  <img src="images/Icon (2).svg" alt="" />
                 </p>
                 <h3>Audit & Evaluation</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
               </div>
               <div class="S4Card">
                 <p class="growingCardIcon">
-                  <i class="fa-solid fa-earth-americas fa-lg"></i>
+                  <img src="images/Icon.svg" alt="" />
                 </p>
                 <h3>Audit & Evaluation</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
               </div>
               <div class="S4Card">
                 <p class="growingCardIcon">
-                  <i class="fa-solid fa-earth-americas fa-lg"></i>
+                  <img src="images/Icon (3).svg" alt="" />
                 </p>
                 <h3>Audit & Evaluation</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
@@ -446,9 +457,15 @@
               </p>
               <hr style="border: 1px solid #c5c5c5" />
               <div class="blogBodyCard1End">
-                <div style="display: flex; align-items: center; justify-content: space-between;">
+                <div
+                  style="
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                  "
+                >
                   <img src="images/blog1.png" alt="" />
-                  <p>John Carar &nbsp; | &nbsp; September 1, 2022</p>
+                  <p>John Cararar &nbsp; | &nbsp; September 1, 2022</p>
                   <p></p>
                 </div>
                 <button class="blogBodyCard1EndButton">Read More</button>
@@ -597,7 +614,8 @@
         </div>
         <hr />
         <p style="color: #c5c5c5; text-align: center">
-          &copy; 2022 AskExperts, All rights reseved | Terms of Service | Privacy Policy
+          &copy; 2022 AskExperts, All rights reseved | Terms of Service |
+          Privacy Policy
         </p>
       </footer>
     </main>
