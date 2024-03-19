@@ -1284,7 +1284,7 @@ footer hr {
     padding: 5px;
   }
 }
-@media screen and (max-width: 671px) {
+@media screen and (max-width: 823px) {
   .navIcons.active{
     top: 140px;
   }
@@ -1371,8 +1371,10 @@ footer hr {
     width: 100%;
   }
 }
-@media screen and (max-width: 505px) {
-  
+@media screen and (max-width: 491px) {
+  .navIcons.active{
+    top: 160px;
+  }
 }
 
 @media screen and (max-width: 450px) {

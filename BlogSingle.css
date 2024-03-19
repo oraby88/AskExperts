@@ -8,19 +8,17 @@ body {
 }
 
 .firstHead {
-  display: flex;
+  display: grid;
   background-color: black;
   color: #f5f5f5;
-  justify-content: space-around;
   align-items: center;
   padding: 0 10%;
-  /* text-align: center; */
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 15px;
 }
-/* .email {
-  width: 20%;
-} */
+
 .address {
-  width: 40%;
+  /* width: 40%; */
   text-align: center;
   color: #e9e9e9;
 }
@@ -28,14 +26,14 @@ body {
   color: #ffcc4a;
 }
 .links {
-  width: 20%;
+  /* width: 20%; */
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 nav {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   background-color: rgb(54, 53, 53);
   color: white;
@@ -62,9 +60,7 @@ nav {
   transition: all 1s ease-in-out;
 }
 
-.name {
-  width: 20%;
-}
+
 
 .linkslist {
   width: 40%;
@@ -87,7 +83,6 @@ li a:hover {
   background-color: rgb(54, 53, 53);
   color: white;
   font-size: 16px;
-  font-weight: bold;
 }
 .callingNum {
   width: 200px;
@@ -122,7 +117,10 @@ li a:hover {
   background-color: #ffcc4a;
   border-radius: 15px;
   padding: 5px 10px;
-  width: 150px;
+  width: 170px;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 2px;
 }
 
 .card {
@@ -220,6 +218,9 @@ li a:hover {
   color: white;
   display: flex;
   /* justify-content: space-around; */
+}
+.businessServicesFooterCard p{
+  color: white;
 }
 .businessServicesFooterCard img {
   width: 200px;
@@ -322,7 +323,7 @@ footer hr {
   .callingNum {
     /* width: 100%; */
     /* display: none; */
-    margin-right: 10px;
+    margin-right: 20px;
   }
   .humbrger {
     display: flex;
@@ -380,6 +381,7 @@ footer hr {
   .linkslist select{
     background-color: white;
     color: black;
+    font-weight: bold;
   }
   .businessServicesContainer{
     width: 90%;
@@ -474,7 +476,8 @@ footer hr {
     display: none;
   }
   .firstHead {
-    flex-direction: column;
+    grid-template-columns: 1fr;
+    gap: 0;
   }
   .email,
   .address,
