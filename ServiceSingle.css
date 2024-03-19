@@ -10,19 +10,19 @@ body {
 }
 
 .firstHead {
-  display: flex;
+  display: grid;
   background-color: black;
   color: #f5f5f5;
   justify-content: space-around;
   align-items: center;
   padding: 0 10%;
   /* text-align: center; */
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 15px;
 }
-.email {
-  width: 20%;
-}
+
 .address {
-  width: 40%;
+  /* width: 40%; */
   text-align: center;
   color: #e9e9e9;
 }
@@ -30,7 +30,7 @@ body {
   color: #ffcc4a;
 }
 .links {
-  width: 20%;
+  /* width: 20%; */
   display: flex;
   justify-content: space-around;
 }
@@ -88,16 +88,22 @@ li a:hover {
   border: 0;
   background-color: rgb(54, 53, 53);
   color: white;
+  font-size: 16px;
+}
+.NumHumbgerContainer{
+  display: flex;
+  /* width: 35%; */
 }
 .callingNum {
-  width: 20%;
+  width: 200px;
 }
 .callingNum div {
   background-color: white;
-  width: 65%;
+  width: 200px;
   border-radius: 20px;
   color: black;
   padding: 5px;
+  letter-spacing: 2px;
 }
 .callingNum div i {
   background-color: #ffcc4a;
@@ -229,7 +235,7 @@ li a:hover {
   -ms-flex-align: center;
   -webkit-align-items: center;
   align-items: center;
-  padding: 20px;
+  padding: 20px 0;
 }
 
 .swiper-slide img {
@@ -480,11 +486,11 @@ li a:hover {
 .todayContactNum p {
   color: #7c7c7c;
 }
-.callingIcon,
-.callingIcon2,
-.callingIcon3 {
+.callingIcon i,
+.callingIcon2 i,
+.callingIcon3 i {
   padding: 5px;
-  background-color: #f5db9f;
+  background-color: #f3ead5;
   border-radius: 50%;
   width: 50px;
   height: 50px;
@@ -493,16 +499,17 @@ li a:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: white;
 }
-.callingIcon2 {
+.callingIcon2 i {
   background-color: #a4d8a4;
+  width: 50px;
+  height: 50px;
 }
-.callingIcon3 {
+.callingIcon3 i {
   background-color: #c4c3c3;
 }
 .contactImageContainer{
-  width: 70%;
+  width: 63%;
 }
 .images{
   position: relative;
@@ -607,20 +614,27 @@ footer {
   margin: 0 auto;
   padding: 100px 0;
   display: flex;
+  gap: 15px;
 }
 .footerCard1 {
   color: white;
   width: 30%;
+}
+.footerCard1 h1{
+  /* display: flex;
+  align-items: center; */
+  /* justify-content: space-around; */
 }
 .footerCard1 h1 i {
   color: #ffcc4a;
 }
 .footerCard2 {
   border-left: 1px solid #7c7c7c;
-  padding-left: 100px;
+  padding-left: 80px;
   width: 70%;
   display: flex;
   justify-content: space-between;
+  gap: 20px;
 }
 .footerProduct {
   color: #c4c3c3;
@@ -628,6 +642,7 @@ footer {
 }
 .footerProduct h4 {
   margin-top: 0;
+  margin-bottom: 10px;
 }
 .footerProduct hr {
   width: 30%;
@@ -635,23 +650,22 @@ footer {
   border: 1px solid #ffcc4a;
 }
 .footerProduct ul {
-  padding: 20px;
+  padding: 10px 20px 30px 20px;
   margin-bottom: 0;
+  margin-top: 0;
 }
 .footerProduct button {
   padding: 20px;
   border-radius: 30px;
   font-weight: bold;
   font-size: 16px;
+  border: 0;
 }
 footer hr {
   border: 1px solid #7c7c7c;
 }
 
 @media screen and (max-width: 1440px) {
-  .callingNum div {
-    width: 100%;
-  }
   .linkslist ul li {
     list-style-type: none;
   }
@@ -681,9 +695,9 @@ footer hr {
     display: none;
   }
   .callingNum {
-    width: 100%;
+    /* width: 100%; */
     /* display: none; */
-    margin-right: 10px;
+    margin-right: 20px;
   }
   .humbrger {
     display: flex;
@@ -703,21 +717,20 @@ footer hr {
   }
   .navIcons {
     opacity: 0;
-    padding: 16px 24px;
+    padding: 30px 0;
     box-sizing: border-box;
-    position: fixed;
-    top: 0;
-    left: 0;
     z-index: 3;
     background-color: white;
     width: 100%;
+    height: 400px;
     color: black;
+    border-radius: 5px;
   }
   .linkslist ul {
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-    margin: 200px 0;
+    margin: 0;
   }
   .linkslist a {
     color: black;
@@ -725,29 +738,24 @@ footer hr {
   .navIcons.active {
     display: flex;
     opacity: 1;
-    /* flex-direction: column;
-          justify-content: space-between;
-          align-items: center; */
-    width: 25%;
-    height: 100vh;
-    position: fixed;
-    top: 0px;
-    left: 80%;
-    right: 0;
-    padding: 0;
-    
-    /* transition: all 2s; */
+    width: 200px;
+    position: absolute;
+    top: 140px;
+    right: 10%;
+    font-size: 18px;
+    font-weight: bold;
+    transition: all 1s ease;
     justify-content: center;
     .linkslist ul {
       flex-direction: column;
-      justify-content: space-around;
+      justify-content: space-between;
       align-items: center;
-      margin: 180px 0;
     }
   }
   .linkslist select{
     background-color: white;
     color: black;
+    font-weight: bold;
   }
   .brandImages img {
     width: 100px;
@@ -803,11 +811,14 @@ footer hr {
   .financialProjectionsContainer{
     margin-left: 20px;
   }
+  .footerContainer{
+    width: 85%;
+  }
+  .footerCard2 {
+    padding-left: 50px !important;  
+  }
 }
 @media screen and (max-width: 786px) {
-
-  
-  
 
   .footerCard2 {
     border-left: 1px solid #7c7c7c;
@@ -815,9 +826,11 @@ footer hr {
     width: 70%;
     display: flex;
     justify-content: space-between;
-    flex-direction: column;
+    /* flex-direction: column; */
+    flex-wrap: wrap;
     width: 100%;
   }
+
   .footerContainer {
     width: 70%;
     margin: 0 auto;
@@ -828,6 +841,9 @@ footer hr {
   .footerCard1 {
     width: 100%;
     margin-bottom: 25px;
+  }
+  .footerProduct{
+    margin-bottom: 10px;
   }
   .footerProduct button {
     padding: 5px;
@@ -869,6 +885,11 @@ footer hr {
     padding: 15px;
   }
 }
+@media screen and (max-width: 671px) {
+  .navIcons.active{
+    top: 140px;
+  }
+}
 @media screen and (max-width: 600px) {
   .callingNum {
     display: none;
@@ -894,11 +915,12 @@ footer hr {
 }
 
 @media screen and (max-width: 450px) {
-  .navIcons.active {
-    font-size: 14px;
+  .navIcons.active{
+    top: 220px;
   }
   .firstHead {
-    flex-direction: column;
+    grid-template-columns: 1fr;
+    gap: 0;
   }
   .email,
   .address,
@@ -931,9 +953,17 @@ footer hr {
     height: 200px;
   }
 
+  .footerContainer{
+    width: 100%;
+  }
+  .footerCard1 h1{
+    font-size: 28px;
+    width: 100%;
+  }
   .footerCard2 {
     border: 0;
     padding: 0;
+    padding: 0 !important;
   }
 
   .feedbackFooter2 {

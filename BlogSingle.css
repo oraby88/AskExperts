@@ -86,6 +86,8 @@ li a:hover {
   border: 0;
   background-color: rgb(54, 53, 53);
   color: white;
+  font-size: 16px;
+  font-weight: bold;
 }
 .callingNum {
   width: 200px;
