@@ -164,7 +164,7 @@ li a:hover {
   object-fit: cover;
 }
 .card {
-  padding: 35px 25px;
+  padding: 35px;
   background-color: rgb(255, 255, 255, 0.9);
   /* opacity: 0.3; */
   width: 20rem;
@@ -195,9 +195,9 @@ li a:hover {
   margin-right: 5px;
 }
 .cardPara {
-  font-size: 24px;
+  font-size: 28px;
   font-weight: bold;
-  margin: 0 10px;
+  margin: 0;
 }
 .cardPara1 {
   font-size: 14px;
@@ -871,7 +871,7 @@ hr {
 .callingIcon2 i,
 .callingIcon3 i {
   padding: 5px;
-  background-color: #f3ead5;
+  background-color: #ffe6ab;
   border-radius: 50%;
   width: 50px;
   height: 50px;
@@ -885,7 +885,7 @@ hr {
   width: 70%;
 }
 .callingIcon2 i {
-  background-color: #a4d8a4;
+  background-color: #98f098;
   width: 50px;
   height: 50px;
 }
@@ -893,7 +893,7 @@ hr {
   width: 30%;
 } */
 .callingIcon3 i {
-  background-color: #c4c3c3;
+  background-color: #e9e9e9;
 }
 /* .callingIcon3 {
   width: 30%;

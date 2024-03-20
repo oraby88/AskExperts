@@ -162,7 +162,7 @@ li a:hover {
   object-fit: cover;
 }
 .card {
-  padding: 15px 30px;
+  padding: 20px 35px;
   background-color: rgb(255, 255, 255, 0.9);
   /* opacity: 0.3; */
   width: 17rem;
@@ -179,11 +179,14 @@ li a:hover {
 .serviceWord {
   font-size: 12px;
   padding: 3px 10px;
-  width: 100px;
+  width: 140px;
   text-align: center;
   background-color: #ffcc4a;
   color: black !important;
   border-radius: 20px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  text-transform: uppercase;
 }
 
 /* financial Projections Section */

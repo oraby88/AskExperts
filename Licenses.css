@@ -159,7 +159,7 @@ li a:hover {
   /* object-position: top; */
 }
 .card {
-  padding: 15px 30px;
+  padding: 20px 35px;
   background-color: rgb(255, 255, 255, 0.9);
   /* opacity: 0.3; */
   width: 20rem;
@@ -180,8 +180,10 @@ li a:hover {
   width: 100px;
   text-align: center;
   background-color: #ffcc4a;
-  color: white !important;
+  color: black !important;
   border-radius: 20px;
+  letter-spacing: 2px;
+  font-weight: bold;
 }
 
 /* licenses section  */

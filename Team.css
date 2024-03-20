@@ -159,7 +159,7 @@ li a:hover {
   object-position: top;
 }
 .card {
-  padding: 15px 30px;
+  padding: 20px 35px;
   background-color: rgb(255, 255, 255, 0.9);
   /* opacity: 0.3; */
   width: 15rem;
@@ -173,14 +173,16 @@ li a:hover {
   font-size: 24px;
   font-weight: 500;
 }
-.serviceWord {
+.teamWord {
   font-size: 12px;
   padding: 3px 10px;
   width: 100px;
   text-align: center;
   background-color: #ffcc4a;
-  color: white !important;
+  color: black !important;
   border-radius: 20px;
+  letter-spacing: 2px;
+  font-weight: bold;
 }
 
 /* Our Team  */
@@ -193,7 +195,7 @@ li a:hover {
   margin: 0 auto;
 }
 
-.teamWord {
+/* .teamWord {
   font-size: 12px;
   padding: 3px 10px;
   width: 100px;
@@ -201,7 +203,7 @@ li a:hover {
   background-color: #ffcc4a;
   border-radius: 20px;
   color: black;
-}
+} */
 .teamHead {
   width: 60%;
 }
