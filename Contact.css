@@ -16,6 +16,7 @@ body {
   padding: 0 10%;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 15px;
+  /* text-align: center; */
 }
 
 .address {
@@ -67,6 +68,7 @@ nav {
 .linkslist ul {
   display: flex;
   justify-content: space-between;
+  gap: 10px;
 }
 .linkslist ul li:hover,
 li a:hover {
@@ -77,10 +79,15 @@ li a:hover {
   color: white;
   list-style-type: circle;
 }
-.linkslist select{
+.linkslist select {
   border: 0;
   background-color: rgb(54, 53, 53);
   color: white;
+  font-size: 16px;
+}
+.NumHumbgerContainer{
+  display: flex;
+  /* width: 35%; */
 }
 .callingNum {
   width: 200px;
@@ -100,10 +107,49 @@ li a:hover {
   color: rgb(3, 3, 114);
 }
 
+.activeNav{
+  display: none; 
+  height: 300px;
+  transition: all 1s ease;
+}
+.activeNavLinks{
+  height: 100%;
+  padding: 15px 0;
+}
+.activeNavLinks ul li a{
+  text-decoration: none;
+  color: white;
+}
+.activeNavLinks ul li a:hover{
+  color: #4eaf4e;
+}
+.activeNavLinks ul li{
+  color: #4eaf4e;
+}
+.activeNavLinks ul{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 100%;
+  margin: 0 10%;
+  /* padding: 0; */
+  list-style-type: circle;
+}
+.activeNavLinks select{
+  background-color: black;
+  color: white;
+  border: 0;
+  font-size: 16px;
+}
+.activeNavLinks select option:hover{
+  color: #4eaf4e;
+}
+
 /* section1 */
 
 .section1 {
   position: relative;
+  /* background-image: url('images/Service Images/'); */
 }
 .section1 img {
   width: 100%;
@@ -293,7 +339,88 @@ li a:hover {
 .todayContactNum p {
   color: #7c7c7c;
 }
-.callingIcon , .callingIcon2 , .callingIcon3 {
+.callingIcon1,
+.callingIcon12,
+.callingIcon13 {
+  width: 70px;
+}
+.callingIcon1 i,
+.callingIcon12 i,
+.callingIcon13 i {
+  padding: 5px;
+  background-color: black;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  margin-right: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+/* subscribe section  */
+
+.subscribeBody {
+  width: 100%;
+  background-color: black;
+  color: white;
+  border-radius: 20px;
+  padding: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.subscribe {
+  width: 70%;
+  margin: 0 auto;
+  position: relative;
+  z-index: -1;
+}
+.subscribeBody input {
+  padding: 20px;
+  border-radius: 30px;
+  border: 0;
+}
+.subscribeBody button {
+  background-color: #ffcc4a;
+  padding: 20px 30px;
+  border-radius: 30px;
+  border: 0;
+}
+.supscribeEmail {
+  display: flex;
+  gap: 10px;
+}
+/* .patternImg{
+  position: absolute;
+  top: 0;
+  left: 80%;
+  bottom: 20%;
+} */
+
+/* contact section  */
+
+.contactContainer {
+  width: 70%;
+  margin: 0 auto;
+  padding: 100px 0;
+  display: flex;
+}
+.contactInfo {
+  width: 40%;
+}
+.todayContactNum {
+  display: flex;
+  align-items: center;
+  margin: 30px 0;
+}
+.todayContactNum p {
+  color: #7c7c7c;
+}
+.callingIcon,
+.callingIcon2,
+.callingIcon3 {
   width: 70px;
 }
 .callingIcon i,
@@ -309,94 +436,18 @@ li a:hover {
   display: flex;
   justify-content: center;
   align-items: center;
+  color: white;
 }
 .callingIcon2 i {
   background-color: #a4d8a4;
   width: 50px;
   height: 50px;
 }
-/* subscribe section  */
-
-
-.subscribeBody{
-  width: 100%;
-  background-color: black;
-  color: white;
-  border-radius: 20px;
-  padding: 50px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.subscribe{
-  width: 70%;
-  margin: 0 auto;
-  position: relative;
-  z-index: -1;
-}
-.subscribeBody input {
-  padding: 20px;
-  border-radius: 30px;
-  border: 0;
-}
-.subscribeBody button{
-  background-color: #ffcc4a;
-  padding: 20px 30px;
-  border-radius: 30px;
-  border: 0;
-}
-.supscribeEmail{
-  display: flex;
-  gap: 10px;
-}
-/* .patternImg{
-  position: absolute;
-  top: 0;
-  left: 80%;
-  bottom: 20%;
-} */
-
-
-/* contact section  */
-
-.contactContainer {
-  width: 70%;
-  margin: 0 auto;
-  padding: 100px 0;
-  display: flex;
-}
-.contactInfo {
-  width: 30%;
-}
-.todayContactNum {
-  display: flex;
-  align-items: center;
-  margin: 30px 0;
-}
-.todayContactNum p {
-  color: #7c7c7c;
-}
-.callingIcon , .callingIcon2 , .callingIcon3 {
-  width: 70px;
-}
-.callingIcon i,
-.callingIcon2 i,
 .callingIcon3 i {
-  padding: 5px;
-  background-color: black;
-  border-radius: 50%;
-  width: 50px;
-  height: 50px;
-  text-align: center;
-  margin-right: 15px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: white;
+  background-color: #c4c3c3;
 }
-
 .contactUserInfo {
-  width: 70%;
+  width: 60%;
   padding: 50px;
 }
 .contactUserInfoForm {
@@ -441,20 +492,27 @@ footer {
   margin: 0 auto;
   padding: 100px 0;
   display: flex;
+  gap: 15px;
 }
 .footerCard1 {
   color: white;
   width: 30%;
+}
+.footerCard1 h1 {
+  /* display: flex;
+  align-items: center; */
+  /* justify-content: space-around; */
 }
 .footerCard1 h1 i {
   color: #ffcc4a;
 }
 .footerCard2 {
   border-left: 1px solid #7c7c7c;
-  padding-left: 100px;
+  padding-left: 80px;
   width: 70%;
   display: flex;
   justify-content: space-between;
+  gap: 20px;
 }
 .footerProduct {
   color: #c4c3c3;
@@ -462,6 +520,7 @@ footer {
 }
 .footerProduct h4 {
   margin-top: 0;
+  margin-bottom: 10px;
 }
 .footerProduct hr {
   width: 30%;
@@ -469,23 +528,28 @@ footer {
   border: 1px solid #ffcc4a;
 }
 .footerProduct ul {
-  padding: 20px;
+  padding: 10px 20px 30px 20px;
   margin-bottom: 0;
+  margin-top: 0;
 }
 .footerProduct button {
   padding: 20px;
   border-radius: 30px;
   font-weight: bold;
   font-size: 16px;
+  border: 0;
 }
 footer hr {
   border: 1px solid #7c7c7c;
 }
-
 @media screen and (max-width: 1440px) {
-  
   .linkslist ul li {
     list-style-type: none;
+  }
+  .footerProduct button {
+    font-size: 12px;
+    border: 0;
+    padding: 17px;
   }
 }
 @media screen and (max-width: 1200px) {
@@ -499,10 +563,6 @@ footer hr {
   }
 }
 @media screen and (max-width: 992px) {
-  .name {
-    width: 100%;
-  }
-
   nav {
     justify-content: space-between;
   }
@@ -530,66 +590,39 @@ footer hr {
   .bar3.active {
     transform: rotate(-45deg) translate(7.5px, -10px);
   }
-  .navIcons {
-    opacity: 0;
-    padding: 30px 0;
-    box-sizing: border-box;
-    z-index: 3;
-    background-color: white;
-    width: 100%;
-    height: 400px;
-    color: black;
-    border-radius: 5px;
-  }
-  .linkslist ul {
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    margin: 0;
-  }
-  .linkslist a {
-    color: black;
-  }
-  .navIcons.active {
-    display: flex;
-    opacity: 1;
-    width: 200px;
+  .activeNav.active{
+    display: block;
     position: absolute;
-    top: 120px;
-    right: 10%;
-    font-size: 18px;
-    font-weight: bold;
-    transition: all 1s ease;
-    justify-content: center;
-    .linkslist ul {
-      flex-direction: column;
-      justify-content: space-between;
-      align-items: center;
-    }
+    width: 100%;
+    background-color: black;
+    z-index: 3;
   }
-  .linkslist select{
-    background-color: white;
-    color: black;
-    font-weight: bold;
-  }
-  .process{
+  .process {
     width: 90%;
     margin: 0 auto;
   }
-  .processContainer{
+  .processContainer {
     width: 90%;
   }
-  .supscribeEmail{
+  .supscribeEmail {
     flex-direction: column;
   }
-  .footerContainer{
+  .footerContainer {
     width: 85%;
   }
   .footerCard2 {
-    padding-left: 50px !important;  
+    padding-left: 50px !important;
   }
 }
 @media screen and (max-width: 786px) {
+  .firstHead {
+    grid-template-columns: 1fr 1fr;
+  }
+  .dateAndClock, .address, .links { 
+    width: 100%;
+    text-align: left;
+    padding-bottom: 10px;
+  }
   .contactContainer {
     flex-direction: column;
   }
@@ -605,21 +638,21 @@ footer hr {
     grid-template-columns: repeat(1, 1fr);
   }
 
-  .processContainer{
+  .processContainer {
     flex-direction: column;
   }
-  .processImg{
+  .processImg {
     width: 100%;
     height: 400px;
   }
-  .text{
+  .text {
     width: 100%;
   }
 
-  .subscribe{
+  .subscribe {
     width: 90%;
   }
-  
+
   .footerCard2 {
     border-left: 1px solid #7c7c7c;
     padding-left: 50px;
@@ -642,36 +675,44 @@ footer hr {
     width: 100%;
     margin-bottom: 25px;
   }
-  .footerProduct{
+  .footerProduct {
     margin-bottom: 10px;
   }
   .footerProduct button {
     padding: 5px;
   }
 }
+@media screen and (max-width: 823px) {
+  .navIcons.active {
+    top: 140px;
+  }
+}
 @media screen and (max-width: 600px) {
-  
   .contactContainer {
     width: 90%;
   }
-  .subscribeBody{
+  .callingNum {
+    display: none;
+  }
+  .subscribeBody {
     flex-direction: column;
   }
-  .supscribeEmail{
+  .supscribeEmail {
     display: flex;
     flex-direction: column;
     gap: 10px;
   }
-  .footerProduct butt
 }
-
+@media screen and (max-width: 491px) {
+  .navIcons.active {
+    top: 160px;
+  }
+}
 @media screen and (max-width: 450px) {
-  .navIcons.active{
+  .navIcons.active {
     top: 220px;
   }
-  .callingNum{
-    display: none;
-  }
+  
   .firstHead {
     grid-template-columns: 1fr;
     gap: 0;
@@ -691,11 +732,10 @@ footer hr {
     position: static;
     width: 100%;
   }
-  
-  .footerContainer{
+  .footerContainer {
     width: 100%;
   }
-  .footerCard1 h1{
+  .footerCard1 h1 {
     font-size: 28px;
     width: 100%;
   }

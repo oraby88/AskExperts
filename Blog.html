@@ -83,6 +83,30 @@
           <div id="bar3" class="bar3"></div>
         </div>
       </nav>
+      <div class="activeNav" id="activeNav">
+        <div class="activeNavLinks" >
+          <ul>
+            <li><a href="/Home.html">Home</a></li>
+            <li><a href="/Blog.html">Pages</a></li>
+            <li>
+              <select
+                name="links"
+                title="services"
+                id=""
+                onchange="location = this.value"
+              >
+                <option>Services</option>
+                <option value="Service.html">Services</option>
+                <option value="Team.html">Team</option>
+                <option value="Licenses.html">Licenses</option>
+              </select>
+            </li>
+            <li><a href="/CaseStudy.html">Work</a></li>
+            <li><a href="/About.html">About</a></li>
+            <li><a href="/Contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </div>
     </header>
     <main>
       <section class="section1">
@@ -120,8 +144,7 @@
               <div class="blogBodyCard1End">
                 <div style="display: flex; align-items: center">
                   <img src="images/blog1.png" alt="" />
-                  <p>John Carar</p>
-                  <p>September 1, 2022</p>
+                  <p>John Carar | September 1, 2022</p>
                 </div>
                 <button class="blogBodyCard1EndButton">Read More</button>
               </div>

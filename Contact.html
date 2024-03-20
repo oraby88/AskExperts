@@ -54,35 +54,52 @@
             <li><a href="/Blog.html">Pages</a></li>
             <li>
               <select name="" id="" onchange="location = this.value">
-                <option>
-                  Services
-                </option>
-                <option value="Service.html">
-                  Services
-                </option>
-                <option value="Team.html">
-                  Team
-                </option>
-                <option value="Licenses.html">
-                  Licenses
-                </option>
-
+                <option>Services</option>
+                <option value="Service.html">Services</option>
+                <option value="Team.html">Team</option>
+                <option value="Licenses.html">Licenses</option>
               </select>
             </li>
             <li><a href="/CaseStudy.html">Work</a></li>
             <li><a href="/About.html">About</a></li>
-            <li><a href="/Contact.html">Contact</a></li>  
+            <li><a href="/Contact.html">Contact</a></li>
           </ul>
         </div>
-        <div class="callingNum">
-          <div><i class="fa-solid fa-phone"></i> +(888)452 1505</div>
-        </div>
-        <div class="humbrger" id="humbrger" onclick="show()">
-          <div id="bar1" class="bar1"></div>
-          <div id="bar2" class="bar2"></div>
-          <div id="bar3" class="bar3"></div>
+        <div class="NumHumbgerContainer">
+          <div class="callingNum">
+            <div><i class="fa-solid fa-phone"></i> +(888)452 1505</div>
+          </div>
+          <div class="humbrger" id="humbrger" onclick="show()">
+            <div id="bar1" class="bar1"></div>
+            <div id="bar2" class="bar2"></div>
+            <div id="bar3" class="bar3"></div>
+          </div>
         </div>
       </nav>
+      <div class="activeNav" id="activeNav">
+        <div class="activeNavLinks" >
+          <ul>
+            <li><a href="/Home.html">Home</a></li>
+            <li><a href="/Blog.html">Pages</a></li>
+            <li>
+              <select
+                name="links"
+                title="services"
+                id=""
+                onchange="location = this.value"
+              >
+                <option>Services</option>
+                <option value="Service.html">Services</option>
+                <option value="Team.html">Team</option>
+                <option value="Licenses.html">Licenses</option>
+              </select>
+            </li>
+            <li><a href="/CaseStudy.html">Work</a></li>
+            <li><a href="/About.html">About</a></li>
+            <li><a href="/Contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </div>
     </header>
 
     <section class="section1">
@@ -91,9 +108,8 @@
         <p class="contactWord">Contact Us</p>
         <p class="cardPara">Feel Free To Reach Us</p>
       </div>
-      
     </section>
-    
+
     <section class="process">
       <div class="processContainer">
         <div class="processImg">
@@ -102,14 +118,14 @@
           <div class="marketImg"></div>
         </div>
         <div class="text">
-          <p class="talkWord">LET'S TALK</p> 
+          <p class="talkWord">LET'S TALK</p>
           <h2 class="headText">Get In Touch With Us</h2>
           <p class="headtext1">
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore
-            eveniet doloremque corporis temporibus voluptatem 
+            eveniet doloremque corporis temporibus voluptatem
           </p>
           <div class="todayContactNum">
-            <div class="callingIcon">
+            <div class="callingIcon1">
               <i class="fa-solid fa-phone"></i>
             </div>
 
@@ -119,7 +135,7 @@
             </div>
           </div>
           <div class="todayContactNum">
-            <div class="callingIcon2">
+            <div class="callingIcon12">
               <i class="fa-regular fa-envelope"></i>
             </div>
 
@@ -129,7 +145,7 @@
             </div>
           </div>
           <div class="todayContactNum">
-            <div class="callingIcon3">
+            <div class="callingIcon13">
               <i class="fa-solid fa-location-dot"></i>
             </div>
 
@@ -157,7 +173,6 @@
       </div>
     </section>
 
-
     <section class="contact">
       <div class="contactContainer">
         <div class="contactInfo">
@@ -182,7 +197,7 @@
           </div>
           <div class="todayContactNum">
             <div class="callingIcon2">
-              <i class="fa-solid fa-phone"></i>
+              <i class="fa-regular fa-clock"></i>
             </div>
 
             <div>
@@ -232,51 +247,51 @@
     </section>
 
     <footer>
-        <div class="footerContainer">
-          <div class="footerCard1">
-            <h1><i class="fa-regular fa-message"></i> AskExperts</h1>
-            <p>Fb./Lg./Tw./Be.</p>
+      <div class="footerContainer">
+        <div class="footerCard1">
+          <h1><i class="fa-regular fa-message"></i> AskExperts</h1>
+          <p>Fb./Lg./Tw./Be.</p>
+        </div>
+        <div class="footerCard2">
+          <div class="footerProduct">
+            <h4>Product</h4>
+            <hr />
+            <ul>
+              <li>Service</li>
+              <li>FAQ</li>
+              <li>Single Service</li>
+              <li>Service</li>
+              <li>Prices</li>
+            </ul>
           </div>
-          <div class="footerCard2">
-            <div class="footerProduct">
-              <h4>Product</h4>
-              <hr />
-              <ul>
-                <li>Service</li>
-                <li>FAQ</li>
-                <li>Single Service</li>
-                <li>Service</li>
-                <li>Prices</li>
-              </ul>
-            </div>
-            <div class="footerProduct">
-              <h4>Company</h4>
-              <hr />
-              <ul>
-                <li>About</li>
-                <li>News</li>
-                <li>contacts</li>
-                <li>Service</li>
-                <li>Our Team</li>
-                <li>Our Aproch</li>
-              </ul>
-            </div>
-            <div class="footerProduct">
-              <h4>Address</h4>
-              <hr />
-              <ul>
-                <li>1700 W Brleen St, 17</li>
-                <li>south USA Amrica</li>
-              </ul>
-              <button>Book an Appoinment</button>
-            </div>
+          <div class="footerProduct">
+            <h4>Company</h4>
+            <hr />
+            <ul>
+              <li>About</li>
+              <li>News</li>
+              <li>contacts</li>
+              <li>Service</li>
+              <li>Our Team</li>
+              <li>Our Aproch</li>
+            </ul>
+          </div>
+          <div class="footerProduct">
+            <h4>Address</h4>
+            <hr />
+            <ul>
+              <li>1700 W Brleen St, 17</li>
+              <li>south USA Amrica</li>
+            </ul>
+            <button>Book an Appoinment</button>
           </div>
         </div>
-        <hr />
-        <p style="color: #c5c5c5; text-align: center">
-          &copy; 2022 AskExperts, All rights reseved | Terms of Service |
-          Privacy Policy
-        </p>
-      </footer>
+      </div>
+      <hr />
+      <p style="color: #c5c5c5; text-align: center">
+        &copy; 2022 AskExperts, All rights reseved | Terms of Service | Privacy
+        Policy
+      </p>
+    </footer>
   </body>
 </html>
