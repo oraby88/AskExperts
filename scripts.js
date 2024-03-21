@@ -24,5 +24,17 @@ function move(){
     document.getElementById('Service')
 }
 
+function appear() {
+    document.querySelector(".language").classList.toggle("display");
+    console.log('aa');
+}
+function mini_nav_language() {
+    document.querySelector(".mini-nav-language").classList.toggle("display");
+}
 
-
+// function mini_nav_languageRemove() {
+ 
+//     document.querySelector(".display").classList.add("mini-nav-language");
+//     document.querySelector(".display").classList.remove("display");
+//     console.log('bb');
+// }

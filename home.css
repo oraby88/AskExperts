@@ -6,7 +6,7 @@ body {
   margin: 0;
   font-family: cabin;
 }
-header{
+header {
   position: relative;
 }
 
@@ -23,7 +23,6 @@ header{
 }
 
 .address {
-  
   text-align: center;
   color: #e9e9e9;
 }
@@ -42,7 +41,7 @@ nav {
   background-color: rgb(54, 53, 53);
   color: white;
   padding: 0 10%;
-  
+
   /* text-align: center; */
   /* transition: all 1s ease;   */
 }
@@ -67,10 +66,8 @@ nav {
   transition: all 1s ease-in-out;
 }
 
-
-
 .linkslist {
-  width: 40%;
+  width: 43%;
 }
 .linkslist ul {
   display: flex;
@@ -86,7 +83,7 @@ li a:hover {
   color: white;
   list-style-type: circle;
 }
-.NumHumbgerContainer{
+.NumHumbgerContainer {
   display: flex;
   /* width: 35%; */
 }
@@ -114,27 +111,76 @@ li a:hover {
   color: white;
   font-size: 16px;
 }
+.linkslist select:hover {
+  color: #4eaf4e;
+}
+.options {
+  position: relative;
+}
+.select {
+  width: 78.63px;
+}
 
-.activeNav{
-  display: none; 
+.language ul {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 10px;
+}
+.language ul li {
+  width: 100%;
+  list-style-type: none;
+}
+.language {
+  display: none;
+  position: absolute;
+  z-index: 3;
+  /* top: 20%; */
+  background-color: black;
+  border-radius: 10px;
+  width: 100px;
+  margin-top: 10px;
+}
+.mini-nav-language {
+  display: none;
+}
+.display {
+  display: block;
+}
+.mini-nav-language ul {
+  margin: 0 !important;
+  padding: 0;
+  /* display: flex;
+  flex-direction: column;
+  justify-content: space-around; */
+}
+.mini-nav-language ul li {
+  margin: 10px 0;
+}
+.mini-nav-language ul li:last-child {
+  margin-bottom: 0;
+}
+
+.activeNav {
+  display: none;
   height: 300px;
   transition: all 1s ease;
 }
-.activeNavLinks{
+.activeNavLinks {
   height: 100%;
   padding: 15px 0;
 }
-.activeNavLinks ul li a{
+.activeList li a {
   text-decoration: none;
   color: white;
 }
-.activeNavLinks ul li a:hover{
+.activeList li a:hover {
   color: #4eaf4e;
 }
-.activeNavLinks ul li{
+.activeList li {
   color: #4eaf4e;
 }
-.activeNavLinks ul{
+.activeList {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -143,13 +189,13 @@ li a:hover {
   /* padding: 0; */
   list-style-type: circle;
 }
-.activeNavLinks select{
+.activeNavLinks select {
   background-color: black;
   color: white;
   border: 0;
   font-size: 16px;
 }
-.activeNavLinks select option:hover{
+.activeNavLinks select:hover {
   color: #4eaf4e;
 }
 
@@ -279,10 +325,10 @@ hr {
   text-align: center;
   /* margin: 0 10px; */
 }
-.card1{
+.card1 {
   margin-right: 10px;
 }
-.card2{
+.card2 {
   margin-left: 11px;
 }
 .hr {
@@ -415,10 +461,10 @@ hr {
   display: flex;
   align-items: center;
 }
-.S4C1Text1 h4{
+.S4C1Text1 h4 {
   margin: 10px 0;
 }
-.S4C1Text1 p{
+.S4C1Text1 p {
   margin: 5px 0;
 }
 .num {
@@ -468,7 +514,7 @@ hr {
   background-color: black;
   color: white;
   display: flex;
-  justify-content: center ;
+  justify-content: center;
   align-items: center;
 }
 .S4Card2 h1 {
@@ -632,8 +678,9 @@ hr {
   border-radius: 20px;
 }
 .feedbackBody {
-  width: 50%;
-  margin-bottom: 50px;
+  width: 600px;
+  margin: 0 auto;
+  padding-bottom: 50px;
 }
 .feedbackUser {
   display: flex;
@@ -643,8 +690,9 @@ hr {
   gap: 10px;
 }
 .clientFeedBackImg {
+  /* width: 30%; */
   border-radius: 50%;
-  transition: all 1s ease;
+  transition: all 0.5s ease-in-out;
 }
 .feedbackUser button {
   padding: 7px 12px;
@@ -711,7 +759,7 @@ hr {
   width: 200px;
   border-radius: 20px;
   color: black;
-  padding: 5px; 
+  padding: 5px;
   letter-spacing: 2px;
 }
 .feedbackNum i {
@@ -864,7 +912,9 @@ hr {
 .todayContactNum p {
   color: #7c7c7c;
 }
-.callingIcon , .callingIcon2 , .callingIcon3 {
+.callingIcon,
+.callingIcon2,
+.callingIcon3 {
   width: 70px;
 }
 .callingIcon i,
@@ -943,28 +993,40 @@ footer {
   margin: 0 auto;
   padding: 100px 0;
   display: flex;
+  justify-content: space-between;
   gap: 15px;
 }
 .footerCard1 {
   color: white;
-  width: 30%;
+  width: 25%;
 }
 
 .footerCard1 h1 i {
   color: #ffcc4a;
 }
 .footerCard2 {
-  border-left: 1px solid #7c7c7c;
-  padding-left: 80px;
-  width: 70%;
+  /* border-left: 1px solid #7c7c7c; */
+  /* padding-left: 80px; */
+  /* width: 65%; */
   display: flex;
   justify-content: space-between;
   gap: 20px;
 }
+.hr2 {
+  width: 1px;
+  height: 200px;
+  background-color: #7c7c7c;
+}
 .footerProduct {
   color: #c4c3c3;
+  width: 32%;
   text-align: left;
 }
+/* .footerProduct ul li:first-child {
+  font-size: 20px;
+  font-weight: 600;
+  list-style-type: none;
+} */
 .footerProduct h4 {
   margin-top: 0;
   margin-bottom: 10px;
@@ -978,13 +1040,20 @@ footer {
   padding: 10px 20px 30px 20px;
   margin-bottom: 0;
   margin-top: 0;
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
 }
 .footerProduct button {
-  padding: 20px;
+  padding: 20px 10px;
+  width: 200px;
   border-radius: 30px;
   font-weight: bold;
   font-size: 16px;
   border: 0;
+}
+.buttonList {
+  list-style-type: none;
 }
 footer hr {
   border: 1px solid #7c7c7c;
@@ -994,31 +1063,21 @@ footer hr {
   .linkslist ul li {
     list-style-type: none;
   }
-  .footerProduct button {
-    font-size: 12px;
-    border: 0;
-    padding: 17px;
-  }
 }
 @media screen and (max-width: 1350px) {
-  .blogBodyCard1EndButton{
-    padding: 10px  15px;
+  .blogBodyCard1EndButton {
+    padding: 10px 15px;
   }
-  .brandImages img{
+  .brandImages img {
     width: 170px;
     height: 100px;
   }
 }
 
-@media screen and (max-width: 1005px) and (min-width: 985px) {
-  .card1 h4 , .card2 h4{
-    font-size: 22px;
-  }
-}
 @media screen and (max-width: 1200px) {
-  .linkslist ul {
+  /* .linkslist ul {
     padding: 0;
-  }
+  } */
 
   .brandImages img {
     width: 150px;
@@ -1031,28 +1090,27 @@ footer hr {
   .S4Container {
     width: 80%;
   }
-  .feedbackBody {
+  /* .feedbackBody {
     width: 75%;
-  }
+  } */
   .blogBodyCard1End {
     flex-direction: column;
   }
-  .footerProduct button {
-    font-size: 12px;
-    border: 0;
-    padding: 10px;
+}
+@media screen and (max-width: 1005px) and (min-width: 985px) {
+  .card1 h4,
+  .card2 h4 {
+    font-size: 22px;
   }
 }
-@media screen and (max-width: 1100px) and (min-width: 992px) {
-  .num{
-    margin-right: 10px;
-  }
-}
+
 @media screen and (max-width: 992px) {
   .name {
     width: 100%;
   }
-
+  .num {
+    margin-right: 10px;
+  }
   nav {
     justify-content: space-between;
     /* position: fixed;
@@ -1066,7 +1124,7 @@ footer hr {
     /* display: none; */
     margin-right: 20px;
   }
-  .callingNum{
+  .callingNum {
     margin: 0;
   }
   .humbrger {
@@ -1109,7 +1167,7 @@ footer hr {
   /* .linkslist a {
     color: black;
   } */
-  .activeNav.active{
+  .activeNav.active {
     display: block;
     position: absolute;
     width: 100%;
@@ -1177,10 +1235,10 @@ footer hr {
   .S4Container {
     flex-direction: column;
   }
-  .name{
+  .name {
     margin: 0;
   }
-  .S4Card1{
+  .S4Card1 {
     width: 100%;
   }
   .S4Card1Container {
@@ -1212,18 +1270,20 @@ footer hr {
   .feedbackFooter2 {
     width: 100%;
   }
-  .footerContainer{
+  .footerContainer {
     width: 85%;
   }
   .footerCard2 {
-    padding-left: 50px !important;  
+    /* padding-left: 50px !important;   */
   }
 }
 @media screen and (max-width: 786px) {
   .firstHead {
     grid-template-columns: 1fr 1fr;
   }
-  .dateAndClock, .address, .links { 
+  .dateAndClock,
+  .address,
+  .links {
     width: 100%;
     text-align: left;
     padding-bottom: 10px;
@@ -1246,6 +1306,10 @@ footer hr {
   }
   .S3Head h1 {
     font-size: 24px;
+  }
+  .process2Container {
+    width: 90%;
+    padding: 75px 0 50px 0;
   }
   .process2Head {
     width: 100%;
@@ -1306,8 +1370,6 @@ footer hr {
   }
 
   .footerCard2 {
-    border-left: 1px solid #7c7c7c;
-    padding-left: 50px;
     width: 70%;
     display: flex;
     justify-content: space-between;
@@ -1323,19 +1385,19 @@ footer hr {
     display: flex;
     flex-direction: column;
   }
+  .hr2 {
+    display: none;
+  }
   .footerCard1 {
     width: 100%;
     margin-bottom: 25px;
   }
-  .footerProduct{
+  .footerProduct {
     margin-bottom: 10px;
-  }
-  .footerProduct button {
-    padding: 5px;
   }
 }
 @media screen and (max-width: 823px) {
-  .navIcons.active{
+  .navIcons.active {
     top: 140px;
   }
 }
@@ -1343,7 +1405,7 @@ footer hr {
   .callingNum {
     display: none;
   }
-  
+
   .S3Head {
     width: 100%;
   }
@@ -1356,11 +1418,8 @@ footer hr {
   .process2Head div {
     width: 100%;
   }
-  .process2Container {
-    width: 90%;
-    padding: 75px 0 50px 0;
-  }
-  .process2Head button{
+
+  .process2Head button {
     margin: 0;
   }
 
@@ -1373,8 +1432,9 @@ footer hr {
     display: none;
   }
   .clientFeedBackImg {
-    width: 150px;
-    height: 150px;
+    /* width: 150px;
+    height: 150px; */
+    width: 30%;
   }
   .feedbackHead h1 {
     font-size: 22px;
@@ -1422,16 +1482,16 @@ footer hr {
   }
 }
 @media screen and (max-width: 491px) {
-  .navIcons.active{
+  .navIcons.active {
     top: 160px;
   }
 }
 
 @media screen and (max-width: 450px) {
-  .navIcons.active{
+  .navIcons.active {
     top: 220px;
   }
-  
+
   .section1 img {
     display: none;
   }
@@ -1486,11 +1546,11 @@ footer hr {
   .headText {
     font-size: 20px;
   }
-  
-  .clientFeedBackImg {
+
+  /* .clientFeedBackImg {
     width: 100px;
     height: 100px;
-  }
+  } */
   .card1,
   .card2 {
     width: 100px;
@@ -1509,20 +1569,23 @@ footer hr {
     width: 70%;
   }
 
-  .footerContainer{
+  .footerContainer {
     width: 100%;
   }
-  .footerCard1 h1{
+  .footerCard1 h1 {
     font-size: 28px;
     width: 100%;
   }
   .footerCard2 {
     border: 0;
-    padding: 0;
-    padding: 0 !important;
+    /* padding: 0; */
+    /* padding: 0 !important; */
+  }
+  .footerProduct button {
+    padding: 10px;
+    font-size: 14px;
   }
 
-  
   .firstHead {
     grid-template-columns: 1fr;
     gap: 0;
@@ -1538,14 +1601,12 @@ footer hr {
   .todayContactNum h3 {
     font-size: 18px;
   }
-
 }
 @media screen and (max-width: 360px) {
-  
   .blogBodyCard1End {
     flex-direction: column;
   }
-  .feedbackUser{
+  .feedbackUser {
     flex-direction: column;
   }
 }

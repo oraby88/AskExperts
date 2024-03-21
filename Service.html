@@ -52,13 +52,27 @@
           <ul>
             <li><a href="/Home.html">Home</a></li>
             <li><a href="/Blog.html">Pages</a></li>
-            <li>
-              <select name="" id="" onchange="location = this.value">
-                <option>Services</option>
-                <option value="Service.html">Services</option>
-                <option value="Team.html">Team</option>
-                <option value="Licenses.html">Licenses</option>
-              </select>
+            <li class="options">
+              <div class="select" onclick="appear()">
+                Services &nbsp;
+                <i
+                  class="fa-solid fa-chevron-down"
+                  style="font-size: 12px; padding-top: 5px"
+                ></i>
+              </div>
+              <div class="language">
+                <ul>
+                  <li onclick="changeLang('ltr')">
+                    <a href="Service.html">Services</a>
+                  </li>
+                  <li onclick="changeLang('rtl')">
+                    <a href="Team.html">Team</a>
+                  </li>
+                  <li onclick="changeLang('rtl')">
+                    <a href="Licenses.html">Licenses</a>
+                  </li>
+                </ul>
+              </div>
             </li>
             <li><a href="/CaseStudy.html">Work</a></li>
             <li><a href="/About.html">About</a></li>
@@ -75,22 +89,33 @@
         </div>
       </nav>
       <div class="activeNav" id="activeNav">
-        <div class="activeNavLinks" >
-          <ul>
+        <div class="activeNavLinks">
+          <ul class="activeList">
             <li><a href="/Home.html">Home</a></li>
             <li><a href="/Blog.html">Pages</a></li>
             <li>
-              <select
-                name="links"
-                title="services"
-                id=""
-                onchange="location = this.value"
-              >
-                <option>Services</option>
-                <option value="Service.html">Services</option>
-                <option value="Team.html">Team</option>
-                <option value="Licenses.html">Licenses</option>
-              </select>
+              <div class="lang">
+                <div class="nav-a">
+                  <div class="select" onclick="mini_nav_language()">
+                    Services
+                    <i
+                      class="fa-solid fa-chevron-down"
+                      style="font-size: 12px"
+                    ></i>
+                  </div>
+                </div>
+                <div class="mini-nav-language">
+                  <ul>
+                    <li><a href="Service.html">Services</a></li>
+                    <li>
+                      <a href="Team.html">Team</a>
+                    </li>
+                    <li>
+                      <a href="Licenses.html">Licenses</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
             </li>
             <li><a href="/CaseStudy.html">Work</a></li>
             <li><a href="/About.html">About</a></li>

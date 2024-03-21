@@ -109,6 +109,62 @@ li a:hover {
   color: rgb(3, 3, 114);
 }
 
+.linkslist select:hover {
+  color: #4eaf4e;
+}
+
+.options{
+  position: relative;
+
+}
+.select{
+  width: 78.63px;
+}
+
+.language ul{
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 10px;
+}
+.language ul li{
+  width: 100%;
+  list-style-type: none;
+}
+.language{
+  display: none;
+  position: absolute;
+  z-index: 3;
+  /* top: 20%; */
+  background-color: black;
+  border-radius: 10px;
+  width: 100px;
+  margin-top: 10px;
+}
+.display{
+  display: block;
+}
+.mini-nav-language{
+  display: none;
+}
+.display{
+  display: block;
+}
+.mini-nav-language ul{
+  margin: 0 !important;
+  padding: 0;
+  /* display: flex;
+  flex-direction: column;
+  justify-content: space-around; */
+}
+.mini-nav-language ul li{
+  margin: 10px 0;
+}
+.mini-nav-language ul li:last-child{
+  margin-bottom: 0;
+}
+
+
 .activeNav{
   display: none; 
   height: 300px;
@@ -118,17 +174,17 @@ li a:hover {
   height: 100%;
   padding: 15px 0;
 }
-.activeNavLinks ul li a{
+.activeList li a{
   text-decoration: none;
   color: white;
 }
-.activeNavLinks ul li a:hover{
+.activeList li a:hover{
   color: #4eaf4e;
 }
-.activeNavLinks ul li{
+.activeList li{
   color: #4eaf4e;
 }
-.activeNavLinks ul{
+.activeList{
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -143,7 +199,7 @@ li a:hover {
   border: 0;
   font-size: 16px;
 }
-.activeNavLinks select option:hover{
+.activeNavLinks select:hover{
   color: #4eaf4e;
 }
 
@@ -462,6 +518,7 @@ hr {
   border-radius: 20px;
   color: black;
   letter-spacing: 2px;
+  font-weight: bold;
 }
 .teamHead {
   width: 60%;
@@ -671,10 +728,12 @@ footer {
   margin-bottom: 0;
 }
 .footerProduct button {
-  padding: 20px;
+  padding: 20px 10px;
+  width: 200px;
   border-radius: 30px;
   font-weight: bold;
   font-size: 16px;
+  border: 0;
 }
 footer hr {
   border: 1px solid #7c7c7c;
@@ -688,8 +747,18 @@ footer hr {
   .linkslist ul li {
     list-style-type: none;
   }
+  .CEOword2 {
+    left: 50%;
+  }
 }
-
+@media screen and (max-width: 1350px) {
+  .CEOword3{
+    left: 38%;
+  }
+  .CEOword {
+    left: 38%;
+  }
+}
 @media screen and (max-width: 1200px) {
   .linkslist ul {
     padding: 0;
@@ -704,7 +773,7 @@ footer hr {
     left: 30%;
   }
   .CEOword2 {
-    left: 30%;
+    left: 50%;
   }
   .CEOword3 {
     left: 30%;
@@ -712,11 +781,7 @@ footer hr {
   .historyHead h1 {
     width: 100%;
   }
-  .footerProduct button {
-    padding: 10px;
-    font-size: 12px;
-    border: 0;
-  }
+  
 }
 @media screen and (max-width: 992px) {
   .name {
@@ -918,9 +983,7 @@ footer hr {
     width: 100%;
     margin-bottom: 25px;
   }
-  .footerProduct button {
-    padding: 5px;
-  }
+  
 }
 @media screen and (max-width: 600px) {
   .callingNum {
@@ -1025,6 +1088,10 @@ footer hr {
   .footerCard1 h1 {
     font-size: 28px;
     width: 100%;
+  }
+  .footerProduct button {
+    padding: 10px;
+    font-size: 14px;
   }
 }
 @media screen and (max-width: 340px) {
