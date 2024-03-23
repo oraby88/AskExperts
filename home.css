@@ -1019,7 +1019,7 @@ footer {
 }
 .footerProduct {
   color: #c4c3c3;
-  width: 32%;
+  /* width: 100%; */
   text-align: left;
 }
 /* .footerProduct ul li:first-child {
@@ -1037,7 +1037,8 @@ footer {
   border: 1px solid #ffcc4a;
 }
 .footerProduct ul {
-  padding: 10px 20px 30px 20px;
+  padding: 10px 0 30px 20px;
+  width: 100%;
   margin-bottom: 0;
   margin-top: 0;
   display: flex;
@@ -1273,9 +1274,11 @@ footer hr {
   .footerContainer {
     width: 85%;
   }
-  .footerCard2 {
-    /* padding-left: 50px !important;   */
+  .footerProduct button {
+    width: 170px;
+    font-size: 14px;
   }
+  
 }
 @media screen and (max-width: 786px) {
   .firstHead {
@@ -1370,12 +1373,11 @@ footer hr {
   }
 
   .footerCard2 {
-    width: 70%;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     /* flex-direction: column; */
     flex-wrap: wrap;
-    width: 100%;
   }
 
   .footerContainer {
@@ -1394,11 +1396,6 @@ footer hr {
   }
   .footerProduct {
     margin-bottom: 10px;
-  }
-}
-@media screen and (max-width: 823px) {
-  .navIcons.active {
-    top: 140px;
   }
 }
 @media screen and (max-width: 600px) {
@@ -1479,11 +1476,6 @@ footer hr {
   }
   .feedbackBody {
     width: 100%;
-  }
-}
-@media screen and (max-width: 491px) {
-  .navIcons.active {
-    top: 160px;
   }
 }
 
@@ -1570,7 +1562,7 @@ footer hr {
   }
 
   .footerContainer {
-    width: 100%;
+    width: 90%;
   }
   .footerCard1 h1 {
     font-size: 28px;
@@ -1578,8 +1570,8 @@ footer hr {
   }
   .footerCard2 {
     border: 0;
-    /* padding: 0; */
-    /* padding: 0 !important; */
+    padding: 0 !important;
+    flex-direction: column;
   }
   .footerProduct button {
     padding: 10px;
