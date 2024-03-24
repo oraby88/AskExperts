@@ -25,16 +25,16 @@ function move(){
 }
 
 function appear() {
-    document.querySelector(".language").classList.toggle("display");
+    document.querySelector(".dropDown").classList.toggle("display");
     console.log('aa');
 }
-function mini_nav_language() {
-    document.querySelector(".mini-nav-language").classList.toggle("display");
+function mini_nav_dropDown() {
+    document.querySelector(".mini-nav-dropDown").classList.toggle("display");
 }
 
-// function mini_nav_languageRemove() {
+// function mini_nav_dropDownRemove() {
  
-//     document.querySelector(".display").classList.add("mini-nav-language");
+//     document.querySelector(".display").classList.add("mini-nav-dropDown");
 //     document.querySelector(".display").classList.remove("display");
 //     console.log('bb');
 // }

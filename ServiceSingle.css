@@ -74,6 +74,7 @@ nav {
 .linkslist ul {
   display: flex;
   justify-content: space-between;
+  gap: 10px;
 }
 .linkslist ul li:hover,
 li a:hover {
@@ -123,17 +124,17 @@ li a:hover {
   width: 78.63px;
 }
 
-.language ul{
+.dropDown ul{
   display: flex;
   flex-direction: column;
   margin: 0;
   padding: 10px;
 }
-.language ul li{
+.dropDown ul li{
   width: 100%;
   list-style-type: none;
 }
-.language{
+.dropDown{
   display: none;
   position: absolute;
   z-index: 3;
@@ -143,30 +144,31 @@ li a:hover {
   width: 100px;
   margin-top: 10px;
 }
-.mini-nav-language{
+.mini-nav-dropDown{
   display: none;
+  margin-left: 100px;
 }
 .display{
   display: block;
 }
-.mini-nav-language ul{
+.mini-nav-dropDown ul{
   margin: 0 !important;
   padding: 0;
   /* display: flex;
   flex-direction: column;
   justify-content: space-around; */
 }
-.mini-nav-language ul li{
+.mini-nav-dropDown ul li{
   margin: 10px 0;
 }
-.mini-nav-language ul li:last-child{
+.mini-nav-dropDown ul li:last-child{
   margin-bottom: 0;
 }
 
 
 .activeNav{
   display: none; 
-  height: 300px;
+  height: 350px;
   transition: all 1s ease;
 }
 .activeNavLinks{
@@ -181,6 +183,9 @@ li a:hover {
   color: #4eaf4e;
 }
 .activeList li{
+  color: white;
+}
+.activeList li:hover {
   color: #4eaf4e;
 }
 .activeList{
@@ -583,7 +588,7 @@ li a:hover {
 .callingIcon2 i,
 .callingIcon3 i {
   padding: 5px;
-  background-color: #f3ead5;
+  background-color: #ffe6ab;
   border-radius: 50%;
   width: 50px;
   height: 50px;
@@ -594,12 +599,12 @@ li a:hover {
   align-items: center;
 }
 .callingIcon2 i {
-  background-color: #a4d8a4;
+  background-color: #98f098;
   width: 50px;
   height: 50px;
 }
 .callingIcon3 i {
-  background-color: #c4c3c3;
+  background-color: #e9e9e9;
 }
 .contactImageContainer{
   width: 63%;
@@ -707,32 +712,40 @@ footer {
   margin: 0 auto;
   padding: 100px 0;
   display: flex;
+  justify-content: space-between;
   gap: 15px;
 }
 .footerCard1 {
   color: white;
-  width: 30%;
+  width: 25%;
 }
-.footerCard1 h1{
-  /* display: flex;
-  align-items: center; */
-  /* justify-content: space-around; */
-}
+
 .footerCard1 h1 i {
   color: #ffcc4a;
 }
 .footerCard2 {
-  border-left: 1px solid #7c7c7c;
-  padding-left: 80px;
-  width: 70%;
+  /* border-left: 1px solid #7c7c7c; */
+  /* padding-left: 80px; */
+  width: 80%;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   gap: 20px;
+}
+.hr2 {
+  width: 1px;
+  height: 200px;
+  background-color: #7c7c7c;
 }
 .footerProduct {
   color: #c4c3c3;
+  /* width: 100%; */
   text-align: left;
 }
+/* .footerProduct ul li:first-child {
+  font-size: 20px;
+  font-weight: 600;
+  list-style-type: none;
+} */
 .footerProduct h4 {
   margin-top: 0;
   margin-bottom: 10px;
@@ -743,9 +756,13 @@ footer {
   border: 1px solid #ffcc4a;
 }
 .footerProduct ul {
-  padding: 10px 20px 30px 20px;
+  padding: 10px 0 30px 20px;
+  width: 100%;
   margin-bottom: 0;
   margin-top: 0;
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
 }
 .footerProduct button {
   padding: 20px 10px;
@@ -754,6 +771,9 @@ footer {
   font-weight: bold;
   font-size: 16px;
   border: 0;
+}
+.buttonList {
+  list-style-type: none;
 }
 footer hr {
   border: 1px solid #7c7c7c;
@@ -870,11 +890,12 @@ footer hr {
   .financialProjectionsContainer{
     margin-left: 20px;
   }
-  .footerContainer{
+  .footerContainer {
     width: 85%;
   }
-  .footerCard2 {
-    padding-left: 50px !important;  
+  .footerProduct button {
+    width: 170px;
+    font-size: 14px;
   }
 }
 @media screen and (max-width: 786px) {
@@ -887,31 +908,7 @@ footer hr {
     padding-bottom: 10px;
   }
 
-  .footerCard2 {
-    border-left: 1px solid #7c7c7c;
-    padding-left: 50px;
-    width: 70%;
-    display: flex;
-    justify-content: space-between;
-    /* flex-direction: column; */
-    flex-wrap: wrap;
-    width: 100%;
-  }
-
-  .footerContainer {
-    width: 70%;
-    margin: 0 auto;
-    padding: 100px 0;
-    display: flex;
-    flex-direction: column;
-  }
-  .footerCard1 {
-    width: 100%;
-    margin-bottom: 25px;
-  }
-  .footerProduct{
-    margin-bottom: 10px;
-  }
+  
   .brandImages {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -948,12 +945,34 @@ footer hr {
   .CutomerQuestions{
     padding: 15px;
   }
-}
-@media screen and (max-width: 671px) {
-  .navIcons.active{
-    top: 140px;
+
+  .footerCard2 {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    /* flex-direction: column; */
+    flex-wrap: wrap;
+  }
+
+  .footerContainer {
+    width: 70%;
+    margin: 0 auto;
+    padding: 100px 0;
+    display: flex;
+    flex-direction: column;
+  }
+  .hr2 {
+    display: none;
+  }
+  .footerCard1 {
+    width: 100%;
+    margin-bottom: 25px;
+  }
+  .footerProduct {
+    margin-bottom: 10px;
   }
 }
+
 @media screen and (max-width: 600px) {
   .callingNum {
     display: none;
@@ -1015,21 +1034,17 @@ footer hr {
     height: 200px;
   }
 
-  .footerContainer{
-    width: 100%;
+  .footerContainer {
+    width: 90%;
   }
-  .footerCard1 h1{
+  .footerCard1 h1 {
     font-size: 28px;
     width: 100%;
   }
   .footerCard2 {
     border: 0;
-    padding: 0;
     padding: 0 !important;
-  }
-
-  .feedbackFooter2 {
-    display: none;
+    flex-direction: column;
   }
   .footerProduct button {
     padding: 10px;
