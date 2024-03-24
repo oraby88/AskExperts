@@ -151,9 +151,9 @@ li a:hover {
 .mini-nav-dropDown ul {
   margin: 0 !important;
   padding: 0;
-  /* display: flex;
+  display: flex;
   flex-direction: column;
-  justify-content: space-around; */
+  justify-content: space-between;
 }
 .mini-nav-dropDown ul li {
   margin: 10px 0;
@@ -164,7 +164,7 @@ li a:hover {
 
 .activeNav {
   display: none;
-  height: 350px;
+  height: 400px;
   transition: all 1s ease;
 }
 .activeNavLinks {
