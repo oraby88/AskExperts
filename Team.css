@@ -269,15 +269,19 @@ li a:hover {
   gap: 15px;
 }
 .CEOMember {
-  position: relative;
+  /* position: relative; */
   margin: 30px 0;
   text-align: center;
 }
 .CEOword {
   position: absolute;
-  top: 55%;
-  left: 40%;
-  padding: 5px 20px;
+  top: 75%;
+  right: 15%;
+  width: 150px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background-color: #ffcc4a;
   border-radius: 20px;
 }
@@ -288,6 +292,9 @@ li a:hover {
   object-fit: cover;
   object-position: top;
 }
+.CEOmemberImg{
+  position: relative;
+}
 .Ryan{
   object-position: right !important;
 }
@@ -297,18 +304,26 @@ li a:hover {
 
 .CEOword2 {
   position: absolute;
-  top: 55%;
-  left: 58%;
-  padding: 5px 20px;
+  top: 75%;
+  right: 15%;
+  width: 100px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background-color: black;
   border-radius: 20px;
   color: white;
 }
 .CEOword3 {
   position: absolute;
-  top: 55%;
-  left: 40%;
-  padding: 5px 20px;
+  top: 75%;
+  right: 15%;
+  width: 150px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background-color: black;
   border-radius: 20px;
   color: white;

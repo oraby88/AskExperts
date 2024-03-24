@@ -85,13 +85,13 @@ li a:hover {
   color: white;
   list-style-type: circle;
 }
-.linkslist select{
+.linkslist select {
   border: 0;
   background-color: rgb(54, 53, 53);
   color: white;
   font-size: 16px;
 }
-.NumHumbgerContainer{
+.NumHumbgerContainer {
   display: flex;
   /* width: 35%; */
 }
@@ -116,25 +116,24 @@ li a:hover {
 .linkslist select:hover {
   color: #4eaf4e;
 }
-.options{
+.options {
   position: relative;
-
 }
-.select{
+.select {
   width: 78.63px;
 }
 
-.dropDown ul{
+.dropDown ul {
   display: flex;
   flex-direction: column;
   margin: 0;
   padding: 10px;
 }
-.dropDown ul li{
+.dropDown ul li {
   width: 100%;
   list-style-type: none;
 }
-.dropDown{
+.dropDown {
   display: none;
   position: absolute;
   z-index: 3;
@@ -144,51 +143,50 @@ li a:hover {
   width: 100px;
   margin-top: 10px;
 }
-.mini-nav-dropDown{
+.mini-nav-dropDown {
   display: none;
   margin-left: 100px;
 }
-.display{
+.display {
   display: block;
 }
-.mini-nav-dropDown ul{
+.mini-nav-dropDown ul {
   margin: 0 !important;
   padding: 0;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
-.mini-nav-dropDown ul li{
+.mini-nav-dropDown ul li {
   margin: 10px 0;
 }
-.mini-nav-dropDown ul li:last-child{
+.mini-nav-dropDown ul li:last-child {
   margin-bottom: 0;
 }
 
-
-.activeNav{
-  display: none; 
+.activeNav {
+  display: none;
   height: 400px;
   transition: all 1s ease;
 }
-.activeNavLinks{
+.activeNavLinks {
   height: 100%;
   padding: 15px 0;
 }
-.activeList li a{
+.activeList li a {
   text-decoration: none;
   color: white;
 }
-.activeList li a:hover{
+.activeList li a:hover {
   color: #4eaf4e;
 }
-.activeList li{
+.activeList li {
   color: white;
 }
 .activeList li:hover {
   color: #4eaf4e;
 }
-.activeList{
+.activeList {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -197,13 +195,13 @@ li a:hover {
   /* padding: 0; */
   list-style-type: circle;
 }
-.activeNavLinks select{
+.activeNavLinks select {
   background-color: black;
   color: white;
   border: 0;
   font-size: 16px;
 }
-.activeNavLinks select:hover{
+.activeNavLinks select:hover {
   color: #4eaf4e;
 }
 
@@ -248,29 +246,29 @@ li a:hover {
 
 /* financial Projections Section */
 
-.financialProjections{
+.financialProjections {
   background-color: #f5f5f5;
   padding: 50px 0;
 }
 
-.financialProjectionsContainer{
+.financialProjectionsContainer {
   margin-left: 200px;
 }
 
-.financialHead{
+.financialHead {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-right: 200px;
 }
-.financialWords{
+.financialWords {
   width: 50%;
 }
-.financialWords p{
+.financialWords p {
   font-size: 14px;
   color: #7c7c7c;
 }
-.financialBtns button{
+.financialBtns button {
   padding: 15px;
   border-radius: 50%;
   border: 0;
@@ -278,32 +276,30 @@ li a:hover {
   color: white;
   transition: all 0.3s ease;
 }
-.financialBtns button:hover{
+.financialBtns button:hover {
   background-color: #ffcc4a;
   color: black;
-
 }
-.financialCardsContainer{
+.financialCardsContainer {
   display: flex;
   justify-content: space-between;
   padding: 50px 0;
   height: 500px;
 }
 
-.financialCard{
+.financialCard {
   background-color: #e9e9e9;
   border-radius: 15px;
   padding: 20px;
   width: 100%;
   transition: all 0.5s ease;
 }
-.financialCard:hover{
+.financialCard:hover {
   background-color: black;
   color: white;
   transform: scale(1.1);
-  
 }
-.financialCard img:hover{
+.financialCard img:hover {
   background-color: #ffcc4a;
 }
 /* .financialCard img{
@@ -344,7 +340,6 @@ li a:hover {
 }
 
 /* Process Section */
-
 
 .processContainer {
   display: flex;
@@ -401,14 +396,13 @@ li a:hover {
   text-align: center;
   /* margin: 0 10px; */
   display: flex;
-  
 }
-.processCardPara{
+.processCardPara {
   font-size: 20px;
   font-weight: bold;
   margin-bottom: 5px;
 }
-.processCardPara1{
+.processCardPara1 {
   font-size: 14px;
   color: #7c7c7c;
   margin-top: 0;
@@ -465,17 +459,17 @@ li a:hover {
   border-radius: 10px;
   z-index: 1;
 }
-.text P{
+.text P {
   font-size: 14px;
   /* color: #7c7c7c; */
 }
-.workwithYouWord{
+.workwithYouWord {
   font-size: 12px;
   padding: 3px 15px;
   width: 200px;
   text-align: center;
   background-color: #ffcc4a;
-  border-radius: 20px;  
+  border-radius: 20px;
   color: black;
 }
 
@@ -489,7 +483,7 @@ li a:hover {
 }
 .brandImages {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   width: 100%;
   /* grid-area: a; */
   justify-items: center;
@@ -498,11 +492,10 @@ li a:hover {
 /* Our History  */
 
 .ourHistory {
-  
   background-color: black;
   color: white;
 }
-.ourHistoryContainer{
+.ourHistoryContainer {
   width: 70%;
   margin: 0 auto;
   padding: 100px 0;
@@ -546,7 +539,7 @@ li a:hover {
   top: 5%;
   left: 1%;
 }
-.yallowBox{
+.yallowBox {
   width: 200px;
   height: 200px;
   background-color: #ffcc4a;
@@ -606,19 +599,19 @@ li a:hover {
 .callingIcon3 i {
   background-color: #e9e9e9;
 }
-.contactImageContainer{
+.contactImageContainer {
   width: 63%;
 }
-.images{
+.images {
   position: relative;
   width: 100%;
   height: 400px;
 }
-.contactImg1Container{
+.contactImg1Container {
   width: 40%;
   position: relative;
 }
-.contactImg1{
+.contactImg1 {
   position: absolute;
   top: 10%;
   left: 40%;
@@ -628,7 +621,7 @@ li a:hover {
   border-radius: 20px;
   z-index: 2;
 }
-.contactImg2{
+.contactImg2 {
   position: absolute;
   top: 10%;
   left: 63%;
@@ -637,7 +630,7 @@ li a:hover {
   width: 250px;
   z-index: 1;
 }
-.contactImg3{
+.contactImg3 {
   position: absolute;
   top: 55%;
   left: 63%;
@@ -646,7 +639,7 @@ li a:hover {
   width: 250px;
   z-index: 1;
 }
-.greenBox{
+.greenBox {
   width: 200px;
   height: 100px;
   background-color: #4eaf4e;
@@ -655,7 +648,7 @@ li a:hover {
   top: 75%;
   left: 10%;
 }
-.pattren{
+.pattren {
   position: absolute;
   top: 0;
   left: 70%;
@@ -664,17 +657,17 @@ li a:hover {
 
 /* Cutomer Questions  */
 
-.CutomerQuestions{
+.CutomerQuestions {
   width: 70%;
   margin: 100px auto;
   background-color: #e9e9e9;
   padding: 150px;
   border-radius: 20px;
 }
-.FAQHead{
+.FAQHead {
   text-align: center;
 }
-.FAQHead p{
+.FAQHead p {
   font-size: 12px;
   padding: 5px 10px;
   width: 60px;
@@ -684,20 +677,20 @@ li a:hover {
   border-radius: 20px;
   color: white;
 }
-.FAQQuestion{
+.FAQQuestion {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.showQuestion{
+.showQuestion {
   font-size: 35px;
   border: 0;
   background-color: #e9e9e9;
 }
-.QdiscrptionNone{
+.QdiscrptionNone {
   display: none;
 }
-.QdiscrptionShow{
+.QdiscrptionShow {
   display: block;
 }
 
@@ -784,20 +777,22 @@ footer hr {
     list-style-type: none;
   }
 }
-@media screen and (max-width: 1200px) {
-  .linkslist ul {
-    padding: 0;
-  }
+@media screen and (max-width: 1250px) {
   .brandImages img {
     width: 150px;
     height: 100px;
   }
-  .historyVideo{
+}
+@media screen and (max-width: 1200px) {
+  .linkslist ul {
+    padding: 0;
+  }
+
+  .historyVideo {
     width: 600px;
   }
-  
 }
-@media screen and (max-width: 992px){
+@media screen and (max-width: 992px) {
   .name {
     width: 100%;
   }
@@ -829,7 +824,7 @@ footer hr {
   .bar3.active {
     transform: rotate(-45deg) translate(7.5px, -10px);
   }
-  .activeNav.active{
+  .activeNav.active {
     display: block;
     position: absolute;
     width: 100%;
@@ -839,55 +834,55 @@ footer hr {
   .brandImages img {
     width: 100px;
   }
-  .historyVideo{
+  .historyVideo {
     width: 600px;
     position: static;
   }
-  .pattrenImg2{
+  .pattrenImg2 {
     display: none;
   }
-  .marketImg2{
+  .marketImg2 {
     display: none;
   }
-  .yallowBox{
+  .yallowBox {
     display: none;
   }
-  .financialHead{
+  .financialHead {
     flex-direction: column;
   }
-  .financialWords{
+  .financialWords {
     width: 100%;
   }
-  .financialBtns{
-    margin: 0 0 30px 0 ; 
+  .financialBtns {
+    margin: 0 0 30px 0;
     width: 100%;
   }
-  .financialCardsContainer{
+  .financialCardsContainer {
     margin-right: 20px;
   }
-  .financialCard{
+  .financialCard {
     width: 100%;
   }
-  .process{
+  .process {
     width: 90%;
     margin: 0 auto;
   }
-  .processContainer{
+  .processContainer {
     width: 90%;
   }
-  .text{
+  .text {
     width: 50%;
   }
-  .CutomerQuestions{
+  .CutomerQuestions {
     padding: 75px;
   }
-  .financialCard p{
+  .financialCard p {
     font-size: 12px;
   }
-  .financialCard h2{
+  .financialCard h2 {
     font-size: 18px;
   }
-  .financialProjectionsContainer{
+  .financialProjectionsContainer {
     margin-left: 20px;
   }
   .footerContainer {
@@ -902,13 +897,14 @@ footer hr {
   .firstHead {
     grid-template-columns: 1fr 1fr;
   }
-  .dateAndClock, .address, .links { 
+  .dateAndClock,
+  .address,
+  .links {
     width: 100%;
     text-align: left;
     padding-bottom: 10px;
   }
 
-  
   .brandImages {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -923,26 +919,26 @@ footer hr {
   .contactContainer {
     flex-direction: column;
   }
-  .contactInfo{
+  .contactInfo {
     width: 100%;
   }
-  .contactImageContainer{
+  .contactImageContainer {
     width: 90%;
   }
-  .historyVideo{
+  .historyVideo {
     width: 500px;
   }
-  .processContainer{
+  .processContainer {
     flex-direction: column;
   }
-  .processImg{
+  .processImg {
     width: 100%;
     height: 400px;
   }
-  .text{
+  .text {
     width: 100%;
   }
-  .CutomerQuestions{
+  .CutomerQuestions {
     padding: 15px;
   }
 
@@ -977,28 +973,27 @@ footer hr {
   .callingNum {
     display: none;
   }
-  .contactImageContainer{
+  .contactImageContainer {
     display: none;
   }
-  .historyVideo{
+  .historyVideo {
     width: 400px;
   }
-  .historyHead{
+  .historyHead {
     width: 100%;
   }
-  .financialHead{
+  .financialHead {
     width: 100%;
   }
-  .contactContainer{
+  .contactContainer {
     width: 90%;
   }
-  .CutomerQuestions{
+  .CutomerQuestions {
     width: 90%;
   }
 }
 
 @media screen and (max-width: 450px) {
-  
   .firstHead {
     grid-template-columns: 1fr;
     gap: 0;
@@ -1013,7 +1008,7 @@ footer hr {
 
   .brandImages {
     display: grid;
-    grid-template-columns: 1fr ;
+    grid-template-columns: 1fr;
     /* grid-area: a; */
     /* width: 150px; */
     /* gap: 10px; */
@@ -1026,7 +1021,7 @@ footer hr {
     margin: 0 auto;
   }
 
-  .historyHead{
+  .historyHead {
     font-size: 14px;
   }
   .historyVideo {
@@ -1053,14 +1048,13 @@ footer hr {
 }
 @media screen and (max-width: 340px) {
   .historyVideo {
-      width: 250px;
-      height: 200px;
-    }
-    .section1 img{
-      display: none;
-    }
-    .card{
-      position: static;
-    }
+    width: 250px;
+    height: 200px;
+  }
+  .section1 img {
+    display: none;
+  }
+  .card {
+    position: static;
+  }
 }
-

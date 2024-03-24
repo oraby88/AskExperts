@@ -532,18 +532,23 @@ hr {
   justify-content: space-between;
 }
 .CEOMember {
-  position: relative;
+  /* position: relative; */
   margin: 30px 0;
   text-align: center;
 }
 .CEOword {
   position: absolute;
-  top: 50%;
-  left: 44%;
-  padding: 5px 20px;
+  top: 75%;
+  right: 15%;
+  width: 150px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background-color: #ffcc4a;
   border-radius: 20px;
   transition: all 0.3s ease;
+  z-index: 3;
 }
 .CEOMember img {
   height: 300px;
@@ -552,11 +557,18 @@ hr {
   object-fit: cover;
   object-position: top;
 }
+.CEOmemberImg{
+  position: relative;
+}
 .CEOword2 {
   position: absolute;
-  top: 50%;
-  left: 65%;
-  padding: 5px 20px;
+  top: 75%;
+  right: 15%;
+  width: 100px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background-color: black;
   border-radius: 20px;
   color: white;
@@ -564,9 +576,13 @@ hr {
 }
 .CEOword3 {
   position: absolute;
-  top: 50%;
-  left: 44%;
-  padding: 5px 20px;
+  top: 75%;
+  right: 15%;
+  width: 150px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background-color: black;
   border-radius: 20px;
   color: white;
@@ -768,18 +784,8 @@ footer hr {
   .linkslist ul li {
     list-style-type: none;
   }
-  .CEOword2 {
-    left: 50%;
-  }
 }
-@media screen and (max-width: 1350px) {
-  .CEOword3{
-    left: 38%;
-  }
-  .CEOword {
-    left: 38%;
-  }
-}
+
 @media screen and (max-width: 1200px) {
   .linkslist ul {
     padding: 0;
@@ -789,15 +795,6 @@ footer hr {
   }
   .teamContainer {
     width: 80%;
-  }
-  .CEOword {
-    left: 30%;
-  }
-  .CEOword2 {
-    left: 50%;
-  }
-  .CEOword3 {
-    left: 30%;
   }
   .historyHead h1 {
     width: 100%;
