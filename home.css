@@ -1007,9 +1007,9 @@ footer {
 .footerCard2 {
   /* border-left: 1px solid #7c7c7c; */
   /* padding-left: 80px; */
-  /* width: 65%; */
+  width: 80%;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   gap: 20px;
 }
 .hr2 {
