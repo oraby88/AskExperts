@@ -377,17 +377,18 @@ border-radius: 25px;
 }
 .Pattern {
   height: 60%;
-  width: 40%;
+  width: 39%;
   object-fit: cover;
   position: absolute;
   z-index: 1;
   top: 20%;
-  left: -5%;
+  left: -3%;
   transform: rotate(73deg);
 }
 .contactEmail{
   padding: 20px;
   border-radius: 30px;
+  margin-bottom: 10px;
   border: 0;
 }
 .btn{

@@ -248,7 +248,7 @@ li a:hover {
 
 .financialProjections {
   background-color: #f5f5f5;
-  padding: 50px 0;
+  padding: 50px 0 0 0;
 }
 
 .financialProjectionsContainer {
@@ -283,7 +283,7 @@ li a:hover {
 .financialCardsContainer {
   display: flex;
   justify-content: space-between;
-  padding: 50px 0;
+  padding: 50px 0 0 0;
   height: 500px;
 }
 
@@ -487,6 +487,7 @@ li a:hover {
   width: 100%;
   /* grid-area: a; */
   justify-items: center;
+  margin-bottom: 30px;
 }
 
 /* Our History  */
@@ -677,10 +678,18 @@ li a:hover {
   border-radius: 20px;
   color: white;
 }
+.FAQHead h1{
+  font-size: 32px;
+  font-weight: bold;
+  margin: 15px 0;
+}
 .FAQQuestion {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+.FAQQuestion p{
+  font-weight: bold;
 }
 .showQuestion {
   font-size: 35px;
@@ -854,7 +863,7 @@ footer hr {
     width: 100%;
   }
   .financialBtns {
-    margin: 0 0 30px 0;
+    margin: 40px 0 0 0;
     width: 100%;
   }
   .financialCardsContainer {
@@ -892,6 +901,30 @@ footer hr {
     width: 170px;
     font-size: 14px;
   }
+  .contactContainer {
+    flex-direction: column;
+  }
+  .contactImg1 {
+    left: 10%;
+  }
+  .contactImg2{
+    left: 53%; 
+  }
+  .contactImg3{
+    left: 53%;
+  } 
+  .greenBox{
+    left: 0;
+  }
+  .pattren{
+    left: 55%;
+  }
+  .contactInfo {
+    width: 100%;
+  }
+  .contactImageContainer {
+    width: 90%;
+  }
 }
 @media screen and (max-width: 786px) {
   .firstHead {
@@ -915,16 +948,7 @@ footer hr {
     width: 100px;
     height: 100px;
   }
-
-  .contactContainer {
-    flex-direction: column;
-  }
-  .contactInfo {
-    width: 100%;
-  }
-  .contactImageContainer {
-    width: 90%;
-  }
+  
   .historyVideo {
     width: 500px;
   }

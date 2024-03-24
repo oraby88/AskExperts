@@ -154,7 +154,7 @@
             </p>
           </div>
           <div class="financialBtns">
-            <button><i class="fa-solid fa-arrow-left"></i></button>
+            <button><i class="fa-solid fa-arrow-left"></i></button>&nbsp;&nbsp;
             <button><i class="fa-solid fa-arrow-right"></i></button>
           </div>
         </div>
@@ -176,7 +176,7 @@
               <div class="swiper-slide">
                 <div class="financialCard">
                   <img src="images/Service_Single/Icon-1.png" alt="" />
-                  <h2>The Balance Sheet</h2>
+                  <h2>Income Statement</h2>
                   <p>
                     Lorem, ipsum dolor sit amet consectetur adipisicing elit.
                     Velit esse quam deserunt aliquid sequi laboriosam quas
@@ -187,7 +187,7 @@
               <div class="swiper-slide">
                 <div class="financialCard">
                   <img src="images/Service_Single/Vector.png" alt="" />
-                  <h2>The Balance Sheet</h2>
+                  <h2>Financial Plan</h2>
                   <p>
                     Lorem, ipsum dolor sit amet consectetur adipisicing elit.
                     Velit esse quam deserunt aliquid sequi laboriosam quas
@@ -415,6 +415,42 @@
                 quos doloremque perferendis blanditiis pariatur dicta?
               </p>
             </div>
+            <div>
+              <div class="FAQQuestion">
+                <p>what will happen when I've sent my application?</p>
+                <button class="showQuestion" onclick="Qshow3()">+</button>
+              </div>
+              <p class="QdiscrptionNone" id="Qdiscrption3">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Suscipit, impedit ut, quae, delectus ipsum quasi cupiditate
+                corporis non laborum odit cum exercitationem magnam reiciendis
+                quos doloremque perferendis blanditiis pariatur dicta?
+              </p>
+            </div>
+            <div>
+              <div class="FAQQuestion">
+                <p>what will happen when I've sent my application?</p>
+                <button class="showQuestion" onclick="Qshow3()">+</button>
+              </div>
+              <p class="QdiscrptionNone" id="Qdiscrption3">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Suscipit, impedit ut, quae, delectus ipsum quasi cupiditate
+                corporis non laborum odit cum exercitationem magnam reiciendis
+                quos doloremque perferendis blanditiis pariatur dicta?
+              </p>
+            </div>
+            <div>
+              <div class="FAQQuestion">
+                <p>what will happen when I've sent my application?</p>
+                <button class="showQuestion" onclick="Qshow3()">+</button>
+              </div>
+              <p class="QdiscrptionNone" id="Qdiscrption3">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Suscipit, impedit ut, quae, delectus ipsum quasi cupiditate
+                corporis non laborum odit cum exercitationem magnam reiciendis
+                quos doloremque perferendis blanditiis pariatur dicta?
+              </p>
+            </div>
           </div>
         </div>
       </div>
@@ -464,8 +500,8 @@
       </div>
       <hr />
       <p style="color: #c5c5c5; text-align: center">
-        &copy; 2022 AskExperts, All rights reseved | Terms of Service |
-        Privacy Policy
+        &copy; 2022 AskExperts, All rights reseved | Terms of Service | Privacy
+        Policy
       </p>
     </footer>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
@@ -476,6 +512,8 @@
         pagination: {
           el: ".swiper-pagination",
           clickable: true,
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
         },
         breakpoints: {
           640: {
