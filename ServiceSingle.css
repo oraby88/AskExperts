@@ -32,7 +32,7 @@ body {
 .links {
   /* width: 20%; */
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 nav {
@@ -268,14 +268,17 @@ li a:hover {
   font-size: 14px;
   color: #7c7c7c;
 }
-.financialBtns button {
+.financialBtns{
+  margin-top: 100px;
+}
+/* .financialBtns button {
   padding: 15px;
   border-radius: 50%;
   border: 0;
   background-color: black;
   color: white;
   transition: all 0.3s ease;
-}
+} */
 .financialBtns button:hover {
   background-color: #ffcc4a;
   color: black;
@@ -330,6 +333,7 @@ li a:hover {
   -webkit-align-items: center;
   align-items: center;
   padding: 20px 0;
+  
 }
 
 .swiper-slide img {
@@ -338,6 +342,28 @@ li a:hover {
   /* height: 100%; */
   object-fit: cover;
 }
+.swiper-wrapper{
+  transition: all 0.5s ease-in-out;
+}
+
+.next{
+  padding: 15px;
+  border-radius: 50%;
+  border: 0;
+  background-color: black;
+  color: white;
+  transition: all 0.3s ease;
+  /* transform: translateX(320px); */
+}
+.prev{
+  padding: 15px;
+  border-radius: 50%;
+  border: 0;
+  background-color: black;
+  color: white;
+  transition: all 0.3s ease;
+}
+
 
 /* Process Section */
 
@@ -935,6 +961,8 @@ footer hr {
   .links {
     width: 100%;
     text-align: left;
+  }
+  .links{
     padding-bottom: 10px;
   }
 

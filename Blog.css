@@ -30,7 +30,7 @@ body {
 .links {
   /* width: 20%; */
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 nav {
@@ -233,8 +233,8 @@ li a:hover {
   font-weight: 400;
 }
 .cardPara {
-  font-size: 24px;
-  font-weight: 500;
+  font-size: 26px;
+  font-weight: bold;
 }
 
 /* blog section  */
@@ -245,7 +245,7 @@ li a:hover {
 .bolgContainer {
   width: 70%;
   margin: 0 auto;
-  padding: 150px 0;
+  padding: 150px 0 50px 0;
 }
 
 .blogHead {
@@ -258,12 +258,14 @@ li a:hover {
 .blogWord {
   font-size: 12px;
   padding: 3px 10px;
-  width: 100px;
+  width: 70px;
   text-align: center;
   background-color: #4eaf4e;
-  color: black !important;
+  color: white !important;
   border-radius: 20px;
-  
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
 }
 .blogWord1{
   font-size: 12px;
@@ -323,6 +325,13 @@ li a:hover {
   border: 0;
   color: white;
   transition: all 0.3s ease;
+}
+.blogBodyCard1EndButton a{
+  text-decoration: none;
+  color: white;
+}
+.blogBodyCard1EndButton a:hover{
+  color: black;
 }
 .blogBodyCard1EndButton:hover {
   background-color: #e9e9e9;
@@ -556,7 +565,9 @@ footer hr {
   .dateAndClock, .address, .links { 
     width: 100%;
     text-align: left;
-    padding-bottom: 10px;
+  }
+  .links{
+    margin-bottom: 10px;
   }
   .blogHead {
     flex-direction: column;

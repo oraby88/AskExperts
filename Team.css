@@ -218,7 +218,7 @@ li a:hover {
   padding: 20px 35px;
   background-color: rgb(255, 255, 255, 0.9);
   /* opacity: 0.3; */
-  width: 15rem;
+  width: 20rem;
   position: absolute;
   top: 25%;
   left: 15%;
@@ -226,8 +226,8 @@ li a:hover {
   object-fit: cover;
 }
 .cardPara {
-  font-size: 24px;
-  font-weight: 500;
+  font-size: 26px;
+  font-weight: bold;
 }
 .teamWord {
   font-size: 12px;
@@ -336,9 +336,10 @@ li a:hover {
 .teamMembersLinks {
   display: flex;
   justify-content: space-around;
-  margin: 10px 20%;
+  margin: 20px 20% 0 20%;
   font-size: 22px;
 }
+
 
 /* contact section  */
 .contact{
@@ -355,6 +356,15 @@ border-radius: 25px;
 .contactHead{
   width: 50%;
   padding: 50px;
+}
+.contactWord{
+  font-size: 12px;
+  background-color: #3b3b3b;
+  width: 100px;
+  padding: 2px 0;
+  text-align: center;
+  border-radius: 10px;
+  letter-spacing: 2px;
 }
 .contactContainer{
   display: flex;
@@ -389,6 +399,7 @@ border-radius: 25px;
   padding: 20px;
   border-radius: 30px;
   margin-bottom: 10px;
+  margin-right: 5px;
   border: 0;
 }
 .btn{
@@ -397,6 +408,7 @@ border-radius: 25px;
   background-color: #4eaf4e;
   color: white;
   border: 0;
+  font-size: 16px;
 }
 
 
@@ -559,15 +571,19 @@ footer hr {
   .dateAndClock, .address, .links { 
     width: 100%;
     text-align: left;
-    padding-bottom: 10px;
   }
-  
+  .links{
+    margin-bottom: 10px;
+  }
   
   .teamMembers{
     grid-template-columns: 1fr;
   }
   .teamHead{
     width: 100%;
+  }
+  .Pattern{
+    display: none;
   }
 
   .footerCard2 {
@@ -639,6 +655,7 @@ footer hr {
     padding: 10px;
     font-size: 14px;
   }
+  
 
   
   .firstHead {

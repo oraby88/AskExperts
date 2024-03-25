@@ -242,19 +242,23 @@ li a:hover {
 }
 
 /* Case Study section  */
+.csaeStudy{
+  height: auto;
+}
 .csaeStudyContainer{
   width: 70%;
-  margin: 100px auto;
+  margin: 100px auto 50px auto;
 }
 .imgContainer{
   position: relative;
   padding: 50px 0;
   width: 100%;
-  height: 400px;
+  /* height: 400px; */
 }
-.imgContainer img{
+
+.caseStudyImg{
   width: 100%;
-  height: 100%;
+  height: 400px;
   object-fit: cover;
   border-radius: 15px;
 }
@@ -277,20 +281,25 @@ li a:hover {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 50%;
+  width: 60%;
+}
+.caseInfoWords span{
+  font-size: 13px;
+  color: #e9e9e9;
 }
 .caseInfo button{
   padding: 15px 20px;
   background-color: #ffcc4a;
   border-radius: 25px;
   border: 0;
+  font-weight: bold;
 }
 
 
 /* overview section  */
 
 .overview{
-  width: 50%;
+  width: 60%;
   margin: 0 auto;
 }
 .overviewHead{
@@ -308,7 +317,7 @@ li a:hover {
 }
 .overview li{
   color: #7c7c7c;
-  line-height: 35px;
+  line-height: 25px;
 }
 .overview h1{
   font-size: 30px;
@@ -327,6 +336,7 @@ li a:hover {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 16px;
 }
 .subscribe{
   width: 70%;
@@ -338,12 +348,15 @@ li a:hover {
   padding: 20px;
   border-radius: 30px;
   border: 0;
+  margin-right: 5px;
+  margin-bottom: 10px;
 }
 .subscribeBody button{
   background-color: #ffcc4a;
   padding: 20px 30px;
   border-radius: 30px;
   border: 0;
+  font-weight: bold ;
 }
 /* .subscribeBody img{
   width: 100%;
@@ -359,7 +372,7 @@ li a:hover {
 
 .moreCaseStudies{
   width: 70%;
-  margin: 50 auto;
+  margin: 100px auto 50px auto;
   text-align: center;
 }
 .moreCaseStudiesImages{
@@ -514,11 +527,15 @@ footer hr {
   .csaeStudyContainer{
     position: static; 
   }
+  .imgContainer{
+    position: static;
+    padding: 0;
+  }
   .caseInfo{
     position: static;
     width: 100%;
     margin-top: 20px;
-    flex-direction: column;
+    /* flex-direction: column; */
   }
   .caseInfoWords{
     flex-direction: column;
@@ -541,7 +558,9 @@ footer hr {
   .dateAndClock, .address, .links { 
     width: 100%;
     text-align: left;
-    padding-bottom: 10px;
+  }
+  .links{
+    margin-bottom: 10px;
   }
   .overview{
     width: 70%;
@@ -595,6 +614,9 @@ footer hr {
   .overview img{
     width: 100%;
   }
+  .subscribeBody{
+    flex-direction: column;
+  }
 }
 
 @media screen and (max-width: 450px) {
@@ -624,11 +646,6 @@ footer hr {
     width: 80%;
   }
 
-  .subscribeBody{
-    flex-direction: column;
-  }
-
-
   .footerContainer {
     width: 90%;
   }
@@ -652,5 +669,12 @@ footer hr {
   .footerProduct button {
     padding: 10px;
     font-size: 14px;
+  }
+  .caseInfoWords{
+    width: 100%;
+  }
+  .caseInfo{
+    flex-direction: column;
+    row-gap: 10px;
   }
 }

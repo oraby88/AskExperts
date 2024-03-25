@@ -38,3 +38,15 @@ function mini_nav_dropDown() {
 //     document.querySelector(".display").classList.remove("display");
 //     console.log('bb');
 // }
+
+function nextSlide(){
+    var x = -420;
+    document.getElementById('swiper-wrapper').style.transform=`translateX(-420px)`;
+    // document.getElementById('swiper-wrapper').classList.remove('prevSlide');
+}
+function prevSlide(){
+    document.getElementById('swiper-wrapper').style.transform=`translateX(0)`;
+
+    // document.getElementById('swiper-wrapper').classList.add('prevSlide');
+    // document.getElementById('swiper-wrapper').classList.remove('nextSlide');
+}

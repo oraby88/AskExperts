@@ -242,8 +242,8 @@ li a:hover {
   font-weight: 400;
 }
 .cardPara {
-  font-size: 24px;
-  font-weight: 500;
+  font-size: 26px;
+  font-weight: bold;
 }
 
 /* business Services */
@@ -255,12 +255,16 @@ li a:hover {
 .businessServicesHead p {
   font-size: 14px;
   color: #7c7c7c;
+  margin-bottom: 10px;
 }
 .businessServicesHead img {
   width: 100%;
   height: 400px;
   object-fit: cover;
   border-radius: 15px;
+}
+.businessServicesHead ul{
+  padding-top: 20px;
 }
 .businessServicesHead li {
   font-size: 14px;
@@ -277,8 +281,19 @@ li a:hover {
   display: flex;
   align-items: center;
   position: relative;
+  flex-direction: column;
+  justify-content: center;
 }
+
 .businessServicesBody p {
+  
+}
+.qoma{
+  font-size: 80px;
+  margin: 0;
+  color: #ffcc4a;
+}
+.businessServicesWords{
   width: 80%;
   margin: 0 auto;
   font-size: 24px;
@@ -482,7 +497,9 @@ footer hr {
   .dateAndClock, .address, .links { 
     width: 100%;
     text-align: left;
-    padding-bottom: 10px;
+  }
+  .links{
+    margin-bottom: 10px;
   }
   .businessServicesFooterCard{
     flex-direction: column;

@@ -30,7 +30,7 @@ body {
 .links {
   /* width: 20%; */
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   gap: 5px;
 }
 
@@ -963,7 +963,9 @@ footer hr {
   .dateAndClock, .address, .links { 
     width: 100%;
     text-align: left;
-    padding-bottom: 10px;
+  }
+  .links{
+    margin-bottom: 10px;
   }
   .growingHead {
     flex-direction: column;

@@ -426,6 +426,7 @@ li a:hover {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 16px;
 }
 .subscribe {
   width: 70%;
@@ -437,6 +438,7 @@ li a:hover {
   padding: 20px;
   border-radius: 30px;
   border: 0;
+  margin-bottom: 10px;
 }
 .subscribeBody button {
   background-color: #ffcc4a;
@@ -445,8 +447,8 @@ li a:hover {
   border: 0;
 }
 .supscribeEmail {
-  display: flex;
-  gap: 10px;
+  /* display: flex; */
+  /* gap: 10px; */
 }
 /* .patternImg{
   position: absolute;
@@ -686,7 +688,9 @@ footer hr {
   .dateAndClock, .address, .links { 
     width: 100%;
     text-align: left;
-    padding-bottom: 10px;
+  }
+  .links{
+    margin-bottom: 10px;
   }
   .contactContainer {
     flex-direction: column;
@@ -755,11 +759,7 @@ footer hr {
   .subscribeBody {
     flex-direction: column;
   }
-  .supscribeEmail {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-  }
+  
 }
 
 @media screen and (max-width: 450px) {

@@ -1291,7 +1291,9 @@ footer hr {
   .links {
     width: 100%;
     text-align: left;
-    padding-bottom: 10px;
+  }
+  .links{
+    margin-bottom: 10px;
   }
   .brandImages {
     display: grid;

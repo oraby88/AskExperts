@@ -154,14 +154,14 @@
             </p>
           </div>
           <div class="financialBtns">
-            <button><i class="fa-solid fa-arrow-left"></i></button>&nbsp;&nbsp;
-            <button><i class="fa-solid fa-arrow-right"></i></button>
+            <button class="prev" onclick="prevSlide()"><i class="fa-solid fa-arrow-left"></i></button>&nbsp;&nbsp;&nbsp;
+            <button class="next" onclick="nextSlide()"><i class="fa-solid fa-arrow-right"></i></button>
           </div>
         </div>
 
         <div class="financialCardsContainer">
           <div class="swiper-container mySwiper">
-            <div class="swiper-wrapper">
+            <div class="swiper-wrapper" id="swiper-wrapper">
               <div class="swiper-slide">
                 <div class="financialCard">
                   <img src="images/Service_Single/Vector-1.png" alt="" />
@@ -509,6 +509,7 @@
       var swiper = new Swiper(".mySwiper", {
         slidesPerView: 1,
         spaceBetween: 10,
+        slideToClickedSlide: true,
         pagination: {
           el: ".swiper-pagination",
           clickable: true,
@@ -534,6 +535,24 @@
           },
         },
       });
+
+      // const swiperSlides = document.getElementsByClassName("swiper-slide");
+
+      // s6.on("slideChange", function () {
+      //   const otherSlides = swiperSlides;
+      //   for (let index = 0; index < swiperSlides.length; index++) {
+      //     const element = swiperSlides[index];
+      //     element.getElementsByTagName("a")[0].style.display = "none";
+      //   }
+
+      //   const linkElemCurrentSlide =
+      //     swiperSlides[s6.realIndex].getElementsByTagName("a");
+      //   linkElemCurrentSlide[0].style.display = "block";
+      // });
+
+      // $(".swiper-slide a").on("click touchstart", function (e) {
+      //   e.preventDefault();
+      // });
     </script>
   </body>
 </html>
