@@ -83,7 +83,7 @@ li a:hover {
   color: white;
   list-style-type: circle;
 }
-.linkslist select{
+.linkslist select {
   border: 0;
   background-color: rgb(54, 53, 53);
   color: white;
@@ -110,25 +110,24 @@ li a:hover {
 .linkslist select:hover {
   color: #4eaf4e;
 }
-.options{
+.options {
   position: relative;
-
 }
-.select{
+.select {
   width: 78.63px;
 }
 
-.dropDown ul{
+.dropDown ul {
   display: flex;
   flex-direction: column;
   margin: 0;
   padding: 10px;
 }
-.dropDown ul li{
+.dropDown ul li {
   width: 100%;
   list-style-type: none;
 }
-.dropDown{
+.dropDown {
   display: none;
   position: absolute;
   z-index: 3;
@@ -138,51 +137,50 @@ li a:hover {
   width: 100px;
   margin-top: 10px;
 }
-.mini-nav-dropDown{
+.mini-nav-dropDown {
   display: none;
   margin-left: 100px;
 }
-.display{
+.display {
   display: block;
 }
-.mini-nav-dropDown ul{
+.mini-nav-dropDown ul {
   margin: 0 !important;
   padding: 0;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
-.mini-nav-dropDown ul li{
+.mini-nav-dropDown ul li {
   margin: 10px 0;
 }
-.mini-nav-dropDown ul li:last-child{
+.mini-nav-dropDown ul li:last-child {
   margin-bottom: 0;
 }
 
-
-.activeNav{
-  display: none; 
+.activeNav {
+  display: none;
   height: 400px;
   transition: all 1s ease;
 }
-.activeNavLinks{
+.activeNavLinks {
   height: 100%;
   padding: 15px 0;
 }
-.activeList li a{
+.activeList li a {
   text-decoration: none;
   color: white;
 }
-.activeList li a:hover{
+.activeList li a:hover {
   color: #4eaf4e;
 }
-.activeList li{
+.activeList li {
   color: white;
 }
 .activeList li:hover {
   color: #4eaf4e;
 }
-.activeList{
+.activeList {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -191,16 +189,15 @@ li a:hover {
   /* padding: 0; */
   list-style-type: circle;
 }
-.activeNavLinks select{
+.activeNavLinks select {
   background-color: black;
   color: white;
   border: 0;
   font-size: 16px;
 }
-.activeNavLinks select:hover{
+.activeNavLinks select:hover {
   color: #4eaf4e;
 }
-
 
 /* section1 */
 
@@ -292,13 +289,13 @@ li a:hover {
   object-fit: cover;
   object-position: top;
 }
-.CEOmemberImg{
+.CEOmemberImg {
   position: relative;
 }
-.Ryan{
+.Ryan {
   object-position: right !important;
 }
-.Lilly{
+.Lilly {
   object-position: left !important;
 }
 
@@ -340,24 +337,23 @@ li a:hover {
   font-size: 22px;
 }
 
-
 /* contact section  */
-.contact{
+.contact {
   padding: 100px 0;
 }
 .contactContainer {
-width: 70%;
-margin: 0 auto;
-/* padding: 50px; */
-background-color: black;
-color: white;
-border-radius: 25px;
+  width: 70%;
+  margin: 0 auto;
+  /* padding: 50px; */
+  background-color: black;
+  color: white;
+  border-radius: 25px;
 }
-.contactHead{
+.contactHead {
   width: 50%;
   padding: 50px;
 }
-.contactWord{
+.contactWord {
   font-size: 12px;
   background-color: #3b3b3b;
   width: 100px;
@@ -366,15 +362,15 @@ border-radius: 25px;
   border-radius: 10px;
   letter-spacing: 2px;
 }
-.contactContainer{
+.contactContainer {
   display: flex;
   /* justify-content: space-between; */
 }
-.contactImage{
+.contactImage {
   position: relative;
   width: 50%;
 }
-.teamImg{
+.teamImg {
   height: 100%;
   width: 100%;
   object-fit: cover;
@@ -395,14 +391,14 @@ border-radius: 25px;
   left: -3%;
   transform: rotate(73deg);
 }
-.contactEmail{
+.contactEmail {
   padding: 20px;
   border-radius: 30px;
   margin-bottom: 10px;
   margin-right: 5px;
   border: 0;
 }
-.btn{
+.btn {
   padding: 20px;
   border-radius: 30px;
   background-color: #4eaf4e;
@@ -410,7 +406,6 @@ border-radius: 25px;
   border: 0;
   font-size: 16px;
 }
-
 
 /* footer  */
 
@@ -489,6 +484,12 @@ footer {
 footer hr {
   border: 1px solid #7c7c7c;
 }
+.endOfPage {
+  color: #c5c5c5;
+  text-align: center;
+  line-height: 25px;
+}
+
 @media screen and (max-width: 1440px) {
   .linkslist ul li {
     list-style-type: none;
@@ -531,7 +532,7 @@ footer hr {
   .bar3.active {
     transform: rotate(-45deg) translate(7.5px, -10px);
   }
-  .activeNav.active{
+  .activeNav.active {
     display: block;
     position: absolute;
     width: 100%;
@@ -546,7 +547,7 @@ footer hr {
   .contactContainer {
     width: 90%;
   }
-  .contactHead{
+  .contactHead {
     font-size: 14px;
     padding: 30px;
   }
@@ -557,10 +558,9 @@ footer hr {
     width: 170px;
     font-size: 14px;
   }
-
 }
 @media screen and (max-width: 823px) {
-  .navIcons.active{
+  .navIcons.active {
     top: 140px;
   }
 }
@@ -568,21 +568,23 @@ footer hr {
   .firstHead {
     grid-template-columns: 1fr 1fr;
   }
-  .dateAndClock, .address, .links { 
+  .dateAndClock,
+  .address,
+  .links {
     width: 100%;
     text-align: left;
   }
-  .links{
+  .links {
     margin-bottom: 10px;
   }
-  
-  .teamMembers{
+
+  .teamMembers {
     grid-template-columns: 1fr;
   }
-  .teamHead{
+  .teamHead {
     width: 100%;
   }
-  .Pattern{
+  .Pattern {
     display: none;
   }
 
@@ -616,16 +618,16 @@ footer hr {
   .callingNum {
     display: none;
   }
-  .teamContainer{
+  .teamContainer {
     width: 90%;
   }
-  .contactImage{
+  .contactImage {
     display: none;
   }
-  .Pattern{
+  .Pattern {
     display: none;
   }
-  .contactHead{
+  .contactHead {
     width: 100%;
   }
 }
@@ -655,9 +657,7 @@ footer hr {
     padding: 10px;
     font-size: 14px;
   }
-  
 
-  
   .firstHead {
     grid-template-columns: 1fr;
     gap: 0;
@@ -666,17 +666,17 @@ footer hr {
   .feedbackFooter2 {
     display: none;
   }
-  .section1 img{
+  .section1 img {
     display: none;
   }
-  .card{
+  .card {
     position: static;
     width: 100%;
   }
-  .contactEmail{
+  .contactEmail {
     padding: 10px;
   }
-  .btn{
+  .btn {
     padding: 10px;
   }
 }

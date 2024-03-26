@@ -329,7 +329,7 @@ li a:hover {
 
 .subscribeBody{
   width: 100%;
-  background-color: black;
+  /* background-color: black; */
   color: white;
   border-radius: 20px;
   padding: 50px;
@@ -343,6 +343,10 @@ li a:hover {
   margin: 0 auto;
   position: relative;
   z-index: -1;
+  background-image: url(images/Newsletter.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 20px;
 }
 .subscribeBody input {
   padding: 20px;
@@ -473,6 +477,11 @@ footer {
 }
 footer hr {
   border: 1px solid #7c7c7c;
+}
+.endOfPage{
+  color: #c5c5c5;
+  text-align: center;
+  line-height: 25px;
 }
 
 @media screen and (max-width: 1440px) {

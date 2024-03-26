@@ -249,7 +249,7 @@ li a:hover {
   width: 70%;
   text-align: center;
   margin: 0 auto;
-  padding: 150px 0;
+  padding: 100px 0;
 }
 .serviceCardsContainer a{
   text-decoration: none;
@@ -681,6 +681,11 @@ footer {
 }
 footer hr {
   border: 1px solid #7c7c7c;
+}
+.endOfPage{
+  color: #c5c5c5;
+  text-align: center;
+  line-height: 25px;
 }
 @media screen and (max-width: 1440px) {
   
