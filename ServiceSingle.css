@@ -69,17 +69,18 @@ nav {
   transition: all 1s ease-in-out;
 }
 
-.name {
-  width: 20%;
-}
 
 .linkslist {
-  width: 40%;
+  width: 50%;
 }
 .linkslist ul {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   gap: 10px;
+  padding: 0;
+}
+.linkslist ul li{
+  list-style-type: circle;
 }
 .linkslist ul li:hover,
 li a:hover {
@@ -719,6 +720,7 @@ li a:hover {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 20px;
 }
 .FAQQuestion p{
   font-weight: bold;
@@ -818,11 +820,7 @@ footer hr {
   line-height: 25px;
 }
 
-@media screen and (max-width: 1440px) {
-  .linkslist ul li {
-    list-style-type: none;
-  }
-}
+
 @media screen and (max-width: 1300px) {
   .brandImages img {
     width: 150px;
@@ -830,12 +828,11 @@ footer hr {
   }
 }
 @media screen and (max-width: 1200px) {
-  .linkslist ul {
-    padding: 0;
-  }
-
   .historyVideo {
     width: 600px;
+  }
+  .linkslist ul li {
+    list-style-type: none;
   }
 }
 @media screen and (max-width: 992px) {

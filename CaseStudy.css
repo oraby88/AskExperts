@@ -68,12 +68,16 @@ nav {
 }
 
 .linkslist {
-  width: 40%;
+  width: 50%;
 }
 .linkslist ul {
   display: flex;
   justify-content: space-between;
   gap: 10px;
+  padding: 0;
+}
+.linkslist ul li{
+  list-style-type: circle;
 }
 .linkslist ul li:hover,
 li a:hover {
@@ -260,6 +264,7 @@ li a:hover {
   margin: 30px auto;
   display: flex;
   justify-content: space-around;
+  gap: 20px;
 }
 .processLinks a{
   text-decoration: none;
@@ -528,7 +533,7 @@ footer hr {
   .callingNum {
     /* width: 100%; */
     /* display: none; */
-    margin-right: 10px;
+    margin-right: 20px;
   }
   .humbrger {
     display: flex;

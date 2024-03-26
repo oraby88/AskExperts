@@ -68,12 +68,16 @@ nav {
 
 
 .linkslist {
-  width: 40%;
+  width: 50%;
 }
 .linkslist ul {
   display: flex;
   justify-content: space-between;
   gap: 10px;
+  padding: 0;
+}
+.linkslist ul li{
+  list-style-type: circle;
 }
 .linkslist ul li:hover,
 li a:hover {
@@ -442,17 +446,14 @@ footer hr {
   text-align: center;
   line-height: 25px;
 }
-@media screen and (max-width: 1440px) {
-  
-  .linkslist ul li {
-    list-style-type: none;
-  }
-}
+
 @media screen and (max-width: 1200px) {
   .linkslist ul {
     padding: 0;
   }
-  
+  .linkslist ul li {
+    list-style-type: none;
+  }
 }
 @media screen and (max-width: 992px) {
   .name {
@@ -575,6 +576,7 @@ footer hr {
 
   .businessServicesBody p {
     font-size: 16px;
+    font-weight: bold;
   }
 
   .footerContainer {

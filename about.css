@@ -41,7 +41,7 @@ body {
 
 nav {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   background-color: rgb(54, 53, 53);
   color: white;
@@ -68,17 +68,18 @@ nav {
   transition: all 1s ease-in-out;
 }
 
-.name {
-  width: 20%;
-}
 
 .linkslist {
-  width: 40%;
+  width: 50%;
 }
 .linkslist ul {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   gap: 10px;
+  padding: 0;
+}
+.linkslist ul li{
+  list-style-type: circle;
 }
 .linkslist ul li:hover,
 li a:hover {
@@ -790,15 +791,11 @@ footer hr {
   line-height: 25px;
 }
 
-@media screen and (max-width: 1440px) {
-  .linkslist ul li {
-    list-style-type: none;
-  }
-}
 
 @media screen and (max-width: 1200px) {
-  .linkslist ul {
-    padding: 0;
+
+  .linkslist ul li {
+    list-style-type: none;
   }
   .historyVideo {
     width: 600px;
@@ -809,6 +806,7 @@ footer hr {
   .historyHead h1 {
     width: 100%;
   }
+  
   
 }
 @media screen and (max-width: 992px) {
