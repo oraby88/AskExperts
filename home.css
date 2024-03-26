@@ -18,8 +18,13 @@ header {
   padding: 0 10%;
   /* text-align: center; */
   grid-template-columns: 1fr 1fr 1fr;
-  gap: 15px;
+  gap: 40px;
   /* align-items: center; */
+}
+.dateAndClock{
+  display: flex;
+  align-items: center;
+  gap: 5px;
 }
 
 .address {
@@ -145,7 +150,6 @@ li a:hover {
 .mini-nav-dropDown {
   display: none;
   margin-left: 100px;
-
 }
 .display {
   display: block;
@@ -156,7 +160,6 @@ li a:hover {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  
 }
 .mini-nav-dropDown ul li {
   margin: 10px 0;
@@ -685,7 +688,7 @@ hr {
   border-radius: 20px;
 }
 .feedbackBody {
-  width: 600px;
+  width: 100%;
   margin: 0 auto;
   padding-bottom: 50px;
 }
@@ -1066,7 +1069,7 @@ footer {
 footer hr {
   border: 1px solid #7c7c7c;
 }
-.endOfPage{
+.endOfPage {
   color: #c5c5c5;
   text-align: center;
   line-height: 25px;
@@ -1082,16 +1085,17 @@ footer hr {
     padding: 10px 15px;
   }
 }
-
+@media screen and (max-width: 1300px) {
+  .brandImages img {
+    width: 150px;
+    height: 100px;
+  }
+}
 @media screen and (max-width: 1200px) {
   /* .linkslist ul {
     padding: 0;
   } */
 
-  .brandImages img {
-    width: 150px;
-    height: 100px;
-  }
   .S3CardsContainer {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -1297,7 +1301,7 @@ footer hr {
     width: 100%;
     text-align: left;
   }
-  .links{
+  .links {
     margin-bottom: 10px;
   }
   .brandImages {
@@ -1598,7 +1602,9 @@ footer hr {
     text-align: center;
     padding-bottom: 10px;
   }
-
+  .dateAndClock{
+    justify-content: center;
+  }
   .todayContactNum h3 {
     font-size: 18px;
   }

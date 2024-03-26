@@ -15,13 +15,12 @@ body {
   align-items: center;
   padding: 0 10%;
   grid-template-columns: 1fr 1fr 1fr;
-  gap: 15px;
+  gap: 40px;
   /* text-align: center; */
 }
-.email{
+.dateAndClock{
   display: flex;
   align-items: center;
-  /* justify-content: center; */
   gap: 5px;
 }
 .address {
@@ -572,7 +571,7 @@ footer hr {
   }
 }
 @media screen and (max-width: 450px) {
-  .email,
+  .dateAndClock,
   .address,
   .links {
     width: 100%;
@@ -603,7 +602,7 @@ footer hr {
     grid-template-columns: 1fr;
     gap: 0;
   }
-  .email{
+  .dateAndClock{
     justify-content: center;
   }
 

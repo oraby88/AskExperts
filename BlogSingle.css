@@ -14,7 +14,12 @@ body {
   align-items: center;
   padding: 0 10%;
   grid-template-columns: 1fr 1fr 1fr;
-  gap: 15px;
+  gap: 40px;
+}
+.dateAndClock{
+  display: flex;
+  align-items: center;
+  gap: 5px;
 }
 
 .address {
@@ -596,12 +601,15 @@ footer hr {
     grid-template-columns: 1fr;
     gap: 0;
   }
-  .email,
+  .dateAndClock,
   .address,
   .links {
     width: 100%;
     text-align: center;
     padding-bottom: 10px;
+  }
+  .dateAndClock{
+    justify-content: center;
   }
   .footerProduct button {
     padding: 10px;
