@@ -16,7 +16,8 @@ body {
   padding: 0 10%;
   /* text-align: center; */
   grid-template-columns: 1fr 1fr 1fr;
-  gap: 40px;
+  column-gap: 60px;
+  row-gap: 30px;
 }
 .dateAndClock{
   display: flex;

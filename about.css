@@ -16,7 +16,8 @@ body {
   padding: 0 10%;
   /* text-align: center; */
   grid-template-columns: 1fr 1fr 1fr;
-  gap: 40px;
+  column-gap: 60px;
+  row-gap: 30px;
 }
 .dateAndClock{
   display: flex;
@@ -45,10 +46,16 @@ nav {
   align-items: center;
   background-color: rgb(54, 53, 53);
   color: white;
-  padding: 0 10%;
+  /* padding: 0 10%; */
   /* text-align: center; */
 }
-
+.navContainer{
+  width: 100%;
+  margin: 0 200px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
 .humbrger {
   display: none;
   flex-direction: column;
@@ -230,7 +237,7 @@ li a:hover {
   width: 28rem;
   position: absolute;
   top: 25%;
-  left: 15%;
+  left: 200px;
   border-radius: 25px;
 }
 .cardPara {
@@ -253,8 +260,8 @@ li a:hover {
 
 .OurVisionContainer {
   display: flex;
-  width: 70%;
-  margin: 50px auto;
+  /* width: 70%; */
+  margin: 50px 200px;
   justify-content: space-between;
   gap: 30px;
   flex-direction: column;
@@ -374,10 +381,10 @@ hr {
 }
 
 .growingWithOurClientsContainer {
-  width: 70%;
-  margin: 0 auto;
+  /* width: 70%; */
+  margin: 0 200px;
 
-  padding: 50px;
+  padding: 50px 0;
 }
 .growing {
   font-size: 12px;
@@ -450,8 +457,7 @@ hr {
 /* Our History  */
 
 .ourHistory {
-  width: 70%;
-  margin: 100px auto 150px auto;
+  margin: 100px 200px 150px 200px;
 }
 .historyHead {
   width: 70%;
@@ -515,8 +521,8 @@ hr {
   padding: 50px 0;
 }
 .teamContainer {
-  width: 70%;
-  margin: 0 auto;
+  /* width: 70%; */
+  margin: 0 200px;
 }
 
 .teamWord {
@@ -609,8 +615,7 @@ hr {
 /* Book Now  */
 
 .bookNow {
-  width: 70%;
-  margin: 100px auto;
+  margin: 100px 200px;
 }
 
 .bookNowFooter {
@@ -715,8 +720,8 @@ footer {
   padding: 30px;
 }
 .footerContainer {
-  width: 70%;
-  margin: 0 auto;
+  /* width: 70%; */
+  margin: 0 200px;
   padding: 100px 0;
   display: flex;
   justify-content: space-between;
@@ -791,6 +796,33 @@ footer hr {
   line-height: 25px;
 }
 
+@media screen and (max-width: 1440px) {
+  .navContainer{
+    margin: 0 100px;
+  }
+  .card {
+    left: 100px;
+  }
+  .OurVisionContainer{
+    margin: 50px 100px;
+  }
+  .growingWithOurClientsContainer{
+    margin: 0 100px;
+  }
+  .ourHistory {
+    margin: 100px 100px 150px 100px;
+  }
+  .teamContainer{
+    margin: 0 100px;
+  }
+  .bookNow {
+    margin: 100px 100px;
+  }
+  .footerContainer{
+    margin: 0 100px;
+  }
+}
+
 
 @media screen and (max-width: 1200px) {
 
@@ -799,9 +831,6 @@ footer hr {
   }
   .historyVideo {
     width: 600px;
-  }
-  .teamContainer {
-    width: 80%;
   }
   .historyHead h1 {
     width: 100%;
@@ -917,9 +946,6 @@ footer hr {
   .marketImg2 {
     display: none;
   }
-  .bookNow {
-    width: 90%;
-  }
   .bookNowHead {
     width: 100%;
   }
@@ -951,12 +977,6 @@ footer hr {
   .teamHead {
     width: 100%;
   }
-  .teamContainer {
-    width: 90%;
-  }
-  .footerContainer {
-    width: 85%;
-  }
   .footerProduct button {
     width: 170px;
     font-size: 14px;
@@ -964,6 +984,31 @@ footer hr {
 }
 
 @media screen and (max-width: 786px) {
+
+  .navContainer{
+    margin: 0 50px;
+  }
+  .card {
+    left: 50px;
+  }
+  .OurVisionContainer{
+    margin: 50px 50px;
+  }
+  .growingWithOurClientsContainer{
+    margin: 0 50px;
+  }
+  .ourHistory {
+    margin: 100px 50px 150px 50px;
+  }
+  .teamContainer{
+    margin: 0 50px;
+  }
+  .bookNow {
+    margin: 100px 50px;
+  }
+  .footerContainer{
+    margin: 0 50px;
+  }
  
   .firstHead {
     grid-template-columns: 1fr 1fr;
@@ -1002,8 +1047,6 @@ footer hr {
   }
 
   .footerContainer {
-    width: 70%;
-    margin: 0 auto;
     padding: 100px 0;
     display: flex;
     flex-direction: column;
@@ -1037,21 +1080,17 @@ footer hr {
     border-radius: 0;
   }
 
-  .OurVisionContainer {
-    width: 90%;
-  }
+  
   .ourVisionNums {
     flex-wrap: wrap;
   }
 
   .growingWithOurClientsContainer {
-    width: 90%;
+    /* width: 90%; */
     padding: 50px 0;
   }
 
-  .ourHistory {
-    width: 90%;
-  }
+  
   .historyVideo {
     width: 400px;
   }
@@ -1059,9 +1098,6 @@ footer hr {
     width: 100%;
   }
 
-  .bookNow {
-    width: 90%;
-  }
   .bookNowFooter1 {
     padding: 20px;
   }
@@ -1078,9 +1114,37 @@ footer hr {
     padding: 3px;
     font-size: 12px;
   }
+  .bookNowFooter2{
+    display: none;
+  }
 }
 
 @media screen and (max-width: 450px) {
+  .navContainer{
+    margin: 0 20px;
+  }
+  .card {
+    padding: 20px;
+  }
+  .OurVisionContainer{
+    margin: 50px 20px;
+  }
+  .growingWithOurClientsContainer{
+    margin: 0 20px;
+  }
+  .ourHistory {
+    margin: 100px 20px 150px 20px;
+  }
+  .teamContainer{
+    margin: 0 20px;
+  }
+  .bookNow {
+    margin: 100px 20px;
+  }
+  .footerContainer{
+    margin: 0 20px;
+  }
+
   .navIcons.active{
     top: 220px;
   }
@@ -1104,9 +1168,6 @@ footer hr {
   .historyVideo {
     width: 300px;
     height: 200px;
-  }
-  .footerContainer {
-    width: 90%;
   }
   .footerCard1 h1 {
     font-size: 28px;

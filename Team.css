@@ -15,7 +15,8 @@ body {
   align-items: center;
   padding: 0 10%;
   grid-template-columns: 1fr 1fr 1fr;
-  gap: 40px;
+  column-gap: 60px;
+  row-gap: 30px;
   /* text-align: center; */
 }
 .dateAndClock{
