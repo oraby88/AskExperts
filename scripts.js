@@ -48,16 +48,16 @@ function mini_nav_dropDown() {
 //     console.log('bb');
 // }
 
-var x = -420;
-function nextSlide(){
-    // x -= 338.25;
-    console.log(`translateX(${x})`);
-    document.getElementById('swiper-wrapper').style.transform=`translateX(${x}px)`;
-    // document.getElementById('swiper-wrapper').classList.remove('prevSlide');
-}
-function prevSlide(){
-    document.getElementById('swiper-wrapper').style.transform=`translateX(0)`;
+// var x = -420;
+// function nextSlide(){
+//     // x -= 338.25;
+//     console.log(`translateX(${x})`);
+//     document.getElementById('swiper-wrapper').style.transform=`translateX(${x}px)`;
+//     // document.getElementById('swiper-wrapper').classList.remove('prevSlide');
+// }
+// function prevSlide(){
+//     document.getElementById('swiper-wrapper').style.transform=`translateX(0)`;
 
-    // document.getElementById('swiper-wrapper').classList.add('prevSlide');
-    // document.getElementById('swiper-wrapper').classList.remove('nextSlide');
-}
+//     // document.getElementById('swiper-wrapper').classList.add('prevSlide');
+//     // document.getElementById('swiper-wrapper').classList.remove('nextSlide');
+// }
