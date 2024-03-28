@@ -13,7 +13,7 @@ body {
   color: #f5f5f5;
   justify-content: space-around;
   align-items: center;
-  padding: 0 10%;
+  padding: 0 200px;
   grid-template-columns: 1fr 1fr 1fr;
   column-gap: 60px;
   row-gap: 30px;
@@ -45,10 +45,16 @@ nav {
   align-items: center;
   background-color: rgb(54, 53, 53);
   color: white;
-  padding: 0 10%;
+  /* padding: 0 10%; */
   /* text-align: center; */
 }
-
+.navContainer{
+  width: 100%;
+  margin: 0 200px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
 .humbrger {
   display: none;
   flex-direction: column;
@@ -226,7 +232,7 @@ li a:hover {
   width: 20rem;
   position: absolute;
   top: 25%;
-  left: 15%;
+  left: 200px;
   border-radius: 15px;
   object-fit: cover;
 }
@@ -252,8 +258,8 @@ li a:hover {
   padding: 50px 0;
 }
 .teamContainer {
-  width: 70%;
-  margin: 0 auto;
+  
+  margin: 0 200px;
 }
 
 /* .teamWord {
@@ -350,12 +356,12 @@ li a:hover {
   padding: 100px 0;
 }
 .contactContainer {
-  width: 70%;
-  margin: 0 auto;
+  margin: 0 200px;
   /* padding: 50px; */
   background-color: black;
   color: white;
   border-radius: 25px;
+  display: flex;
 }
 .contactHead {
   width: 50%;
@@ -369,10 +375,6 @@ li a:hover {
   text-align: center;
   border-radius: 10px;
   letter-spacing: 2px;
-}
-.contactContainer {
-  display: flex;
-  /* justify-content: space-between; */
 }
 .contactImage {
   position: relative;
@@ -419,11 +421,10 @@ li a:hover {
 
 footer {
   background-color: black;
-  padding: 30px;
+  /* padding: 30px; */
 }
 .footerContainer {
-  width: 70%;
-  margin: 0 auto;
+  margin: 0 200px;
   padding: 100px 0;
   display: flex;
   justify-content: space-between;
@@ -496,6 +497,31 @@ footer hr {
   color: #c5c5c5;
   text-align: center;
   line-height: 25px;
+  margin: 0 200px;
+  padding-bottom: 10px;
+}
+@media screen and (max-width: 1440px) {
+  .firstHead{
+    padding: 0 100px;
+  }
+  .navContainer{
+    margin: 0 100px;
+  }
+  .card{
+    left: 100px;
+  }
+  .teamContainer {
+    margin: 0 100px;
+  }
+  .contactContainer {
+    margin: 0 100px;
+  }
+  .footerContainer {
+    margin: 0 100px;
+  }
+  .endOfPage {
+    margin: 0 100px;
+  }
 }
 
 
@@ -549,15 +575,9 @@ footer hr {
     grid-template-columns: repeat(2, 1fr);
     gap: 15px;
   }
-  .contactContainer {
-    width: 90%;
-  }
   .contactHead {
     font-size: 14px;
     padding: 30px;
-  }
-  .footerContainer {
-    width: 85%;
   }
   .footerProduct button {
     width: 170px;
@@ -570,6 +590,27 @@ footer hr {
   }
 }
 @media screen and (max-width: 786px) {
+  .firstHead{
+    padding: 0 50px;
+  }
+  .navContainer{
+    margin: 0 50px;
+  }
+  .card{
+    left: 50px;
+  }
+  .teamContainer {
+    margin: 0 50px;
+  }
+  .contactContainer {
+    margin: 0 50px;
+  }
+  .footerContainer {
+    margin: 0 50px;
+  }
+  .endOfPage {
+    margin: 0 50px;
+  }
   .firstHead {
     grid-template-columns: 1fr 1fr;
   }
@@ -602,8 +643,6 @@ footer hr {
   }
 
   .footerContainer {
-    width: 70%;
-    margin: 0 auto;
     padding: 100px 0;
     display: flex;
     flex-direction: column;
@@ -623,9 +662,7 @@ footer hr {
   .callingNum {
     display: none;
   }
-  .teamContainer {
-    width: 90%;
-  }
+  
   .contactImage {
     display: none;
   }
@@ -638,6 +675,27 @@ footer hr {
 }
 
 @media screen and (max-width: 450px) {
+  .firstHead{
+    padding: 0 20px;
+  }
+  .navContainer{
+    margin: 0 20px;
+  }
+  .card{
+    padding: 20px;
+  }
+  .teamContainer {
+    margin: 0 20px;
+  }
+  .contactContainer {
+    margin: 0 20px;
+  }
+  .footerContainer {
+    margin: 0 20px;
+  }
+  .endOfPage {
+    margin: 0 20px;
+  }
   .dateAndClock,
   .address,
   .links {
@@ -647,9 +705,6 @@ footer hr {
   }
   .dateAndClock{
     justify-content: center;
-  }
-  .footerContainer {
-    width: 90%;
   }
   .footerCard1 h1 {
     font-size: 28px;

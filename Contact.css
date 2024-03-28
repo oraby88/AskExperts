@@ -13,7 +13,7 @@ body {
   color: #f5f5f5;
   justify-content: space-around;
   align-items: center;
-  padding: 0 10%;
+  padding: 0 200px;
   grid-template-columns: 1fr 1fr 1fr;
   column-gap: 60px;
   row-gap: 30px;
@@ -45,8 +45,15 @@ nav {
   align-items: center;
   background-color: rgb(54, 53, 53);
   color: white;
-  padding: 0 10%;
+  /* padding: 0 10%; */
   /* text-align: center; */
+}
+.navContainer{
+  width: 100%;
+  margin: 0 200px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .humbrger {
@@ -229,7 +236,7 @@ li a:hover {
   width: 20rem;
   position: absolute;
   top: 25%;
-  left: 15%;
+  left: 200px;
   border-radius: 15px;
   object-fit: cover;
   text-align: center;
@@ -254,9 +261,8 @@ li a:hover {
 /* Process Section */
 
 .processContainer {
+  margin: 100px 200px;
   display: flex;
-  width: 70%;
-  margin: 100px auto;
   justify-content: space-between;
   gap: 30px;
 }
@@ -438,8 +444,7 @@ li a:hover {
   gap: 25px;
 }
 .subscribe {
-  width: 70%;
-  margin: 0 auto;
+  margin: 0 200px;
   position: relative;
   z-index: -1;
   background-image: url(images/Newsletter.svg);
@@ -473,8 +478,7 @@ li a:hover {
 /* contact section  */
 
 .contactContainer {
-  width: 70%;
-  margin: 0 auto;
+  margin: 0 200px;
   padding: 100px 0;
   display: flex;
 }
@@ -556,11 +560,10 @@ li a:hover {
 
 footer {
   background-color: black;
-  padding: 30px;
+  /* padding: 30px; */
 }
 .footerContainer {
-  width: 70%;
-  margin: 0 auto;
+  margin: 0 200px;
   padding: 100px 0;
   display: flex;
   justify-content: space-between;
@@ -633,6 +636,35 @@ footer hr {
   color: #c5c5c5;
   text-align: center;
   line-height: 25px;
+  margin: 0;
+  padding-bottom: 10px;
+}
+@media screen and (max-width: 1440px) {
+  .firstHead{
+    padding: 0 100px;
+  }
+  .navContainer{
+    margin: 0 100px;
+  }
+  .card{
+    left: 100px;
+  }
+  .processContainer {
+    margin: 100px 100px;
+  }
+  .subscribe {
+    margin: 0 100px;
+  }
+  .contactContainer {
+    margin: 0 100px;
+  }
+  .footerContainer {
+    margin: 0 100px;
+  }
+  .endOfPage{
+    margin: 0 100px;
+  }
+
 }
 
 @media screen and (max-width: 1200px) {
@@ -682,14 +714,8 @@ footer hr {
     width: 90%;
     margin: 0 auto;
   }
-  .processContainer {
-    width: 90%;
-  }
   .supscribeEmail {
     flex-direction: column;
-  }
-  .footerContainer {
-    width: 85%;
   }
   .footerProduct button {
     width: 170px;
@@ -697,6 +723,31 @@ footer hr {
   }
 }
 @media screen and (max-width: 786px) {
+  .firstHead{
+    padding: 0 50px;
+  }
+  .navContainer{
+    margin: 0 50px;
+  }
+  .card{
+    left: 50px;
+  }
+  .processContainer {
+    margin: 100px 50px;
+  }
+  .subscribe {
+    margin: 0 50px;
+  }
+  .contactContainer {
+    margin: 0 50px;
+  }
+  .footerContainer {
+    margin: 0 50px;
+  }
+  .endOfPage{
+    margin: 0 50px;
+  }
+
   .firstHead {
     grid-template-columns: 1fr 1fr;
   }
@@ -733,10 +784,6 @@ footer hr {
     width: 100%;
   }
 
-  .subscribe {
-    width: 90%;
-  }
-
   .footerCard2 {
     width: 100%;
     display: flex;
@@ -746,8 +793,6 @@ footer hr {
   }
 
   .footerContainer {
-    width: 70%;
-    margin: 0 auto;
     padding: 100px 0;
     display: flex;
     flex-direction: column;
@@ -765,9 +810,6 @@ footer hr {
 }
 
 @media screen and (max-width: 600px) {
-  .contactContainer {
-    width: 90%;
-  }
   .callingNum {
     display: none;
   }
@@ -778,6 +820,31 @@ footer hr {
 }
 
 @media screen and (max-width: 450px) {
+  .firstHead{
+    padding: 0 20px;
+  }
+  .navContainer{
+    margin: 0 20px;
+  }
+  .card{
+    left: 20px;
+  }
+  .processContainer {
+    margin: 100px 20px;
+  }
+  .subscribe {
+    margin: 0 20px;
+  }
+  .contactContainer {
+    margin: 0 20px;
+  }
+  .footerContainer {
+    margin: 0 20px;
+  }
+  .endOfPage{
+    margin: 0 20px;
+  }
+
   .navIcons.active {
     top: 220px;
   }
@@ -803,9 +870,6 @@ footer hr {
   .card {
     position: static;
     width: 100%;
-  }
-  .footerContainer {
-    width: 90%;
   }
   .footerCard1 h1 {
     font-size: 28px;

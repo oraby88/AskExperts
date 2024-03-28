@@ -13,7 +13,7 @@ body {
   color: #f5f5f5;
   justify-content: space-between;
   align-items: center;
-  padding: 0 10%;
+  padding: 0 200px;
   /* text-align: center; */
   grid-template-columns: 1fr 1fr 1fr;
   column-gap: 60px;
@@ -717,7 +717,7 @@ hr {
 
 footer {
   background-color: black;
-  padding: 30px;
+  /* padding: 30px; */
 }
 .footerContainer {
   /* width: 70%; */
@@ -794,9 +794,14 @@ footer hr {
   color: #c5c5c5;
   text-align: center;
   line-height: 25px;
+  margin: 0;
+  padding-bottom: 10px;
 }
 
 @media screen and (max-width: 1440px) {
+  .firstHead{
+    padding: 0 100px;
+  }
   .navContainer{
     margin: 0 100px;
   }
@@ -819,6 +824,9 @@ footer hr {
     margin: 100px 100px;
   }
   .footerContainer{
+    margin: 0 100px;
+  }
+  .endOfPage{
     margin: 0 100px;
   }
 }
@@ -984,7 +992,9 @@ footer hr {
 }
 
 @media screen and (max-width: 786px) {
-
+  .firstHead{
+    padding: 0 50px;
+  }
   .navContainer{
     margin: 0 50px;
   }
@@ -1007,6 +1017,9 @@ footer hr {
     margin: 100px 50px;
   }
   .footerContainer{
+    margin: 0 50px;
+  }
+  .endOfPage{
     margin: 0 50px;
   }
  
@@ -1120,6 +1133,9 @@ footer hr {
 }
 
 @media screen and (max-width: 450px) {
+  .firstHead{
+    padding: 0 20px;
+  }
   .navContainer{
     margin: 0 20px;
   }
@@ -1142,6 +1158,9 @@ footer hr {
     margin: 100px 20px;
   }
   .footerContainer{
+    margin: 0 20px;
+  }
+  .endOfPage{
     margin: 0 20px;
   }
 
