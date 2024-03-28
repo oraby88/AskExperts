@@ -280,7 +280,8 @@ li a:hover {
   border-radius: 15px;
 }
 .businessServicesHead ul{
-  padding-top: 20px;
+  padding-top: 5px;
+  padding-bottom: 15px;
 }
 .businessServicesHead li {
   font-size: 14px;
@@ -328,7 +329,7 @@ li a:hover {
   z-index: 1;
 }
 .businessServicesFooter p {
-  font-size: 12px;
+  font-size: 14px;
   color: #7c7c7c;
 }
 .businessServicesFooter h1 {
@@ -336,12 +337,12 @@ li a:hover {
   margin-bottom: 10px;
 }
 .businessServicesFooter li {
-  font-size: 12px;
+  font-size: 14px;
   color: #7c7c7c;
   line-height: 30px;
 }
 .businessServicesFooterCard {
-  width: 70%;
+  width: 80%;
   background-color: black;
   border-radius: 15px;
   padding: 50px;

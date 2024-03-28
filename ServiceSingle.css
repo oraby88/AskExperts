@@ -267,6 +267,7 @@ li a:hover {
 
 .financialProjectionsContainer {
   margin: 0 0 0 200px;
+  padding-right: 30px;
 }
 
 .financialHead {
@@ -277,6 +278,7 @@ li a:hover {
 }
 .financialWords {
   width: 50%;
+  padding-right: 30px;
 }
 .financialWords p {
   font-size: 14px;

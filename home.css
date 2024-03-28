@@ -402,7 +402,7 @@ hr {
   /* width: 70%; */
   text-align: center;
   margin: 50px 200px;
-  padding: 150px 0;
+  padding: 90px 0;
 }
 .S3Head {
   width: 50%;
@@ -1115,7 +1115,8 @@ footer hr {
     margin: 50px 100px;
   }
   .S3Container {
-    margin: 50px 100px;
+    margin: 0px 100px;
+    padding: 80px 0;
   }
   .S4Container {
     margin: 70px 100px;
@@ -1558,7 +1559,7 @@ footer hr {
   }
   .feedbackUser button {
     padding: 7px 10px;
-    font-size: 12px;
+    font-size: 10px;
   }
 
   .blogBodyCard1,

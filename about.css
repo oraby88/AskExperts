@@ -989,6 +989,9 @@ footer hr {
     width: 170px;
     font-size: 14px;
   }
+  .ourVisionNums {
+    margin: 0;
+  }
 }
 
 @media screen and (max-width: 786px) {

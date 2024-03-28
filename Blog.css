@@ -296,6 +296,7 @@ li a:hover {
   margin-top: 70px;
   padding: 15px 25px;
   border-radius: 25px;
+  margin-bottom: 10px;
   background-color: #ffcc4a;
   font-weight: bold;
   border: 0;
@@ -534,6 +535,9 @@ footer hr {
   .linkslist ul li {
     list-style-type: none;
   }
+  .blogHeadWords {
+    width: 50%;
+  }
 }
 @media screen and (max-width: 992px) {
   .name {
@@ -625,7 +629,9 @@ footer hr {
   }
   .blogHead button {
     margin-top: 5px;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
+    font-size: 12px;
+    padding: 10px 20px;
   }
   .blogHead h1 {
     font-size: 18px;

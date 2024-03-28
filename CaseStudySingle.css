@@ -349,8 +349,6 @@ li a:hover {
 }
 .subscribe {
   margin: 0 200px;
-  position: relative;
-  z-index: -1;
   background-image: url(images/Newsletter.svg);
   background-size: cover;
   background-repeat: no-repeat;
